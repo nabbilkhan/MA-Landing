@@ -1,0 +1,12 @@
+name: ma-landing
+region: nyc
+static_sites:
+- build_command: npm ci && npm run build:static
+  environment_slug: node-js
+  git:
+    branch: main
+    repo_clone_url: https://github.com/nabbilkhan/MA-Landing.git
+  name: landing
+  output_dir: out
+  routes:
+  - path: /

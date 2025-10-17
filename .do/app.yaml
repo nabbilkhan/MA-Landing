@@ -1,0 +1,47 @@
+name: ma-landing
+region: nyc
+
+# Static site configuration for ultra-fast builds
+static_sites:
+- name: landing
+  github:
+    repo: nabbilkhan/MA-Landing
+    branch: main
+    deploy_on_push: true
+
+  # Build configuration
+  build_command: npm ci && npm run build:static
+  output_dir: out
+
+  # Environment
+  environment_slug: node-js
+
+  # Routes
+  routes:
+  - path: /
+
+  # Error pages
+  error_document: 404.html
+
+  # CORS (if needed for API calls)
+  cors:
+    allow_origins:
+    - prefix: https://app.mentoragile.com
+    - prefix: https://mentor-agile-dashboard-sdeeo.ondigitalocean.app
+    allow_methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - HEAD
+    - OPTIONS
+    allow_headers:
+    - Content-Type
+    - Authorization
+
+  # Environment variables (minimal for static site)
+  envs:
+  - key: NEXT_PUBLIC_SITE_URL
+    value: "https://mentoragile.com"
+  - key: NEXT_PUBLIC_API_URL
+    value: "https://app.mentoragile.com/api"

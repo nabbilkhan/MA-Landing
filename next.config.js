@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable standalone mode for server-side rendering
-  output: 'standalone',
+  // Enable static export for proper image serving
+  output: 'export',
 
   // Required for Next.js Image optimization
   images: {
     unoptimized: true
   },
+
+  // Add trailing slashes for better static hosting
+  trailingSlash: true,
 
   // Strict mode for better development
   reactStrictMode: true,

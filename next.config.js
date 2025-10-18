@@ -1,20 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export
-  output: 'export',
+  // Enable standalone mode for server-side rendering
+  output: 'standalone',
 
-  // Required for static export
+  // Required for Next.js Image optimization
   images: {
     unoptimized: true
   },
 
-  // Add trailing slashes for better static hosting
-  trailingSlash: true,
-
   // Strict mode for better development
   reactStrictMode: true,
-
-  // Performance optimizations (removed swcMinify - not valid in Next.js 15)
 
   // Disable x-powered-by header
   poweredByHeader: false,

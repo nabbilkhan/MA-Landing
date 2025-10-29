@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
+import { useRouter, usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -13,9 +14,17 @@ export default function NavigationHeader({ onCTAClick }) {
   const [isVisible, setIsVisible] = useState(false)
   const headerRef = useRef(null)
   const [isMounted, setIsMounted] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
-  // Smooth scroll function
+  // Smooth scroll function with cross-page navigation support
   const scrollToSection = (sectionId) => {
+    // If not on course-landing page, navigate there first
+    if (pathname !== '/course-landing' && pathname !== '/') {
+      router.push(`/course-landing#${sectionId}`)
+      return
+    }
+
     const element = document.getElementById(sectionId)
     if (element) {
       const offset = 80 // Account for header height
@@ -26,6 +35,19 @@ export default function NavigationHeader({ onCTAClick }) {
         top: offsetPosition,
         behavior: 'smooth'
       })
+    } else {
+      // Element not found, navigate to homepage with anchor
+      router.push(`/course-landing#${sectionId}`)
+    }
+  }
+
+  // Handle CTA click with fallback
+  const handleCTAClick = () => {
+    if (onCTAClick) {
+      onCTAClick()
+    } else {
+      // Default fallback: navigate to path selection
+      router.push('/course-landing/path-selection')
     }
   }
 
@@ -100,7 +122,10 @@ export default function NavigationHeader({ onCTAClick }) {
           <div className="flex items-center justify-between h-16 sm:h-20">
 
             {/* Logo + Brand Name */}
-            <div className="flex items-center gap-3 sm:gap-4 group">
+            <button
+              onClick={() => router.push('/')}
+              className="flex items-center gap-3 sm:gap-4 group cursor-pointer"
+            >
               {/* Logo */}
               <div className="relative w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-300 group-hover:scale-110">
                 <Image
@@ -123,7 +148,7 @@ export default function NavigationHeader({ onCTAClick }) {
                   Product Management Training
                 </span>
               </div>
-            </div>
+            </button>
 
             {/* Navigation Links - Hidden on mobile, shown on desktop */}
             <nav className="hidden md:flex items-center gap-6 lg:gap-8">
@@ -149,7 +174,11 @@ export default function NavigationHeader({ onCTAClick }) {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 group-hover/link:w-full transition-all duration-300"></span>
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  if (pathname !== '/contact') {
+                    router.push('/contact')
+                  }
+                }}
                 className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors duration-300 relative group/link"
               >
                 Contact
@@ -159,7 +188,7 @@ export default function NavigationHeader({ onCTAClick }) {
 
             {/* CTA Button - Beautiful 3D with Reliable Clicks */}
             <button
-              onClick={onCTAClick}
+              onClick={handleCTAClick}
               className="reserve-seat-3d-button relative min-h-[44px] px-5 sm:px-7 py-2.5 sm:py-3 bg-gradient-to-br from-gold-500 via-gold-600 to-gold-700 rounded-full font-black text-sm sm:text-base text-white cursor-pointer select-none"
               style={{ touchAction: 'manipulation' }}
             >

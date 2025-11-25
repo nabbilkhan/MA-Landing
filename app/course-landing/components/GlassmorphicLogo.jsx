@@ -5,8 +5,45 @@ import Image from 'next/image'
 
 export default function GlassmorphicLogo({
   logoPath = '/images/logos/mentor-agile-gold.png',
-  className = ''
+  className = '',
+  theme = 'gold' // 'gold' or 'medical'
 }) {
+  const isGold = theme === 'gold'
+
+  // Color configurations
+  const colors = isGold ? {
+    glow1: '#FFD700',
+    glow1Mid: '#D4AF37',
+    glow2: '#B8860B',
+    glow2Mid: '#996515',
+    glow3: '#D4AF37',
+    glow3Mid: '#FFD700',
+    panelBg: 'rgba(212, 175, 55, 0.08)',
+    panelBgHover: 'rgba(212, 175, 55, 0.12)',
+    borderHover: 'rgba(255, 215, 0, 0.4)',
+    shadowColor: 'rgba(212, 175, 55, 0.3)',
+    shadowColorHover: 'rgba(212, 175, 55, 0.5)',
+    shadowColorHover2: 'rgba(255, 215, 0, 0.3)',
+    shimmerColor: 'rgba(255, 215, 0, 0.2)',
+    dropShadow: 'rgba(212, 175, 55, 0.4)',
+    dropShadowHover: 'rgba(255, 215, 0, 0.6)'
+  } : {
+    glow1: '#38bdf8',
+    glow1Mid: '#0ea5e9',
+    glow2: '#0284c7',
+    glow2Mid: '#0369a1',
+    glow3: '#0ea5e9',
+    glow3Mid: '#38bdf8',
+    panelBg: 'rgba(14, 165, 233, 0.08)',
+    panelBgHover: 'rgba(14, 165, 233, 0.12)',
+    borderHover: 'rgba(56, 189, 248, 0.4)',
+    shadowColor: 'rgba(14, 165, 233, 0.3)',
+    shadowColorHover: 'rgba(14, 165, 233, 0.5)',
+    shadowColorHover2: 'rgba(56, 189, 248, 0.3)',
+    shimmerColor: 'rgba(56, 189, 248, 0.2)',
+    dropShadow: 'rgba(14, 165, 233, 0.4)',
+    dropShadowHover: 'rgba(56, 189, 248, 0.6)'
+  }
   const [isMounted, setIsMounted] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
@@ -82,7 +119,7 @@ export default function GlassmorphicLogo({
         .glow-orb-1 {
           width: 200px;
           height: 200px;
-          background: radial-gradient(circle, #FFD700 0%, #D4AF37 50%, transparent 70%);
+          background: radial-gradient(circle, ${colors.glow1} 0%, ${colors.glow1Mid} 50%, transparent 70%);
           top: -50px;
           left: -50px;
           animation-delay: 0s;
@@ -91,7 +128,7 @@ export default function GlassmorphicLogo({
         .glow-orb-2 {
           width: 150px;
           height: 150px;
-          background: radial-gradient(circle, #B8860B 0%, #996515 50%, transparent 70%);
+          background: radial-gradient(circle, ${colors.glow2} 0%, ${colors.glow2Mid} 50%, transparent 70%);
           bottom: -30px;
           right: -30px;
           animation-delay: 1.5s;
@@ -100,7 +137,7 @@ export default function GlassmorphicLogo({
         .glow-orb-3 {
           width: 180px;
           height: 180px;
-          background: radial-gradient(circle, #D4AF37 0%, #FFD700 50%, transparent 70%);
+          background: radial-gradient(circle, ${colors.glow3} 0%, ${colors.glow3Mid} 50%, transparent 70%);
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -111,13 +148,13 @@ export default function GlassmorphicLogo({
         .glass-panel {
           position: relative;
           padding: ${isMobile ? '30px 20px' : '40px 30px'};
-          background: rgba(212, 175, 55, 0.08);
+          background: ${colors.panelBg};
           backdrop-filter: blur(20px) saturate(180%);
           -webkit-backdrop-filter: blur(20px) saturate(180%);
           border-radius: 30px;
           border: 1px solid rgba(255, 255, 255, 0.25);
           box-shadow:
-            0 8px 32px rgba(212, 175, 55, 0.3),
+            0 8px 32px ${colors.shadowColor},
             0 16px 64px rgba(0, 0, 0, 0.2),
             inset 0 1px 0 rgba(255, 255, 255, 0.3),
             inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -127,11 +164,11 @@ export default function GlassmorphicLogo({
 
         .glass-panel:hover {
           transform: scale(1.05);
-          background: rgba(212, 175, 55, 0.12);
-          border-color: rgba(255, 215, 0, 0.4);
+          background: ${colors.panelBgHover};
+          border-color: ${colors.borderHover};
           box-shadow:
-            0 12px 48px rgba(212, 175, 55, 0.5),
-            0 24px 96px rgba(255, 215, 0, 0.3),
+            0 12px 48px ${colors.shadowColorHover},
+            0 24px 96px ${colors.shadowColorHover2},
             inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
@@ -154,7 +191,7 @@ export default function GlassmorphicLogo({
             transparent 0%,
             transparent 40%,
             rgba(255, 255, 255, 0.3) 50%,
-            rgba(255, 215, 0, 0.2) 55%,
+            ${colors.shimmerColor} 55%,
             transparent 60%,
             transparent 100%
           );
@@ -175,12 +212,12 @@ export default function GlassmorphicLogo({
           width: 100%;
           height: auto;
           object-fit: contain;
-          filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.4));
+          filter: drop-shadow(0 4px 12px ${colors.dropShadow});
           transition: filter 0.4s ease;
         }
 
         .glass-panel:hover .logo-image {
-          filter: drop-shadow(0 8px 24px rgba(255, 215, 0, 0.6));
+          filter: drop-shadow(0 8px 24px ${colors.dropShadowHover});
         }
 
         /* Animations */

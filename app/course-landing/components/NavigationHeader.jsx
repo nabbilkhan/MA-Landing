@@ -146,34 +146,48 @@ export default function NavigationHeader({ onCTAClick }) {
                   Mentor Agile
                 </span>
                 <span className="hidden sm:block text-xs font-medium text-gold-400">
-                  Product Management Training
+                  The Premier AI Institute
                 </span>
               </div>
             </button>
 
             {/* Navigation Links - Hidden on mobile, shown on desktop */}
             <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+              {/* Industry Routes */}
               <button
-                onClick={() => scrollToSection('certifications')}
-                className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors duration-300 relative group/link"
+                onClick={() => router.push('/tech')}
+                className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
+                  pathname === '/tech' || pathname === '/course-landing' ? 'text-gold-400' : 'text-gray-300 hover:text-gold-400'
+                }`}
               >
-                Certifications
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 group-hover/link:w-full transition-all duration-300"></span>
+                Tech
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-gold-400 transition-all duration-300 ${
+                  pathname === '/tech' || pathname === '/course-landing' ? 'w-full' : 'w-0 group-hover/link:w-full'
+                }`}></span>
               </button>
               <button
-                onClick={() => scrollToSection('modules')}
-                className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors duration-300 relative group/link"
+                onClick={() => router.push('/healthcare')}
+                className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
+                  pathname === '/healthcare' ? 'text-medical-400' : 'text-gray-300 hover:text-medical-400'
+                }`}
               >
-                Curriculum
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 group-hover/link:w-full transition-all duration-300"></span>
+                Healthcare
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-medical-400 transition-all duration-300 ${
+                  pathname === '/healthcare' ? 'w-full' : 'w-0 group-hover/link:w-full'
+                }`}></span>
               </button>
               <button
-                onClick={() => scrollToSection('testimonials')}
-                className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors duration-300 relative group/link"
+                onClick={() => router.push('/logistics')}
+                className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
+                  pathname === '/logistics' ? 'text-logistics-400' : 'text-gray-300 hover:text-logistics-400'
+                }`}
               >
-                Testimonials
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 group-hover/link:w-full transition-all duration-300"></span>
+                Logistics
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-logistics-400 transition-all duration-300 ${
+                  pathname === '/logistics' ? 'w-full' : 'w-0 group-hover/link:w-full'
+                }`}></span>
               </button>
+              <div className="w-px h-5 bg-gray-600"></div>
               <button
                 onClick={() => {
                   if (pathname !== '/contact') {

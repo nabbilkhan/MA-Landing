@@ -6,44 +6,64 @@ import Image from 'next/image'
 export default function GlassmorphicLogo({
   logoPath = '/images/logos/mentor-agile-gold.png',
   className = '',
-  theme = 'gold' // 'gold' or 'medical'
+  theme = 'gold' // 'gold', 'medical', or 'logistics'
 }) {
-  const isGold = theme === 'gold'
-
-  // Color configurations
-  const colors = isGold ? {
-    glow1: '#FFD700',
-    glow1Mid: '#D4AF37',
-    glow2: '#B8860B',
-    glow2Mid: '#996515',
-    glow3: '#D4AF37',
-    glow3Mid: '#FFD700',
-    panelBg: 'rgba(212, 175, 55, 0.08)',
-    panelBgHover: 'rgba(212, 175, 55, 0.12)',
-    borderHover: 'rgba(255, 215, 0, 0.4)',
-    shadowColor: 'rgba(212, 175, 55, 0.3)',
-    shadowColorHover: 'rgba(212, 175, 55, 0.5)',
-    shadowColorHover2: 'rgba(255, 215, 0, 0.3)',
-    shimmerColor: 'rgba(255, 215, 0, 0.2)',
-    dropShadow: 'rgba(212, 175, 55, 0.4)',
-    dropShadowHover: 'rgba(255, 215, 0, 0.6)'
-  } : {
-    glow1: '#38bdf8',
-    glow1Mid: '#0ea5e9',
-    glow2: '#0284c7',
-    glow2Mid: '#0369a1',
-    glow3: '#0ea5e9',
-    glow3Mid: '#38bdf8',
-    panelBg: 'rgba(14, 165, 233, 0.08)',
-    panelBgHover: 'rgba(14, 165, 233, 0.12)',
-    borderHover: 'rgba(56, 189, 248, 0.4)',
-    shadowColor: 'rgba(14, 165, 233, 0.3)',
-    shadowColorHover: 'rgba(14, 165, 233, 0.5)',
-    shadowColorHover2: 'rgba(56, 189, 248, 0.3)',
-    shimmerColor: 'rgba(56, 189, 248, 0.2)',
-    dropShadow: 'rgba(14, 165, 233, 0.4)',
-    dropShadowHover: 'rgba(56, 189, 248, 0.6)'
+  // Color configurations by theme
+  const colorThemes = {
+    gold: {
+      glow1: '#FFD700',
+      glow1Mid: '#D4AF37',
+      glow2: '#B8860B',
+      glow2Mid: '#996515',
+      glow3: '#D4AF37',
+      glow3Mid: '#FFD700',
+      panelBg: 'rgba(212, 175, 55, 0.08)',
+      panelBgHover: 'rgba(212, 175, 55, 0.12)',
+      borderHover: 'rgba(255, 215, 0, 0.4)',
+      shadowColor: 'rgba(212, 175, 55, 0.3)',
+      shadowColorHover: 'rgba(212, 175, 55, 0.5)',
+      shadowColorHover2: 'rgba(255, 215, 0, 0.3)',
+      shimmerColor: 'rgba(255, 215, 0, 0.2)',
+      dropShadow: 'rgba(212, 175, 55, 0.4)',
+      dropShadowHover: 'rgba(255, 215, 0, 0.6)'
+    },
+    medical: {
+      glow1: '#38bdf8',
+      glow1Mid: '#0ea5e9',
+      glow2: '#0284c7',
+      glow2Mid: '#0369a1',
+      glow3: '#0ea5e9',
+      glow3Mid: '#38bdf8',
+      panelBg: 'rgba(14, 165, 233, 0.08)',
+      panelBgHover: 'rgba(14, 165, 233, 0.12)',
+      borderHover: 'rgba(56, 189, 248, 0.4)',
+      shadowColor: 'rgba(14, 165, 233, 0.3)',
+      shadowColorHover: 'rgba(14, 165, 233, 0.5)',
+      shadowColorHover2: 'rgba(56, 189, 248, 0.3)',
+      shimmerColor: 'rgba(56, 189, 248, 0.2)',
+      dropShadow: 'rgba(14, 165, 233, 0.4)',
+      dropShadowHover: 'rgba(56, 189, 248, 0.6)'
+    },
+    logistics: {
+      glow1: '#4ade80',
+      glow1Mid: '#22c55e',
+      glow2: '#16a34a',
+      glow2Mid: '#15803d',
+      glow3: '#22c55e',
+      glow3Mid: '#4ade80',
+      panelBg: 'rgba(34, 197, 94, 0.08)',
+      panelBgHover: 'rgba(34, 197, 94, 0.12)',
+      borderHover: 'rgba(74, 222, 128, 0.4)',
+      shadowColor: 'rgba(34, 197, 94, 0.3)',
+      shadowColorHover: 'rgba(34, 197, 94, 0.5)',
+      shadowColorHover2: 'rgba(74, 222, 128, 0.3)',
+      shimmerColor: 'rgba(74, 222, 128, 0.2)',
+      dropShadow: 'rgba(34, 197, 94, 0.4)',
+      dropShadowHover: 'rgba(74, 222, 128, 0.6)'
+    }
   }
+
+  const colors = colorThemes[theme] || colorThemes.gold
   const [isMounted, setIsMounted] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 

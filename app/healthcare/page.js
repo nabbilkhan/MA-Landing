@@ -875,31 +875,29 @@ export default function HealthcareLandingPage() {
               From Beginner to <span className="text-medical-400 font-semibold">Certified Pharmacy & EKG Technician</span> in Just 4 Weeks
             </p>
 
-            {/* Stats - Healthcare specific */}
-            <div className="grid grid-cols-4 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
+            {/* Stats - Healthcare specific (matching /tech layout) */}
+            <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
+              {/* Avg Salary */}
               <div className="text-center">
                 <div className="text-3xl font-bold text-gradient-medical">
-                  <span className="stat-number" data-target="4">4</span>
-                </div>
-                <div className="text-sm text-gray-300">Weeks</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-medical">
-                  <span className="stat-number" data-target="160">160</span>
-                </div>
-                <div className="text-sm text-gray-300">Hours</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-gradient-medical">
-                  CPhT
-                </div>
-                <div className="text-xs text-gray-300">Cert Included</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-medical">
-                  $<span className="stat-number" data-target="60">60</span>K+
+                  $<span className="stat-number" data-target="65">65</span>K
                 </div>
                 <div className="text-sm text-gray-300">Avg Salary</div>
+              </div>
+              {/* Top Earners */}
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gradient-medical">
+                  $<span className="stat-number" data-target="100">100</span>K
+                </div>
+                <div className="text-sm text-gray-300">Top Earners</div>
+              </div>
+              {/* Job Openings - Green Glow */}
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400 animate-pulse-glow-green">
+                  <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
+                  <span className="stat-number" data-target="53">53</span>K
+                </div>
+                <div className="text-sm text-green-300">Job Openings</div>
               </div>
             </div>
           </div>

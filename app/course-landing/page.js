@@ -9,7 +9,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
 import * as THREE from 'three';
 import Lenis from 'lenis';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 // Import new components
 import IBHEBanner from './components/IBHEBanner';
@@ -24,6 +24,7 @@ import SocialFooter from './components/SocialFooter';
 import PathSelectionModal from './components/PathSelectionModal';
 import PickYourPathModal from './components/PickYourPathModal';
 import StateFundedModal from './components/StateFundedModal';
+import TechSalaryPopup from './components/TechSalaryPopup';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -32,6 +33,7 @@ if (typeof window !== 'undefined') {
 
 export default function CourseLandingPage() {
   const router = useRouter();
+  const pathname = usePathname();
   const heroRef = useRef(null);
   const canvasRef = useRef(null);
   const textRef = useRef(null);
@@ -58,6 +60,7 @@ export default function CourseLandingPage() {
   const [showPathSelectionModal, setShowPathSelectionModal] = useState(false);
   const [showPickYourPathModal, setShowPickYourPathModal] = useState(false);
   const [showStateFundedModal, setShowStateFundedModal] = useState(false);
+  const [showSalaryPopup, setShowSalaryPopup] = useState(false);
   const reserveSeatButtonRef = useRef(null);
   const courseOverviewButtonRef = useRef(null);
 
@@ -835,6 +838,24 @@ export default function CourseLandingPage() {
       {/* IBHE Trust Banner - Sticky at top */}
       <IBHEBanner onCTAClick={handleOpenPathSelection} />
 
+      {/* Back to Home - Shows on /tech page */}
+      {(pathname === '/tech' || pathname === '/tech/') && (
+        <button
+          onClick={() => router.push('/')}
+          className="fixed top-16 left-4 z-[100] flex items-center gap-2 px-4 py-2 rounded-full bg-black/60 backdrop-blur-md border border-gold-500/30 text-white hover:bg-black/80 hover:border-gold-500/50 transition-all duration-300 group"
+        >
+          <svg
+            className="w-4 h-4 text-gold-400 group-hover:-translate-x-1 transition-transform duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span className="text-sm font-semibold">Home</span>
+        </button>
+      )}
+
       {/* Sticky Navigation Header */}
       <NavigationHeader onCTAClick={handleOpenPathSelection} />
 
@@ -972,7 +993,7 @@ export default function CourseLandingPage() {
 
             {/* Subtitle */}
             <p className="hero-subtitle text-xl lg:text-2xl text-gray-400 font-light mb-6">
-              From Beginner to <span className="text-gold-400 font-semibold">$85K+ Product Manager</span> in Just 8 Weeks
+              From Beginner to <span className="text-gold-400 font-semibold">$130K+ Product Manager</span> in Just 8 Weeks
             </p>
 
             {/* CTA Buttons - Mobile Optimized with 48px+ touch targets */}
@@ -998,25 +1019,42 @@ export default function CourseLandingPage() {
               </button>
             </div>
 
-            {/* Stats */}
+            {/* Stats - BA/PO/PM Specific Data */}
             <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-gold">
-                  <span className="stat-number" data-target="500">500</span>+
+              <div
+                className="text-center cursor-pointer group hover:scale-105 transition-transform duration-300"
+                onClick={() => setShowSalaryPopup(true)}
+              >
+                <div className="text-3xl font-bold text-gradient-gold group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">
+                  $<span className="stat-number" data-target="130">130</span>K
                 </div>
-                <div className="text-sm text-gray-300">Graduates</div>
+                <div className="text-sm text-gray-300 group-hover:text-gold-400 transition-colors flex items-center justify-center gap-1">
+                  <span>Avg Salary</span>
+                  <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="text-center cursor-pointer group hover:scale-105 transition-transform duration-300"
+                onClick={() => setShowSalaryPopup(true)}
+              >
+                <div className="text-3xl font-bold text-gradient-gold group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">
+                  $<span className="stat-number" data-target="516">516</span>K
+                </div>
+                <div className="text-sm text-gray-300 group-hover:text-gold-400 transition-colors flex items-center justify-center gap-1">
+                  <span>Top Earners</span>
+                  <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-gold">
-                  $<span className="stat-number" data-target="85">85</span>K+
+                <div className="text-3xl font-bold text-green-400 animate-pulse-glow-green">
+                  <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
+                  <span className="stat-number" data-target="281">281</span>K
                 </div>
-                <div className="text-sm text-gray-300">Avg Salary</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-gold">
-                  <span className="stat-number" data-target="95">95</span>%
-                </div>
-                <div className="text-sm text-gray-300">Job Rate</div>
+                <div className="text-sm text-green-300">Job Openings</div>
               </div>
             </div>
           </div>
@@ -1321,6 +1359,20 @@ export default function CourseLandingPage() {
           50% {
             background-position: 100% 50%;
           }
+        }
+
+        /* Green Glow Animation for Job Openings */
+        @keyframes pulse-glow-green {
+          0%, 100% {
+            text-shadow: 0 0 10px rgba(74, 222, 128, 0.7), 0 0 20px rgba(74, 222, 128, 0.5), 0 0 30px rgba(74, 222, 128, 0.3);
+          }
+          50% {
+            text-shadow: 0 0 20px rgba(74, 222, 128, 0.9), 0 0 40px rgba(74, 222, 128, 0.7), 0 0 60px rgba(74, 222, 128, 0.5);
+          }
+        }
+
+        .animate-pulse-glow-green {
+          animation: pulse-glow-green 2s ease-in-out infinite;
         }
 
         .neumorphic-card {
@@ -1866,6 +1918,12 @@ export default function CourseLandingPage() {
       <StateFundedModal
         isOpen={showStateFundedModal}
         onClose={handleCloseStateFunded}
+      />
+
+      {/* Tech Salary Popup - BA/PO/PM Specific */}
+      <TechSalaryPopup
+        isOpen={showSalaryPopup}
+        onClose={() => setShowSalaryPopup(false)}
       />
     </div>
   );

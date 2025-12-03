@@ -58,3 +58,383 @@ input[type="number"]::-webkit-outer-spin-button {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   TENSOR-STYLE 3D BUTTONS
+   8-layer depth shadow system for premium tactile feel
+═══════════════════════════════════════════════════════════════════ */
+
+.hero-primary-btn {
+  background: linear-gradient(135deg, #FFB001 0%, #E69A00 100%);
+  color: #000;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  min-height: 48px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+
+  /* 8-layer 3D depth shadow cascade */
+  box-shadow:
+    0 1px 0 0 rgba(255, 220, 100, 0.95),
+    0 2px 0 0 rgba(255, 200, 50, 0.9),
+    0 3px 0 0 rgba(255, 176, 1, 1),
+    0 4px 0 0 rgba(255, 176, 1, 0.95),
+    0 5px 0 0 rgba(230, 154, 0, 0.9),
+    0 6px 0 0 rgba(230, 154, 0, 0.85),
+    0 8px 0 0 rgba(200, 130, 0, 0.75),
+    0 10px 0 0 rgba(170, 110, 0, 0.6),
+    0 14px 25px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(255, 176, 1, 0.3);
+
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.hero-primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 1px 0 0 rgba(255, 230, 120, 1),
+    0 2px 0 0 rgba(255, 220, 100, 0.95),
+    0 3px 0 0 rgba(255, 200, 50, 0.9),
+    0 4px 0 0 rgba(255, 176, 1, 1),
+    0 5px 0 0 rgba(255, 176, 1, 0.95),
+    0 6px 0 0 rgba(230, 154, 0, 0.9),
+    0 8px 0 0 rgba(230, 154, 0, 0.85),
+    0 10px 0 0 rgba(200, 130, 0, 0.75),
+    0 12px 0 0 rgba(170, 110, 0, 0.6),
+    0 18px 35px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(255, 176, 1, 0.45);
+}
+
+.hero-primary-btn:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 1px 0 0 rgba(200, 130, 0, 0.9),
+    0 2px 0 0 rgba(170, 110, 0, 0.7),
+    0 4px 10px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.06s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Secondary button - Glass style */
+.hero-secondary-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  min-height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 2px 0 0 rgba(255, 255, 255, 0.1),
+    0 4px 0 0 rgba(255, 255, 255, 0.05),
+    0 8px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.hero-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow:
+    0 2px 0 0 rgba(255, 255, 255, 0.15),
+    0 4px 0 0 rgba(255, 255, 255, 0.1),
+    0 6px 0 0 rgba(255, 255, 255, 0.05),
+    0 12px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.hero-secondary-btn:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.05),
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PILL NAVIGATION BUTTONS
+═══════════════════════════════════════════════════════════════════ */
+
+.pill-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pill-btn:hover {
+  transform: scale(1.05);
+}
+
+.pill-btn:active {
+  transform: scale(0.98);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SCROLL INDICATOR ANIMATION
+═══════════════════════════════════════════════════════════════════ */
+
+@keyframes scrollPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scaleY(1.1);
+  }
+}
+
+.scroll-indicator {
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PULSING GREEN GLOW FOR JOBS COUNTER
+═══════════════════════════════════════════════════════════════════ */
+
+@keyframes pulseGreen {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.3), 0 0 60px rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(34, 197, 94, 0.5), 0 0 100px rgba(34, 197, 94, 0.2);
+    border-color: rgba(74, 222, 128, 0.7);
+  }
+}
+
+.animate-pulse-green {
+  animation: pulseGreen 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   AI BADGE ANIMATIONS - Glow and Breathe Effects
+═══════════════════════════════════════════════════════════════════ */
+
+@keyframes aiBreathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.9;
+  }
+}
+
+@keyframes aiGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 30px rgba(168, 85, 247, 0.25), inset 0 1px 0 rgba(255,255,255,0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.8), 0 0 50px rgba(168, 85, 247, 0.4), 0 0 75px rgba(168, 85, 247, 0.2), inset 0 1px 0 rgba(255,255,255,0.4);
+  }
+}
+
+.animate-ai-breathe {
+  animation: aiBreathe 2.5s ease-in-out infinite;
+}
+
+.animate-ai-glow {
+  animation: aiGlow 2s ease-in-out infinite;
+}
+
+/* Gold AI Badge Animations */
+@keyframes aiGlowGold {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 176, 1, 0.3), 0 4px 15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 176, 1, 0.5), 0 0 90px rgba(255, 215, 0, 0.3), 0 4px 15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.6);
+  }
+}
+
+@keyframes aiRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmerBadge {
+  0% {
+    transform: translateX(-100%);
+  }
+  50%, 100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-ai-glow-gold {
+  animation: aiGlowGold 2s ease-in-out infinite;
+}
+
+.animate-ai-rotate {
+  animation: aiRotate 8s linear infinite;
+}
+
+/* Emerald VR Badge Animations */
+@keyframes vrGlowEmerald {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5), 0 0 30px rgba(5, 150, 105, 0.3), 0 4px 15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.8), 0 0 60px rgba(5, 150, 105, 0.5), 0 0 90px rgba(52, 211, 153, 0.3), 0 4px 15px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.6);
+  }
+}
+
+.animate-vr-glow-emerald {
+  animation: vrGlowEmerald 2s ease-in-out infinite;
+}
+
+/* Premium Badge Animations */
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1.4);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes badgeFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+.animate-badge-float {
+  animation: badgeFloat 2.5s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HOLOGRAPHIC BADGE EFFECTS
+   Pokemon Card CSS inspired holographic shine effects
+═══════════════════════════════════════════════════════════════════ */
+
+@keyframes holoShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes holoSparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.02) rotate(1deg);
+  }
+  75% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes holoGlare {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes rainbowShift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.holo-card {
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --pointer-from-center: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.holo-card:hover {
+  transform: scale(1.05);
+}
+
+.holo-shine {
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 219, 112, 0.4) 36%,
+    rgba(255, 196, 112, 0.4) 43%,
+    rgba(255, 180, 112, 0.4) 50%,
+    rgba(148, 187, 233, 0.4) 57%,
+    rgba(170, 148, 233, 0.4) 64%,
+    rgba(233, 148, 212, 0.4) 71%,
+    transparent 80%
+  );
+  background-size: 300% 300%;
+  mix-blend-mode: overlay;
+  animation: holoShine 3s ease-in-out infinite;
+}
+
+.holo-rainbow {
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(53, 80%, 65%, 0.3) 0%,
+    hsla(93, 70%, 55%, 0.3) 8%,
+    hsla(176, 70%, 55%, 0.3) 16%,
+    hsla(228, 75%, 60%, 0.3) 24%,
+    hsla(283, 75%, 60%, 0.3) 32%,
+    hsla(326, 75%, 55%, 0.3) 40%,
+    hsla(53, 80%, 65%, 0.3) 48%
+  );
+  background-size: 200% 200%;
+  mix-blend-mode: color-dodge;
+  animation: holoShine 4s ease-in-out infinite;
+}
+
+.holo-glare {
+  background: radial-gradient(
+    farthest-corner circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 20%,
+    transparent 60%
+  );
+  mix-blend-mode: overlay;
+}

@@ -37,8 +37,8 @@ const industries = [
     icon: '💻',
     href: '/tech',
     theme: 'gold',
-    features: ['8-Week Intensive Program', 'CSPO Certification', 'AI Essentials Training', 'Portfolio Project'],
-    stats: { 'Avg Salary': '$88K', 'Up To': '$356K' },
+    features: ['12-Week Intensive Program', 'CSPO Certification', 'AI Essentials Training', 'Portfolio Project'],
+    stats: { 'Starting Salary': '$88K', 'Up To': '$356K' },
     hasAIBadge: true,
   },
   {

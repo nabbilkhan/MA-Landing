@@ -46,9 +46,9 @@ export const CONFIG = {
 // Texture paths
 export const TEXTURE_PATHS = {
   baseColor: '/textures/gold/BaseColor.jpg',
-  roughness: '/textures/gold/Roughness.png',
+  roughness: '/textures/gold/Roughness.jpg',
   metalness: '/textures/gold/Metallic.jpg',
-  normal: '/textures/gold/NormalGL.png',
+  normal: '/textures/gold/NormalGL.jpg',
   ao: '/textures/gold/AO.jpg',
 };
 

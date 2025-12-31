@@ -47,6 +47,7 @@ export default function IndustryCard3D({
   stats = null,
   hasAIBadge = false,
   hasVRBadge = false,
+  comingSoon = false,
 }) {
   const cardRef = useRef(null)
   const [isMobile, setIsMobile] = useState(false)
@@ -118,6 +119,43 @@ export default function IndustryCard3D({
 
           {/* Top Accent Bar */}
           <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${colors.gradient}`} />
+
+          {/* Coming Soon Badge - Top Right Corner */}
+          {comingSoon && (
+            <div className="absolute top-4 right-4 z-30">
+              <div className="relative group/badge">
+                {/* Soft glow behind */}
+                <div
+                  className="absolute inset-0 rounded-full blur-md opacity-80 animate-pulse-slow"
+                  style={{
+                    background: 'radial-gradient(circle, rgba(168, 85, 247, 0.6) 0%, transparent 70%)',
+                    transform: 'scale(1.5)',
+                  }}
+                />
+                {/* Main Badge */}
+                <div
+                  className="relative flex items-center gap-1.5 px-3 py-1.5 rounded-full animate-badge-float"
+                  style={{
+                    background: 'linear-gradient(145deg, #C084FC 0%, #A855F7 30%, #9333EA 60%, #7E22CE 100%)',
+                    boxShadow: `
+                      0 2px 4px rgba(0,0,0,0.3),
+                      0 4px 8px rgba(0,0,0,0.2),
+                      inset 0 2px 4px rgba(255,255,255,0.6),
+                      inset 0 -2px 4px rgba(0,0,0,0.1),
+                      0 0 20px rgba(168, 85, 247, 0.4)
+                    `,
+                    border: '1px solid rgba(255, 255, 255, 0.4)',
+                  }}
+                >
+                  {/* Clock icon */}
+                  <svg className="w-4 h-4 text-purple-100" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-white font-black text-xs tracking-wider uppercase" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}>Coming Soon</span>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Badges Container - Top Left Corner - Vertical Stack */}
           {(hasAIBadge || hasVRBadge) && (

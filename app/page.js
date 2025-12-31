@@ -51,6 +51,7 @@ const industries = [
     stats: { Certifications: '2', Duration: '4 Weeks' },
     hasAIBadge: true,
     hasVRBadge: true,
+    comingSoon: true,
   },
   {
     title: 'Advanced CDL',
@@ -62,6 +63,7 @@ const industries = [
     stats: { Demand: 'High', Growth: '25%' },
     hasAIBadge: true,
     hasVRBadge: true,
+    comingSoon: true,
   },
 ]
 
@@ -787,7 +789,7 @@ export default function AIInstituteLanding() {
                 </div>
               </div>
               <span className="text-sm md:text-base lg:text-lg font-bold text-white">
-                Trusted by 1000+ Students Nationwide
+                State-Approved & Industry-Recognized Programs
               </span>
             </div>
           </div>

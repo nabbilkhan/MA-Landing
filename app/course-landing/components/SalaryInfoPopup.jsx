@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { isProgramVisible } from '../../config/siteConfig';
 
 export default function SalaryInfoPopup({ isOpen, onClose }) {
   const popupContentRef = useRef(null);
@@ -56,11 +57,11 @@ export default function SalaryInfoPopup({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const disciplines = [
-    { name: 'BA / PO / PM', openings: '281K', midCareer: '$130K', maxCeiling: '$516K' },
-    { name: 'Pharmacy Tech', openings: '49K', midCareer: '$50K', maxCeiling: '$100K' },
-    { name: 'EKG Tech', openings: '4K', midCareer: '$80K', maxCeiling: '$95K' },
-    { name: 'CDL (All Forms)', openings: '550K', midCareer: '$70K', maxCeiling: '$300K' },
-  ];
+    { name: 'BA / PO / PM', openings: '281K', midCareer: '$130K', maxCeiling: '$516K', program: 'tech' },
+    { name: 'Pharmacy Tech', openings: '49K', midCareer: '$50K', maxCeiling: '$100K', program: 'healthcare' },
+    { name: 'EKG Tech', openings: '4K', midCareer: '$80K', maxCeiling: '$95K', program: 'healthcare' },
+    { name: 'CDL (All Forms)', openings: '550K', midCareer: '$70K', maxCeiling: '$300K', program: 'logistics' },
+  ].filter(d => isProgramVisible(d.program));
 
   return (
     <AnimatePresence>
@@ -112,11 +113,11 @@ export default function SalaryInfoPopup({ isOpen, onClose }) {
             {/* Key Metrics */}
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-2xl p-4 border border-green-500/20 text-center">
-                <div className="text-3xl font-black text-green-400 mb-1">$88K</div>
+                <div className="text-3xl font-black text-green-400 mb-1">$130K</div>
                 <div className="text-xs text-gray-400 uppercase tracking-wider">Mid-Career Avg</div>
               </div>
               <div className="bg-gradient-to-br from-gold-500/10 to-gold-600/10 rounded-2xl p-4 border border-gold-500/20 text-center">
-                <div className="text-3xl font-black text-gold-400 mb-1">$357K</div>
+                <div className="text-3xl font-black text-gold-400 mb-1">$516K</div>
                 <div className="text-xs text-gray-400 uppercase tracking-wider">Top Earners</div>
               </div>
             </div>
@@ -124,9 +125,8 @@ export default function SalaryInfoPopup({ isOpen, onClose }) {
             {/* Explanation */}
             <div className="bg-white/5 rounded-2xl p-4 mb-6 border border-white/10">
               <p className="text-gray-300 text-sm leading-relaxed">
-                These figures are <span className="text-gold-400 font-semibold">weighted by job openings</span> across
-                BA/Product Manager, Pharmacy Tech, EKG Tech, and CDL careers (884K total annual openings).
-                Fields with more jobs count proportionally more.
+                These figures reflect <span className="text-gold-400 font-semibold">salary data</span> for
+                Business Analyst, Product Owner, and Product Manager careers (281K total annual openings).
               </p>
             </div>
 

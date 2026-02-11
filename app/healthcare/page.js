@@ -16,6 +16,7 @@ import NavigationHeader from '../course-landing/components/NavigationHeader';
 import GlassmorphicLogo from '../course-landing/components/GlassmorphicLogo';
 import NewsletterSignup from '../course-landing/components/NewsletterSignup';
 import SocialFooter from '../course-landing/components/SocialFooter';
+import { isProgramVisible } from '../config/siteConfig';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -47,6 +48,13 @@ export default function HealthcareLandingPage() {
   const particleCanvasRef = useRef(null);
   const scrollProgressBarRef = useRef(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
+
+  // Redirect if program is hidden
+  useEffect(() => {
+    if (!isProgramVisible('healthcare')) {
+      router.replace('/');
+    }
+  }, [router]);
 
   // Loading Animation
   useEffect(() => {

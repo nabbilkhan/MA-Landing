@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { isProgramVisible } from '../../config/siteConfig';
 
 export default function JobsAvailablePopup({ isOpen, onClose }) {
   const popupContentRef = useRef(null);
@@ -51,41 +52,52 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
 
   if (!isOpen) return null;
 
-  const jobCategories = [
+  const allJobCategories = [
     {
       name: 'BA / PO / PM',
       openings: '281K',
-      percentage: 32,
+      openingsNum: 281000,
       icon: '💻',
       color: 'from-blue-500 to-indigo-600',
       bgColor: 'bg-blue-500/10',
       borderColor: 'border-blue-500/30',
       textColor: 'text-blue-400',
-      description: 'Business Analyst, Product Owner, Product Manager'
+      description: 'Business Analyst, Product Owner, Product Manager',
+      program: 'tech',
     },
     {
       name: 'CDL Driving',
       openings: '550K',
-      percentage: 62,
+      openingsNum: 550000,
       icon: '🚛',
       color: 'from-green-500 to-emerald-600',
       bgColor: 'bg-green-500/10',
       borderColor: 'border-green-500/30',
       textColor: 'text-green-400',
-      description: 'Heavy trucks, light trucks, bus, delivery'
+      description: 'Heavy trucks, light trucks, bus, delivery',
+      program: 'logistics',
     },
     {
       name: 'Healthcare Tech',
       openings: '53K',
-      percentage: 6,
+      openingsNum: 53000,
       icon: '🏥',
       color: 'from-purple-500 to-pink-600',
       bgColor: 'bg-purple-500/10',
       borderColor: 'border-purple-500/30',
       textColor: 'text-purple-400',
-      description: 'Pharmacy Tech (49K) + EKG Tech (4K)'
+      description: 'Pharmacy Tech (49K) + EKG Tech (4K)',
+      program: 'healthcare',
     },
   ];
+
+  const jobCategories = allJobCategories.filter(c => isProgramVisible(c.program));
+  const totalOpenings = jobCategories.reduce((sum, c) => sum + c.openingsNum, 0);
+  const jobCategoriesWithPercentage = jobCategories.map(c => ({
+    ...c,
+    percentage: Math.round((c.openingsNum / totalOpenings) * 100),
+  }));
+  const totalDisplay = totalOpenings >= 1000 ? `~${Math.round(totalOpenings / 1000)}K` : totalOpenings.toLocaleString();
 
   return (
     <AnimatePresence>
@@ -140,13 +152,13 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
                 transition={{ delay: 0.2 }}
               >
                 <h3 className="text-3xl sm:text-4xl font-black text-white mb-2">
-                  <span className="text-green-400 animate-pulse">~900,000</span>
+                  <span className="text-green-400 animate-pulse">{totalDisplay}</span>
                 </h3>
                 <p className="text-xl sm:text-2xl font-bold text-white mb-1">
                   Job Openings Per Year
                 </p>
                 <p className="text-gray-400 text-sm">
-                  Across all career paths we train for in the U.S.
+                  {jobCategories.length === 1 ? `In ${jobCategories[0].name} careers in the U.S.` : 'Across all career paths we train for in the U.S.'}
                 </p>
               </motion.div>
             </div>
@@ -154,7 +166,7 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
             {/* Visual breakdown */}
             <div className="mb-6">
               <div className="flex h-4 rounded-full overflow-hidden mb-3">
-                {jobCategories.map((cat, i) => (
+                {jobCategoriesWithPercentage.map((cat, i) => (
                   <motion.div
                     key={i}
                     initial={{ width: 0 }}
@@ -169,7 +181,7 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
 
             {/* Job Categories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-              {jobCategories.map((cat, i) => (
+              {jobCategoriesWithPercentage.map((cat, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
@@ -211,18 +223,24 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
                 <span>💡</span> Key Insights
               </h4>
               <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2 text-gray-300">
-                  <span className="text-green-400 mt-0.5">✓</span>
-                  <span><span className="text-green-400 font-semibold">CDL + Trucking</span> dominates demand with over half of all openings</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-300">
-                  <span className="text-blue-400 mt-0.5">✓</span>
-                  <span><span className="text-blue-400 font-semibold">BA/PO/PM roles</span> offer ~280K openings/year - huge white-collar market</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-300">
-                  <span className="text-purple-400 mt-0.5">✓</span>
-                  <span><span className="text-purple-400 font-semibold">Healthcare tech</span> (Pharmacy + EKG) provides steady medical career paths</span>
-                </li>
+                {isProgramVisible('logistics') && (
+                  <li className="flex items-start gap-2 text-gray-300">
+                    <span className="text-green-400 mt-0.5">✓</span>
+                    <span><span className="text-green-400 font-semibold">CDL + Trucking</span> dominates demand with over half of all openings</span>
+                  </li>
+                )}
+                {isProgramVisible('tech') && (
+                  <li className="flex items-start gap-2 text-gray-300">
+                    <span className="text-blue-400 mt-0.5">✓</span>
+                    <span><span className="text-blue-400 font-semibold">BA/PO/PM roles</span> offer ~280K openings/year - huge white-collar market</span>
+                  </li>
+                )}
+                {isProgramVisible('healthcare') && (
+                  <li className="flex items-start gap-2 text-gray-300">
+                    <span className="text-purple-400 mt-0.5">✓</span>
+                    <span><span className="text-purple-400 font-semibold">Healthcare tech</span> (Pharmacy + EKG) provides steady medical career paths</span>
+                  </li>
+                )}
               </ul>
             </motion.div>
 

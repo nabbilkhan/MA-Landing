@@ -13,6 +13,7 @@ import IndustryCard3D from './components/IndustryCard3D'
 import HolographicBadge from './components/HolographicBadge'
 import SalaryInfoPopup from './course-landing/components/SalaryInfoPopup'
 import JobsAvailablePopup from './course-landing/components/JobsAvailablePopup'
+import { isProgramVisible } from './config/siteConfig'
 
 // Dynamically import HexCoins for code splitting
 const HexCoins = dynamic(() => import('./components/HexCoins'), {
@@ -32,6 +33,7 @@ if (typeof window !== 'undefined') {
 // Industry data
 const industries = [
   {
+    slug: 'tech',
     title: 'Tech Product Owner / Manager',
     description: 'Product Management & AI certifications for the tech industry',
     icon: '💻',
@@ -42,6 +44,7 @@ const industries = [
     hasAIBadge: true,
   },
   {
+    slug: 'healthcare',
     title: 'Pharmacy & EKG Technician',
     description: 'Pharmacy Tech & EKG certifications with AI integration',
     icon: '🏥',
@@ -54,6 +57,7 @@ const industries = [
     comingSoon: true,
   },
   {
+    slug: 'logistics',
     title: 'Advanced CDL',
     description: 'Supply Chain Management with AI-powered analytics',
     icon: '🚛',
@@ -73,27 +77,31 @@ const certifications = [
     name: 'IBHE',
     fullName: 'Illinois Board of Higher Education',
     logo: '/images/logos/ibhe.png',
-    bg: 'bg-white'
+    bg: 'bg-white',
+    program: null, // shared across all programs
   },
   {
     name: 'PTCB',
     fullName: 'PTCB Certified',
     logo: '/images/logos/ptcb-certified.png',
-    bg: 'bg-white'
+    bg: 'bg-white',
+    program: 'healthcare',
   },
   {
     name: 'CompTIA',
     fullName: 'CompTIA Authorized',
     logo: '/images/logos/comptia-partner.webp',
-    bg: 'bg-transparent'
+    bg: 'bg-transparent',
+    program: null, // shared across all programs
   },
   {
     name: 'Scrum Alliance',
     fullName: 'Scrum Alliance Certified',
     logo: '/images/logos/scrum-alliance.png',
-    bg: 'bg-white'
+    bg: 'bg-white',
+    program: 'tech',
   },
-]
+].filter(cert => cert.program === null || isProgramVisible(cert.program))
 
 export default function AIInstituteLanding() {
   const canvasRef = useRef(null)
@@ -126,8 +134,8 @@ export default function AIInstituteLanding() {
   useEffect(() => {
     if (isLoading) return
 
-    const MIN_VALUE = 886000
-    const MAX_VALUE = 887000
+    const MIN_VALUE = 280000
+    const MAX_VALUE = 282000
 
     // Random starting target within range
     const targetValue = Math.floor(Math.random() * 1001) + MIN_VALUE
@@ -586,7 +594,7 @@ export default function AIInstituteLanding() {
             {/* Subtitle with accent color */}
             <p className="hero-subtitle text-gray-200 text-lg md:text-xl lg:text-2xl max-w-2xl mb-8">
               Transform your career with cutting-edge AI training for{' '}
-              <span className="text-gold-400 font-semibold">Tech, Healthcare, and Logistics</span>
+              <span className="text-gold-400 font-semibold">the Tech industry</span>
             </p>
 
             {/* CTA Button with 3D depth */}
@@ -680,18 +688,22 @@ export default function AIInstituteLanding() {
               >
                 Tech
               </Link>
-              <Link
-                href="/healthcare"
-                className="pill-btn px-4 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold text-white/70 hover:text-medical-400 hover:bg-medical-500/15 border border-transparent hover:border-medical-500/30 transition-all"
-              >
-                Healthcare
-              </Link>
-              <Link
-                href="/logistics"
-                className="pill-btn px-4 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold text-white/70 hover:text-logistics-400 hover:bg-logistics-500/15 border border-transparent hover:border-logistics-500/30 transition-all"
-              >
-                Logistics
-              </Link>
+              {isProgramVisible('healthcare') && (
+                <Link
+                  href="/healthcare"
+                  className="pill-btn px-4 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold text-white/70 hover:text-medical-400 hover:bg-medical-500/15 border border-transparent hover:border-medical-500/30 transition-all"
+                >
+                  Healthcare
+                </Link>
+              )}
+              {isProgramVisible('logistics') && (
+                <Link
+                  href="/logistics"
+                  className="pill-btn px-4 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold text-white/70 hover:text-logistics-400 hover:bg-logistics-500/15 border border-transparent hover:border-logistics-500/30 transition-all"
+                >
+                  Logistics
+                </Link>
+              )}
             </div>
           </div>
         </section>
@@ -748,13 +760,13 @@ export default function AIInstituteLanding() {
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700/50 mb-6">
                 <span className="text-sm font-bold text-gray-300 uppercase tracking-wider">
-                  Choose Your Industry
+                  Featured Program
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
                 AI-Powered Training
-                <span className="block mt-2 bg-gradient-to-r from-gold-400 via-medical-400 to-logistics-400 bg-clip-text text-transparent">
-                  For Every Industry
+                <span className="block mt-2 bg-gradient-to-r from-gold-400 via-amber-300 to-gold-500 bg-clip-text text-transparent">
+                  For the Tech Industry
                 </span>
               </h2>
               <p className="text-lg text-gray-400 max-w-2xl mx-auto">
@@ -764,7 +776,7 @@ export default function AIInstituteLanding() {
 
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-              {industries.map((industry, index) => (
+              {industries.filter(i => isProgramVisible(i.slug)).map((industry, index) => (
                 <div key={index} className="industry-card">
                   <IndustryCard3D {...industry} />
                 </div>
@@ -781,15 +793,19 @@ export default function AIInstituteLanding() {
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-gold-500 to-amber-500 flex items-center justify-center text-sm md:text-lg border-2 border-gray-900">
                   🚀
                 </div>
-                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center text-sm md:text-lg border-2 border-gray-900">
-                  🏥
-                </div>
-                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-sm md:text-lg border-2 border-gray-900">
-                  📦
-                </div>
+                {isProgramVisible('healthcare') && (
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center text-sm md:text-lg border-2 border-gray-900">
+                    🏥
+                  </div>
+                )}
+                {isProgramVisible('logistics') && (
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-sm md:text-lg border-2 border-gray-900">
+                    📦
+                  </div>
+                )}
               </div>
               <span className="text-sm md:text-base lg:text-lg font-bold text-white">
-                State-Approved & Industry-Recognized Programs
+                State-Approved & Industry-Recognized Program
               </span>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { useRouter, usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { isProgramVisible } from '../../config/siteConfig'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
@@ -165,28 +166,32 @@ export default function NavigationHeader({ onCTAClick }) {
                   pathname === '/tech' || pathname === '/course-landing' ? 'w-full' : 'w-0 group-hover/link:w-full'
                 }`}></span>
               </button>
-              <button
-                onClick={() => router.push('/healthcare')}
-                className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
-                  pathname === '/healthcare' ? 'text-medical-400' : 'text-gray-300 hover:text-medical-400'
-                }`}
-              >
-                Healthcare
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-medical-400 transition-all duration-300 ${
-                  pathname === '/healthcare' ? 'w-full' : 'w-0 group-hover/link:w-full'
-                }`}></span>
-              </button>
-              <button
-                onClick={() => router.push('/logistics')}
-                className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
-                  pathname === '/logistics' ? 'text-logistics-400' : 'text-gray-300 hover:text-logistics-400'
-                }`}
-              >
-                Logistics
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-logistics-400 transition-all duration-300 ${
-                  pathname === '/logistics' ? 'w-full' : 'w-0 group-hover/link:w-full'
-                }`}></span>
-              </button>
+              {isProgramVisible('healthcare') && (
+                <button
+                  onClick={() => router.push('/healthcare')}
+                  className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
+                    pathname === '/healthcare' ? 'text-medical-400' : 'text-gray-300 hover:text-medical-400'
+                  }`}
+                >
+                  Healthcare
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-medical-400 transition-all duration-300 ${
+                    pathname === '/healthcare' ? 'w-full' : 'w-0 group-hover/link:w-full'
+                  }`}></span>
+                </button>
+              )}
+              {isProgramVisible('logistics') && (
+                <button
+                  onClick={() => router.push('/logistics')}
+                  className={`text-sm font-semibold transition-colors duration-300 relative group/link ${
+                    pathname === '/logistics' ? 'text-logistics-400' : 'text-gray-300 hover:text-logistics-400'
+                  }`}
+                >
+                  Logistics
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-logistics-400 transition-all duration-300 ${
+                    pathname === '/logistics' ? 'w-full' : 'w-0 group-hover/link:w-full'
+                  }`}></span>
+                </button>
+              )}
               <div className="w-px h-5 bg-gray-600"></div>
               <button
                 onClick={() => {
@@ -301,60 +306,62 @@ export default function NavigationHeader({ onCTAClick }) {
       `}</style>
     </header>
 
-    {/* Floating Sticky CTA - Right Side */}
-    <div className="fixed right-0 top-1/2 -translate-y-1/2 z-[85] group">
-      <button
-        onClick={() => {
-          if (pathname === '/healthcare' || pathname === '/healthcare/') {
-            router.push('/')
-          } else {
-            router.push('/healthcare')
-          }
-        }}
-        className="flex items-center gap-2 py-3 pl-3 pr-3 rounded-l-xl backdrop-blur-md transition-all duration-300 overflow-hidden"
-        style={{
-          background: (pathname === '/healthcare' || pathname === '/healthcare/')
-            ? 'rgba(212, 175, 55, 0.35)'
-            : 'rgba(14, 165, 233, 0.35)',
-          border: (pathname === '/healthcare' || pathname === '/healthcare/')
-            ? '1px solid rgba(212, 175, 55, 0.5)'
-            : '1px solid rgba(14, 165, 233, 0.5)',
-          borderRight: 'none',
-          boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)'
-        }}
-      >
-        {/* Arrow - Always visible */}
-        <svg
-          className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:rotate-180"
-          style={{ color: (pathname === '/healthcare' || pathname === '/healthcare/') ? '#D4AF37' : '#38bdf8' }}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+    {/* Floating Sticky CTA - Right Side (only shown when healthcare program is visible) */}
+    {isProgramVisible('healthcare') && (
+      <div className="fixed right-0 top-1/2 -translate-y-1/2 z-[85] group">
+        <button
+          onClick={() => {
+            if (pathname === '/healthcare' || pathname === '/healthcare/') {
+              router.push('/')
+            } else {
+              router.push('/healthcare')
+            }
+          }}
+          className="flex items-center gap-2 py-3 pl-3 pr-3 rounded-l-xl backdrop-blur-md transition-all duration-300 overflow-hidden"
+          style={{
+            background: (pathname === '/healthcare' || pathname === '/healthcare/')
+              ? 'rgba(212, 175, 55, 0.35)'
+              : 'rgba(14, 165, 233, 0.35)',
+            border: (pathname === '/healthcare' || pathname === '/healthcare/')
+              ? '1px solid rgba(212, 175, 55, 0.5)'
+              : '1px solid rgba(14, 165, 233, 0.5)',
+            borderRight: 'none',
+            boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)'
+          }}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-
-        {/* Icon - Always visible */}
-        {(pathname === '/healthcare' || pathname === '/healthcare/') ? (
-          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          {/* Arrow - Always visible */}
+          <svg
+            className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:rotate-180"
+            style={{ color: (pathname === '/healthcare' || pathname === '/healthcare/') ? '#D4AF37' : '#38bdf8' }}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-        ) : (
-          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#38bdf8' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 11v4m-2-2h4" />
-          </svg>
-        )}
 
-        {/* Text - Only visible on hover */}
-        <span
-          className="text-sm font-semibold whitespace-nowrap max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all duration-300 overflow-hidden"
-          style={{ color: (pathname === '/healthcare' || pathname === '/healthcare/') ? '#D4AF37' : '#38bdf8' }}
-        >
-          {(pathname === '/healthcare' || pathname === '/healthcare/') ? 'Interested in IT?' : 'Interested in Healthcare?'}
-        </span>
-      </button>
-    </div>
+          {/* Icon - Always visible */}
+          {(pathname === '/healthcare' || pathname === '/healthcare/') ? (
+            <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#38bdf8' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 11v4m-2-2h4" />
+            </svg>
+          )}
+
+          {/* Text - Only visible on hover */}
+          <span
+            className="text-sm font-semibold whitespace-nowrap max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all duration-300 overflow-hidden"
+            style={{ color: (pathname === '/healthcare' || pathname === '/healthcare/') ? '#D4AF37' : '#38bdf8' }}
+          >
+            {(pathname === '/healthcare' || pathname === '/healthcare/') ? 'Interested in IT?' : 'Interested in Healthcare?'}
+          </span>
+        </button>
+      </div>
+    )}
     </>
   )
 }

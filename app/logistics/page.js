@@ -1,15 +1,25 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import GlassmorphicLogo from '../course-landing/components/GlassmorphicLogo'
 import SocialFooter from '../course-landing/components/SocialFooter'
+import { isProgramVisible } from '../config/siteConfig'
 
 export default function LogisticsLandingPage() {
+  const router = useRouter()
   const [email, setEmail] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
   const canvasRef = useRef(null)
+
+  // Redirect if program is hidden
+  useEffect(() => {
+    if (!isProgramVisible('logistics')) {
+      router.replace('/')
+    }
+  }, [router])
 
   useEffect(() => {
     setIsMounted(true)

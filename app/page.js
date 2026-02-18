@@ -612,33 +612,6 @@ export default function AIInstituteLanding() {
 
             {/* Job & Salary Stats */}
             <div className="hero-stats flex flex-wrap gap-6 md:gap-10 items-center">
-              {/* Total Jobs Available - Large Pulsing Green */}
-              <button
-                onClick={() => setShowJobsPopup(true)}
-                className="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-green-500/10 hover:bg-green-500/20 border-2 border-green-500/40 hover:border-green-400 transition-all cursor-pointer animate-pulse-green"
-                style={{
-                  boxShadow: '0 0 30px rgba(34, 197, 94, 0.3), 0 0 60px rgba(34, 197, 94, 0.1)',
-                }}
-              >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-2xl shadow-lg shadow-green-500/30">
-                  💼
-                </div>
-                <div className="text-left">
-                  <div className="text-4xl md:text-5xl font-black text-green-400 tabular-nums tracking-tight">
-                    +{jobsCount.toLocaleString()}
-                  </div>
-                  <div className="text-sm md:text-base text-green-300/80 font-semibold flex items-center gap-2">
-                      Total Jobs Available
-                      {/* Pulsing Green Orb */}
-                      <span className="relative flex h-3 w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-lg shadow-green-500/50"></span>
-                      </span>
-                    </div>
-                </div>
-                <span className="ml-3 text-green-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-              </button>
-
               {/* Salary Range - Large */}
               <button
                 onClick={() => setShowSalaryPopup(true)}
@@ -720,7 +693,7 @@ export default function AIInstituteLanding() {
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Officially Certified
+                Officially Approved
               </span>
             </div>
 

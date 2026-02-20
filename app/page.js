@@ -40,7 +40,7 @@ const industries = [
     href: '/tech',
     theme: 'gold',
     features: ['12-Week Intensive Program', 'CSPO Certification', 'AI Essentials Training', 'Portfolio Project'],
-    stats: { 'Starting Salary': '$88K', 'Up To': '$356K' },
+    // stats: { 'Starting Salary': '$88K', 'Up To': '$356K' },
     hasAIBadge: true,
   },
   {
@@ -610,9 +610,8 @@ export default function AIInstituteLanding() {
               </button>
             </div>
 
-            {/* Job & Salary Stats */}
+            {/* Job & Salary Stats - hidden per request
             <div className="hero-stats flex flex-wrap gap-6 md:gap-10 items-center">
-              {/* Salary Range - Large */}
               <button
                 onClick={() => setShowSalaryPopup(true)}
                 className="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-gold-500/10 hover:bg-gold-500/20 border-2 border-gold-500/40 hover:border-gold-400 transition-all cursor-pointer"
@@ -632,6 +631,7 @@ export default function AIInstituteLanding() {
                 <span className="ml-3 text-gold-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </button>
             </div>
+            */}
           </div>
 
           {/* FIXED BOTTOM: Scroll Indicator - Left */}

@@ -142,6 +142,68 @@ export default function SocialFooter() {
           {/* Divider */}
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" data-aos="fade"></div>
 
+          {/* Institution Complaint Policy */}
+          <div className="w-full max-w-4xl mx-auto text-left space-y-6" data-aos="fade-up" data-aos-delay="150">
+            <h4 className="text-lg font-bold text-white text-center">Institution Policy for Addressing Student Complaints</h4>
+
+            <div className="text-sm text-gray-300 space-y-4 leading-relaxed">
+              <p><span className="font-semibold text-gray-100">1. Introduction</span><br />
+              Mentor Agile values feedback and treats complaints as opportunities to enhance services and learning experiences.</p>
+
+              <p><span className="font-semibold text-gray-100">2. Scope</span><br />
+              The policy covers all enrolled students and addresses concerns about academic matters, administrative services, faculty, and overall experience.</p>
+
+              <p><span className="font-semibold text-gray-100">3. Definitions</span></p>
+              <ul className="list-disc list-inside space-y-1 pl-2">
+                <li><span className="font-semibold text-gray-100">Complaint:</span> Formal expression of dissatisfaction with institutional operations, services, or environment</li>
+                <li><span className="font-semibold text-gray-100">Complainant:</span> The student submitting the complaint</li>
+                <li><span className="font-semibold text-gray-100">Respondent:</span> Individual or department being complained about</li>
+              </ul>
+
+              <p><span className="font-semibold text-gray-100">4. Procedures for Lodging a Complaint</span></p>
+              <p><em className="text-gray-200">Informal Resolution:</em> Students should first attempt to resolve issues directly with relevant individuals or departments.</p>
+              <p><em className="text-gray-200">Formal Complaint Process:</em></p>
+              <ul className="list-disc list-inside space-y-2 pl-2">
+                <li><span className="font-semibold text-gray-100">Step 1 – Submission:</span> Submit written complaints using official forms available on the website or student portal, including issue details, dates, parties involved, and supporting documents</li>
+                <li><span className="font-semibold text-gray-100">Step 2 – Acknowledgment:</span> Institution acknowledges receipt within 5 business days with investigation timeline</li>
+                <li><span className="font-semibold text-gray-100">Step 3 – Investigation:</span> Appointed Complaints Officer reviews documentation impartially and confidentially, conducting interviews and gathering information</li>
+                <li><span className="font-semibold text-gray-100">Step 4 – Resolution:</span> Written decision provided within 20 business days including findings and corrective actions</li>
+                <li><span className="font-semibold text-gray-100">Step 5 – Appeal:</span> Dissatisfied complainants may appeal within 10 business days; Appeals Committee decides within 15 business days</li>
+              </ul>
+
+              <p><span className="font-semibold text-gray-100">5. Confidentiality</span><br />
+              Information shared only with those directly involved in resolution.</p>
+
+              <p><span className="font-semibold text-gray-100">6. Retaliation Prohibited</span><br />
+              No retaliation against students for complaints; violations subject to disciplinary action.</p>
+
+              <p><span className="font-semibold text-gray-100">7. Record Keeping</span><br />
+              Five-year minimum retention in secure, confidential manner.</p>
+
+              <p><span className="font-semibold text-gray-100">8. Continuous Improvement</span><br />
+              Regular review of complaint trends to inform institutional changes.</p>
+
+              <p><span className="font-semibold text-gray-100">9. External Complaints – Illinois Board of Higher Education</span><br />
+              Contact the IBHE if internal resolution fails:</p>
+              <div className="pl-4 border-l-2 border-gray-600 text-gray-200">
+                <p>Illinois Board of Higher Education<br />
+                Division of Private Business and Vocational Schools<br />
+                1 N. Old State Capitol Plaza, Suite 333<br />
+                Springfield, IL 62701<br />
+                Phone: (217) 782-2551<br />
+                Fax: (217) 782-8548<br />
+                Website: www.ibhe.org</p>
+              </div>
+              <p>Mentor Agile may appeal determinations within 10 business days; noncompliance may result in cease and desist orders or approval revocation.</p>
+
+              <p><span className="font-semibold text-gray-100">10. Public Reporting</span><br />
+              The IBHE issues annual public reports on complaints without identifying individual students.</p>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" data-aos="fade"></div>
+
           {/* Footer Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm" data-aos="fade-up" data-aos-delay="200">
             <a href="/about" className="text-gray-200 hover:text-gold-400 transition-colors duration-300">About</a>

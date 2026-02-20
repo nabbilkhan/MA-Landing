@@ -1019,7 +1019,7 @@ export default function CourseLandingPage() {
               </button>
             </div>
 
-            {/* Stats - BA/PO/PM Specific Data */}
+            {/* Stats - BA/PO/PM Specific Data - hidden per request
             <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
               <div
                 className="text-center cursor-pointer group hover:scale-105 transition-transform duration-300"
@@ -1057,6 +1057,7 @@ export default function CourseLandingPage() {
                 <div className="text-sm text-green-300">Job Openings</div>
               </div>
             </div>
+            */}
           </div>
 
           {/* Right Side - Hero Image (60%) */}

@@ -153,9 +153,20 @@ export default function SocialFooter() {
             <a href="/privacy" className="text-gray-200 hover:text-gold-400 transition-colors duration-300">Privacy</a>
             <span className="text-gray-700">•</span>
             <a href="/terms" className="text-gray-200 hover:text-gold-400 transition-colors duration-300">Terms</a>
-            <span className="text-gray-700">•</span>
-            <a href="/complaint-policy" className="text-gray-200 hover:text-gold-400 transition-colors duration-300">Institution Complaint Policy</a>
           </div>
+
+          {/* Institution Complaint Policy - Prominent Link */}
+          <a
+            href="/complaint-policy"
+            className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-gold-400 border border-gold-500/40 rounded-xl bg-gold-500/10 hover:bg-gold-500/20 hover:border-gold-400 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Institution Complaint Policy
+          </a>
 
           {/* Copyright */}
           <div className="text-center text-sm text-gray-300" data-aos="fade-up" data-aos-delay="300">

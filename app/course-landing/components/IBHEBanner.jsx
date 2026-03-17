@@ -61,7 +61,7 @@ export default function IBHEBanner({ onCTAClick }) {
                 </span>
                 <span className="hidden sm:block text-white font-bold">•</span>
                 <span className="text-sm sm:text-base font-bold text-white">
-                  Illinois Board of Higher Education Certified Training Provider
+                  Approved to operate by the Illinois Board of Higher Education PBVS Division
                 </span>
               </div>
             </div>

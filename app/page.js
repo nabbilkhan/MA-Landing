@@ -11,7 +11,6 @@ import GlassmorphicLogo from './course-landing/components/GlassmorphicLogo'
 import SocialFooter from './course-landing/components/SocialFooter'
 import IndustryCard3D from './components/IndustryCard3D'
 import HolographicBadge from './components/HolographicBadge'
-import SalaryInfoPopup from './course-landing/components/SalaryInfoPopup'
 import JobsAvailablePopup from './course-landing/components/JobsAvailablePopup'
 import { isProgramVisible } from './config/siteConfig'
 
@@ -109,7 +108,6 @@ export default function AIInstituteLanding() {
   const [isMounted, setIsMounted] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [jobsCount, setJobsCount] = useState(0)
-  const [showSalaryPopup, setShowSalaryPopup] = useState(false)
   const [showJobsPopup, setShowJobsPopup] = useState(false)
   const [showPillNav, setShowPillNav] = useState(false)
 
@@ -787,12 +785,6 @@ export default function AIInstituteLanding() {
         {/* Footer */}
         <SocialFooter />
       </div>
-
-      {/* Salary Info Popup */}
-      <SalaryInfoPopup
-        isOpen={showSalaryPopup}
-        onClose={() => setShowSalaryPopup(false)}
-      />
 
       {/* Jobs Available Popup */}
       <JobsAvailablePopup

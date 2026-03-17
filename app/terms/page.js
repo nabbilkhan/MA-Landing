@@ -183,9 +183,9 @@ export default function TermsPage() {
                 </div>
                 <div className="prose prose-invert max-w-none">
                   <p className="text-gray-300 leading-relaxed mb-4">
-                    Mentor Agile provides the "Become a Job-Ready Product Owner" program in two formats:
-                    a premium VIP program with live coaching ($6,000) and a flexible On-Demand option ($800).
-                    Both are comprehensive 12-week trainings designed to transform beginners into certified Product Owners.
+                    Mentor Agile provides the "Become a Job-Ready Product Owner" 12-week VIP program
+                    with live coaching ($6,000). This comprehensive training is designed to transform
+                    beginners into certified Product Owners.
                   </p>
 
                   <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">VIP Program — Live + Pre-Recorded ($6,000)</h3>
@@ -209,34 +209,6 @@ export default function TermsPage() {
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span>Personalized coach feedback and private community access</span>
-                    </li>
-                  </ul>
-
-                  <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">On-Demand Program ($800)</h3>
-                  <ul className="space-y-3 text-gray-300 mb-6">
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>12-week self-paced Product Owner curriculum (video lessons and worksheets)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Scrum Alliance Certified Scrum Product Owner (CSPO®) certification guidance</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>AI Essentials training for modern product management</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Portfolio Capstone Project to showcase your skills to employers</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Lifetime access to all course materials and updates</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Community access via Slack for networking and support</span>
                     </li>
                   </ul>
 
@@ -322,12 +294,6 @@ export default function TermsPage() {
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span>
                         <strong className="text-gold-300">VIP Program:</strong> $6,000 for 12 weeks of live coaching plus pre-recorded curriculum. Contact us to book a free consultation.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>
-                        <strong className="text-gold-300">On-Demand Program:</strong> $800 for lifetime access to self-paced curriculum
                       </span>
                     </li>
                     <li className="flex items-start gap-3">

@@ -31,7 +31,7 @@ const testimonials = [
     quote: 'I never thought I\'d be someone who could earn six figures. For so long, I doubted myself, my abilities, and whether I\'d ever have the kind of career that could truly transform my life. But then I found Mentor Agile, and everything changed.',
     rating: 5,
     program: 'Business Analyst',
-    outcome: 'Six-Figure Salary'
+    outcome: 'Career Transformation'
   },
   {
     id: 3,

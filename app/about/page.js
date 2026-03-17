@@ -86,8 +86,8 @@ export default function AboutPage() {
               <div className="text-gray-400 text-sm md:text-base">Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">$85K+</div>
-              <div className="text-gray-400 text-sm md:text-base">Avg Salary</div>
+              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">95%</div>
+              <div className="text-gray-400 text-sm md:text-base">Job Placement</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">12</div>
@@ -112,11 +112,10 @@ export default function AboutPage() {
               the job was nearly impossible to find.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-              We offer two learning paths to fit your needs: a premium VIP program with live coaching and
-              personalized feedback, or a flexible on-demand option for self-paced learning. Both paths
-              include Scrum Alliance CSPO certification, modern AI tools, real-world projects, and portfolio
-              development. We don't just teach theory—we transform beginners into job-ready professionals
-              who can command $85K+ salaries.
+              Our 12-week VIP program combines live coaching with personalized feedback and a full
+              pre-recorded curriculum library. It includes Scrum Alliance CSPO certification, modern AI tools,
+              real-world projects, and portfolio development. We don't just teach theory; we transform
+              beginners into job-ready professionals who are prepared from day one.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Today, over 500 graduates have launched successful Product Owner careers through our program.
@@ -152,7 +151,7 @@ export default function AboutPage() {
             <h3 className="text-3xl md:text-4xl font-black mb-6 text-gold-400">Our Vision</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
               To be the #1 trusted program for breaking into Product Owner careers, known for delivering
-              real results: $85K+ salaries, 95% job placement, and life-changing career transformations.
+              real results: 95% job placement and life-changing career transformations.
               We believe anyone with ambition can succeed—and we're here to prove it.
             </p>
           </div>
@@ -248,109 +247,61 @@ export default function AboutPage() {
       {/* Certifications Section */}
       <CertificationsSection compact={true} />
 
-      {/* Choose Your Path Section */}
+      {/* Our Program Section */}
       <section className="relative py-24 px-6 bg-gradient-to-b from-black via-gold-950/5 to-black">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-4 text-center bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">
-            Choose Your Path
+            Our Program
           </h2>
           <p className="text-xl text-gray-400 mb-16 text-center max-w-3xl mx-auto">
-            Both programs lead to the same destination: a job-ready Product Owner career earning $85K+. Pick the learning format that works for you.
+            A 12-week intensive program designed to transform you into a job-ready Product Owner.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* VIP Program Card */}
-            <div className="relative backdrop-blur-xl bg-gradient-to-br from-gold-500/20 to-gold-600/10 border-4 border-gold-500/70 rounded-3xl p-8 md:p-10 shadow-2xl hover:scale-105 transition-transform duration-300">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-500 to-gold-600 text-black px-6 py-2 rounded-full font-bold text-sm">
-                BEST OUTCOMES
-              </div>
-
-              <div className="mt-4">
-                <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
-                  VIP Program — Live + Pre-Recorded
-                </h3>
-                <div className="text-center mb-6">
-                  <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
-                  <div className="text-gray-400 text-lg">/ 12 weeks</div>
-                </div>
-
-                <div className="space-y-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">Weekly live cohort sessions + full pre-recorded library</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">CSPO + 2 AI certifications guidance</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">Career assets: backlogs, user stories, artifacts & portfolio</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">Coach feedback & private community</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">No coding required — built for beginners</span>
-                  </div>
-                </div>
-
-                <a
-                  href="https://courses.mentoragile.com/12-week-po-course"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold text-lg rounded-xl hover:shadow-lg hover:shadow-gold-500/50 transition-all duration-300 text-center"
-                >
-                  Book Your Free Consultation →
-                </a>
-              </div>
+          <div className="relative backdrop-blur-xl bg-gradient-to-br from-gold-500/20 to-gold-600/10 border-4 border-gold-500/70 rounded-3xl p-8 md:p-10 shadow-2xl">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-500 to-gold-600 text-black px-6 py-2 rounded-full font-bold text-sm">
+              12-WEEK VIP PROGRAM
             </div>
 
-            {/* On-Demand Program Card */}
-            <div className="relative backdrop-blur-xl bg-gray-50/5 border-2 border-gray-500/30 rounded-3xl p-8 md:p-10 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="mt-8">
-                <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
-                  On-Demand Program
-                </h3>
-                <div className="text-center mb-6">
-                  <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$800</div>
-                  <div className="text-gray-400 text-lg">/ Start today</div>
-                </div>
-
-                <div className="space-y-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-300 text-sm">12-week on-demand curriculum (videos + worksheets)</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-300 text-sm">Scrum Alliance CSPO® Certification</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-300 text-sm">AI Essentials training</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-300 text-sm">Portfolio Capstone Project</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                    <span className="text-gray-300 text-sm">Lifetime Course Access + Community (Slack)</span>
-                  </div>
-                </div>
-
-                <a
-                  href="https://courses.mentoragile.com/offers/4HqAbvUj/checkout"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold text-lg rounded-xl hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  Enroll Now →
-                </a>
+            <div className="mt-4">
+              <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
+                VIP Program — Live + Pre-Recorded
+              </h3>
+              <div className="text-center mb-6">
+                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
+                <div className="text-gray-400 text-lg">/ 12 weeks</div>
               </div>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200 text-sm">Weekly live cohort sessions + full pre-recorded library</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200 text-sm">CSPO + 2 AI certifications guidance</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200 text-sm">Career assets: backlogs, user stories, artifacts & portfolio</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200 text-sm">Coach feedback & private community</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
+                  <span className="text-gray-200 text-sm">No coding required — built for beginners</span>
+                </div>
+              </div>
+
+              <a
+                href="https://courses.mentoragile.com/12-week-po-course"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold text-lg rounded-xl hover:shadow-lg hover:shadow-gold-500/50 transition-all duration-300 text-center"
+              >
+                Book Your Free Consultation →
+              </a>
             </div>
           </div>
         </div>
@@ -363,7 +314,7 @@ export default function AboutPage() {
             Ready to Become a Product Owner?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-            Join 500+ graduates who transformed their careers and now earn $85K+ as Product Owners—
+            Join 500+ graduates who transformed their careers as Product Owners,
             all in just 12 weeks, no coding required.
           </p>
           <a

@@ -955,7 +955,7 @@ export default function CourseLandingPage() {
 
             {/* Subtitle */}
             <p className="hero-subtitle text-xl lg:text-2xl text-gray-400 font-light mb-6">
-              From Beginner to <span className="text-gold-400 font-semibold">$130K+ Product Manager</span> in Just 8 Weeks
+              From Beginner to <span className="text-gold-400 font-semibold">Certified Product Owner</span> in Just 12 Weeks
             </p>
 
             {/* CTA Buttons - Mobile Optimized with 48px+ touch targets */}

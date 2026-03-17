@@ -746,9 +746,9 @@ export default function AIInstituteLanding() {
             </div>
 
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            <div className="flex flex-wrap justify-center gap-8 lg:gap-10">
               {industries.filter(i => isProgramVisible(i.slug)).map((industry, index) => (
-                <div key={index} className="industry-card">
+                <div key={index} className="industry-card w-full max-w-md">
                   <IndustryCard3D {...industry} />
                 </div>
               ))}

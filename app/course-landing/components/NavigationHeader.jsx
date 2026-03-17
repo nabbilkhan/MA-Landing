@@ -47,8 +47,8 @@ export default function NavigationHeader({ onCTAClick }) {
     if (onCTAClick) {
       onCTAClick()
     } else {
-      // Default fallback: navigate to path selection
-      router.push('/course-landing/path-selection')
+      // Default fallback: navigate to VIP enrollment
+      window.open('https://courses.mentoragile.com/12-week-po-course', '_blank')
     }
   }
 

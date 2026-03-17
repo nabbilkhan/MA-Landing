@@ -4,11 +4,9 @@ A modern, responsive landing page for Mentor Agile's Product Owner Training prog
 
 ## 🎯 Project Overview
 
-Mentor Agile provides comprehensive Product Owner training through two program formats:
-- **VIP Program** ($6,000) - Live coaching with expert instructors plus pre-recorded curriculum
-- **On-Demand Program** ($800) - Self-paced learning with lifetime access
+Mentor Agile provides comprehensive Product Owner training through a 12-week VIP program ($6,000) combining live coaching with expert instructors and a full pre-recorded curriculum.
 
-The platform helps professionals break into high-paying Product Owner roles with CSPO® certification, AI essentials training, and hands-on portfolio projects.
+The platform helps professionals break into Product Owner roles with CSPO certification, AI essentials training, and hands-on portfolio projects.
 
 ## 🚀 Tech Stack
 
@@ -48,7 +46,7 @@ The application will be available at `http://localhost:3001`
 
 ### 🏠 Homepage (`/course-landing`)
 - Dynamic hero section with animated gradients
-- Interactive program comparison (VIP vs On-Demand)
+- VIP program showcase
 - 12-week curriculum breakdown with all 9 topics:
   - Agile Principles
   - Agile Ceremonies & Artifacts
@@ -65,8 +63,7 @@ The application will be available at `http://localhost:3001`
 - Sticky navigation header
 
 ### 📚 Courses Page (`/courses`)
-- Comprehensive program comparison
-- Dual-program pricing cards
+- VIP program details and pricing
 - Target roles section
 - Full curriculum listing
 - Certifications information
@@ -78,7 +75,7 @@ The application will be available at `http://localhost:3001`
 - Core values showcase (6 values)
 - Curriculum preview
 - Certifications overview
-- Program comparison cards
+- VIP program card
 
 ### 📞 Contact Page (`/contact`)
 - Interactive contact form with validation
@@ -156,8 +153,6 @@ MA-Landing/
 │   │   │   ├── NavigationHeader.jsx # Sticky navigation
 │   │   │   ├── SocialFooter.jsx    # Social media footer
 │   │   │   └── TestimonialsCarousel.jsx # Homepage carousel
-│   │   ├── path-selection/
-│   │   │   └── page.js             # Program selection page
 │   │   └── page.js                 # Main landing page
 │   ├── courses/
 │   │   └── page.js                 # Courses listing page
@@ -283,7 +278,6 @@ npm run build && npm start
 
 - **500+** Graduates
 - **4.9★** Average Rating
-- **$85K+** Average Salary
 - **95%** Job Placement Rate
 - **12 Weeks** Program Duration
 
@@ -296,15 +290,6 @@ npm run build && npm start
 - Career assets development
 - Personalized coach feedback
 - Private community access
-
-### On-Demand Program ($800)
-- 12-week self-paced curriculum
-- Video lessons and worksheets
-- CSPO® certification guidance
-- AI Essentials training
-- Portfolio Capstone Project
-- Lifetime access
-- Slack community
 
 ## 📞 Contact Information
 

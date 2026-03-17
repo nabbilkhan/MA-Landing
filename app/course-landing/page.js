@@ -21,10 +21,6 @@ import TestimonialsCarousel from './components/TestimonialsCarousel';
 import YoutubeShortsGallery from './components/YoutubeShortsGallery';
 import NewsletterSignup from './components/NewsletterSignup';
 import SocialFooter from './components/SocialFooter';
-import PathSelectionModal from './components/PathSelectionModal';
-import PickYourPathModal from './components/PickYourPathModal';
-import StateFundedModal from './components/StateFundedModal';
-import TechSalaryPopup from './components/TechSalaryPopup';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -57,10 +53,6 @@ export default function CourseLandingPage() {
   const particleCanvasRef = useRef(null);
   const scrollProgressBarRef = useRef(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
-  const [showPathSelectionModal, setShowPathSelectionModal] = useState(false);
-  const [showPickYourPathModal, setShowPickYourPathModal] = useState(false);
-  const [showStateFundedModal, setShowStateFundedModal] = useState(false);
-  const [showSalaryPopup, setShowSalaryPopup] = useState(false);
   const reserveSeatButtonRef = useRef(null);
   const courseOverviewButtonRef = useRef(null);
 
@@ -774,39 +766,9 @@ export default function CourseLandingPage() {
     return () => window.removeEventListener('keydown', handleEscape);
   }, [showVideoModal]);
 
-  // Modal Handler Functions
-  const handleOpenPathSelection = () => {
-    if (isMobile) {
-      router.push('/course-landing/path-selection');
-    } else {
-      setShowPathSelectionModal(true);
-    }
-  };
-
-  const handleClosePathSelection = () => {
-    setShowPathSelectionModal(false);
-  };
-
-  const handleSelectBlackFriday = () => {
-    setShowPathSelectionModal(false);
-    setTimeout(() => {
-      setShowPickYourPathModal(true);
-    }, 300); // Small delay for smooth transition
-  };
-
-  const handleSelectStateFunded = () => {
-    setShowPathSelectionModal(false);
-    setTimeout(() => {
-      setShowStateFundedModal(true);
-    }, 300); // Small delay for smooth transition
-  };
-
-  const handleClosePickYourPath = () => {
-    setShowPickYourPathModal(false);
-  };
-
-  const handleCloseStateFunded = () => {
-    setShowStateFundedModal(false);
+  // CTA handler - navigate directly to VIP enrollment
+  const handleReserveSeat = () => {
+    window.open('https://courses.mentoragile.com/12-week-po-course', '_blank');
   };
 
   const modules = [
@@ -836,7 +798,7 @@ export default function CourseLandingPage() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* IBHE Trust Banner - Sticky at top */}
-      <IBHEBanner onCTAClick={handleOpenPathSelection} />
+      <IBHEBanner onCTAClick={handleReserveSeat} />
 
       {/* Back to Home - Shows on /tech page */}
       {(pathname === '/tech' || pathname === '/tech/') && (
@@ -857,7 +819,7 @@ export default function CourseLandingPage() {
       )}
 
       {/* Sticky Navigation Header */}
-      <NavigationHeader onCTAClick={handleOpenPathSelection} />
+      <NavigationHeader onCTAClick={handleReserveSeat} />
 
       {/* Loading Screen */}
       {isLoading && (
@@ -1011,7 +973,7 @@ export default function CourseLandingPage() {
                 </span>
               </button>
               <button
-                onClick={handleOpenPathSelection}
+                onClick={handleReserveSeat}
                 className="hero-reserve-seat-btn relative min-h-[48px] px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-br from-gold-500 via-gold-600 to-gold-700 rounded-full font-black text-base sm:text-lg text-white cursor-pointer select-none"
                 style={{ touchAction: 'manipulation' }}
               >
@@ -1253,7 +1215,7 @@ export default function CourseLandingPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               {/* Mobile-Optimized Black Friday Button - 48px+ touch target, responsive sizing, 3D depth */}
               <button
-                onClick={handleOpenPathSelection}
+                onClick={handleReserveSeat}
                 className="black-friday-3d-button relative min-h-[48px] px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 bg-gradient-to-br from-red-600 via-orange-600 to-amber-600 rounded-full font-black text-base sm:text-lg md:text-xl cursor-pointer select-none"
                 style={{ touchAction: 'manipulation' }}
               >
@@ -1901,31 +1863,6 @@ export default function CourseLandingPage() {
       {/* Social Media Footer */}
       <SocialFooter />
 
-      {/* Path Selection Modal */}
-      <PathSelectionModal
-        isOpen={showPathSelectionModal}
-        onClose={handleClosePathSelection}
-        onSelectBlackFriday={handleSelectBlackFriday}
-        onSelectStateFunded={handleSelectStateFunded}
-      />
-
-      {/* Pick Your Path Modal */}
-      <PickYourPathModal
-        isOpen={showPickYourPathModal}
-        onClose={handleClosePickYourPath}
-      />
-
-      {/* State Funded Modal */}
-      <StateFundedModal
-        isOpen={showStateFundedModal}
-        onClose={handleCloseStateFunded}
-      />
-
-      {/* Tech Salary Popup - BA/PO/PM Specific */}
-      <TechSalaryPopup
-        isOpen={showSalaryPopup}
-        onClose={() => setShowSalaryPopup(false)}
-      />
     </div>
   );
 }

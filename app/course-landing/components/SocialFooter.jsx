@@ -168,6 +168,34 @@ export default function SocialFooter() {
             Institution Complaint Policy
           </a>
 
+          {/* Regulatory Compliance */}
+          <div className="w-full max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="275">
+            <div className="bg-gray-800/30 border border-gray-700/40 rounded-2xl px-6 py-5 text-center space-y-3">
+              <p className="text-sm text-gray-300">
+                Mentor Agile is approved to operate by the{' '}
+                <a
+                  href="https://www.ibhe.org/pbvsAppProgs.aspx?id=1374"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold-400 hover:text-gold-300 underline underline-offset-2 transition-colors"
+                >
+                  Illinois Board of Higher Education
+                </a>{' '}
+                PBVS Division.
+              </p>
+              <p className="text-xs text-gray-400">
+                Mentor Agile is not accredited by a U.S. Department of Education recognized accrediting body.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 pt-1 text-sm">
+                <a href="/student-catalog" className="text-gray-300 hover:text-gold-400 transition-colors duration-300">Student Catalog</a>
+                <span className="text-gray-700">|</span>
+                <a href="/institutional-disclosure" className="text-gray-300 hover:text-gold-400 transition-colors duration-300">Institutional Disclosure</a>
+                <span className="text-gray-700">|</span>
+                <a href="/complaint-policy" className="text-gray-300 hover:text-gold-400 transition-colors duration-300">Complaint Policy</a>
+              </div>
+            </div>
+          </div>
+
           {/* Copyright */}
           <div className="text-center text-sm text-gray-300" data-aos="fade-up" data-aos-delay="300">
             <p>

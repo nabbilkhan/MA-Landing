@@ -136,7 +136,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Questions about VIP or On-Demand programs? Need help choosing the right path? Ready to start your journey to a $85K+ career?
+            Questions about our 12-week VIP program? Ready to start your journey to a new career?
             We're here to help you every step of the way.
           </p>
         </div>
@@ -234,7 +234,6 @@ export default function ContactPage() {
                   >
                     <option value="">Select an option</option>
                     <option value="VIP Program - $6,000">VIP Program - Live + Pre-Recorded - $6,000</option>
-                    <option value="On-Demand - $800">On-Demand Program - Self-Paced - $800</option>
                     <option value="Enterprise Training">Enterprise Training</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>

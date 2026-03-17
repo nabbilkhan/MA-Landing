@@ -33,7 +33,7 @@ const certifications = [
   },
   {
     id: 'ibhe',
-    name: 'IBHE Certified',
+    name: 'IBHE Approved',
     description: 'Illinois Board of Higher Education',
     icon: '🏛️',
     color: 'from-gold-500 to-amber-500',
@@ -64,7 +64,7 @@ export default function CertificationsShowcase() {
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Training programs approved and certified by leading industry organizations
+            Training programs approved by leading industry organizations and regulatory bodies
           </p>
         </div>
 

@@ -299,7 +299,7 @@ export default function CurriculumSection({ compact = false }) {
         {!compact && (
           <div className="text-center mt-12 md:mt-16">
             <p className="text-lg md:text-xl text-gold-300 font-semibold">
-              On-demand access • Bite-sized videos • Hands-on worksheets • Mobile-friendly
+              Live sessions + pre-recorded library • Bite-sized videos • Hands-on worksheets • Mobile-friendly
             </p>
           </div>
         )}

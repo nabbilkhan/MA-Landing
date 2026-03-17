@@ -1213,23 +1213,15 @@ export default function CourseLandingPage() {
               Book a call to see if you're a good fit for our next cohort. <span className="text-gold-400 font-semibold">Seats are limited!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              {/* Mobile-Optimized Black Friday Button - 48px+ touch target, responsive sizing, 3D depth */}
               <button
                 onClick={handleReserveSeat}
-                className="black-friday-3d-button relative min-h-[48px] px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 bg-gradient-to-br from-red-600 via-orange-600 to-amber-600 rounded-full font-black text-base sm:text-lg md:text-xl cursor-pointer select-none"
+                className="relative min-h-[48px] px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 bg-gradient-to-br from-gold-500 via-gold-600 to-gold-700 rounded-full font-black text-base sm:text-lg md:text-xl cursor-pointer select-none hover:shadow-lg hover:shadow-gold-500/50 hover:scale-105 transition-all duration-300"
                 style={{ touchAction: 'manipulation' }}
               >
-                <span className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-white drop-shadow-lg">
-                  <span className="text-2xl sm:text-3xl animate-pulse">🔥</span>
-                  <span className="tracking-wide text-center sm:text-left">
-                    <span className="block text-sm sm:text-base md:text-lg font-semibold uppercase tracking-wider">Black Friday Special</span>
-                    <span className="block text-xs sm:text-sm font-black flex items-center justify-center sm:justify-start gap-2 mt-1">
-                      <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-gradient-to-r from-green-400 to-green-500"></span>
-                      </span>
-                      <span className="text-green-100">Limited Seats Open</span>
-                    </span>
+                <span className="relative z-10 flex items-center justify-center gap-3 text-white drop-shadow-lg">
+                  <span className="tracking-wide text-center">
+                    <span className="block text-sm sm:text-base md:text-lg font-semibold uppercase tracking-wider">Limited Seats Available</span>
+                    <span className="block text-xs sm:text-sm font-black mt-1">Reserve Your Seat Now</span>
                   </span>
                 </span>
               </button>

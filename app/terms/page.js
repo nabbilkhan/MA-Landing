@@ -1,5 +1,7 @@
 'use client';
 
+import RefundPolicy from '../components/RefundPolicy';
+
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -109,7 +111,7 @@ export default function TermsPage() {
             Please read these terms carefully before using our services. By accessing or using Mentor
             Agile, you agree to be bound by these terms.
           </p>
-          <p className="text-sm text-gray-400">Last Updated: January 1, 2025</p>
+          <p className="text-sm text-gray-400">Last Updated: October 6, 2026</p>
         </div>
       </section>
 
@@ -200,7 +202,7 @@ export default function TermsPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>CSPO® + 2 AI certifications guidance and support</span>
+                      <span>CSPO® + AI skills training</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -315,16 +317,12 @@ export default function TermsPage() {
                   </ul>
 
                   <h3 className="text-xl font-bold text-gold-300 mb-4 mt-8">Refund Policy</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    All sales are final. Due to the digital nature of our programs and immediate access to course materials,
-                    we do not offer refunds once enrollment is complete and access has been granted.
-                  </p>
+                  <RefundPolicy />
 
                   <div className="bg-gold-500/10 border border-gold-500/30 rounded-xl p-6 mt-6">
                     <p className="text-gold-300 font-semibold mb-2">CSPO® Certification:</p>
                     <p className="text-gray-300">
-                      The Scrum Alliance CSPO® certification exam and membership is included in your program fee.
-                      Certification policies are governed by Scrum Alliance terms and conditions.
+                      The public VIP program includes the initial CSPO® training and certification arrangement. Scrum Alliance currently requires successful completion of a 16-hour course taught by a Certified Scrum Trainer® and acceptance of its license agreement; there is no CSPO® exam. The training booking and included fees are identified in your enrollment agreement. Membership and renewal follow Scrum Alliance terms.
                     </p>
                   </div>
                 </div>
@@ -427,11 +425,7 @@ export default function TermsPage() {
 
                   <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">Certification Disclaimer</h3>
                   <p className="text-gray-300 leading-relaxed mb-4">
-                    While we maintain high standards and a 98% pass rate, we do not guarantee that you
-                    will pass any certification exam. Exam success depends on individual effort, study,
-                    participation, and examination performance. Certification exam results are determined
-                    solely by the certifying body (Scrum Alliance, Scaled Agile, PMI, etc.), not by Mentor
-                    Agile.
+                    Completion of Mentor Agile coursework does not automatically award a third-party credential. Each issuing organization controls its own eligibility, attendance, assessment, membership, and renewal requirements. We do not guarantee certification, employment, or a particular salary. CSPO® currently has no certification exam.
                   </p>
 
                   <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">Limitation of Liability</h3>

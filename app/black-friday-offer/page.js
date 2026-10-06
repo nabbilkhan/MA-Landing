@@ -663,7 +663,7 @@ export default function BlackFridayOfferPage() {
     { name: 'Live Cohort Sessions', vip: true, onDemand: false },
     { name: 'Complete On-Demand Library', vip: true, onDemand: true },
     { name: 'CSPO Certification (Included)', vip: true, onDemand: false },
-    { name: '2 AI Certifications (Included)', vip: true, onDemand: false },
+    { name: 'AI Skills Training (Included)', vip: true, onDemand: false },
     { name: 'Certification Roadmap Guidance', vip: true, onDemand: true },
     { name: 'Career Assets & Portfolio Built With You', vip: true, onDemand: false },
     { name: 'Custom Resume Service', vip: true, onDemand: false },
@@ -719,7 +719,7 @@ export default function BlackFridayOfferPage() {
     },
     {
       question: 'What certifications are included?',
-      answer: 'VIP includes 3 certifications: CSPO (Scrum Alliance), AI for Product Owners, and AI Prompting Essentials. We prepare you and cover exam costs. On-Demand includes certification guidance only.'
+      answer: 'The VIP program includes CSPO training support and AI coursework. CSPO requires a Certified Scrum Trainer course and has no certification exam. Your enrollment agreement identifies included credentialing fees and any additional credentials. AI coursework is not a CompTIA certification.'
     },
     {
       question: 'What is your refund policy?',
@@ -954,7 +954,7 @@ export default function BlackFridayOfferPage() {
                       <Check className="w-6 h-6 text-gold-300 flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="font-bold text-white text-base">3 certifications included</p>
-                        <p className="text-sm text-gray-improved">CSPO + AI for POs + AI Prompting</p>
+                        <p className="text-sm text-gray-improved">CSPO guidance + AI coursework</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -1230,7 +1230,7 @@ export default function BlackFridayOfferPage() {
               </div>
             </div>
             <p className="text-sm text-gray-improved mt-8">
-              No refunds after week 2. <Link href="/refund-policy" className="text-gold-400 hover:underline">See full policy</Link>
+              No refunds after week 2. <Link href="/student-catalog/#refunds" className="text-gold-400 hover:underline">See full policy</Link>
             </p>
           </div>
         </div>

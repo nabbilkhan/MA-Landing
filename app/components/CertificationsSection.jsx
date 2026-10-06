@@ -16,18 +16,18 @@ const certifications = [
     provider: 'Scrum Alliance',
     logo: '/images/logos/scrum-alliance.png',
     icon: Award,
-    description: 'Industry-leading Product Owner certification recognized globally',
+    description: 'Scrum Alliance credential earned through its required trainer-led course; no CSPO exam',
     features: [
-      'Official CSPO® certification preparation',
-      'Live training with certified instructors',
+      'CSPO® training and certification guidance',
+      'CSPO® requires a Certified Scrum Trainer course',
       'Globally recognized credential',
-      'Lifetime Scrum Alliance membership'
+      'Membership and renewal under Scrum Alliance terms'
     ],
     isPrimary: true,
     color: 'gold'
   },
   {
-    name: 'AI Product Management',
+    name: 'AI Product Management Coursework',
     provider: 'Mentor Agile',
     icon: Brain,
     description: 'Master AI tools and strategies for modern Product Owners',
@@ -39,13 +39,13 @@ const certifications = [
     ],
     isPrimary: false,
     color: 'purple',
-    badge: 'AI Certified'
+    badge: 'Coursework'
   },
   {
-    name: 'AI Essentials for Leaders',
+    name: 'AI Essentials for Leaders Coursework',
     provider: 'Mentor Agile',
     icon: Sparkles,
-    description: 'Leverage cutting-edge AI to 10x your productivity and impact',
+    description: 'Apply AI tools to practical product and leadership tasks',
     features: [
       'AI strategy and implementation',
       'Leading AI-powered teams',
@@ -54,7 +54,7 @@ const certifications = [
     ],
     isPrimary: false,
     color: 'blue',
-    badge: 'AI Ready'
+    badge: 'Coursework'
   }
 ]
 
@@ -131,20 +131,19 @@ export default function CertificationsSection({ compact = false }) {
           <div className="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/30 rounded-full px-4 py-2 mb-6">
             <Award className="w-4 h-4 text-gold-400" />
             <span className="text-sm font-bold text-gold-400 uppercase tracking-wider">
-              Industry Certifications
+              Credentials & Skills
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 md:mb-6">
-            Earn Recognized
+            Explore Your
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500">
-              Certifications
+              Credential Pathways
             </span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Get certified with industry-recognized credentials that validate your
-            expertise and accelerate your career growth.
+            CSPO follows Scrum Alliance requirements. Mentor Agile AI coursework develops practical skills and is separate from third-party certification.
           </p>
         </div>
 

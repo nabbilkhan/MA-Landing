@@ -1,0 +1,17 @@
+{
+  "tuition": 6000,
+  "currency": "USD",
+  "refundRows": [
+    ["Before the first live session begins", "100% of tuition paid"],
+    ["During the first program week", "75% of tuition paid"],
+    ["During the second program week", "50% of tuition paid"],
+    ["After the second program week", "No tuition refund"]
+  ],
+  "refundNotes": [
+    "Submit cancellation or withdrawal requests in writing to admissions@mentoragile.com. Include your name, program, cohort, and request date. Keep a copy of the request and the school’s response.",
+    "The refund period is measured from the beginning of the program’s first live session. Receiving access to recorded materials before that session does not remove the published pre-start refund right.",
+    "Approved refunds are processed within 14 business days of approval. The school reviews requests for refund or deferment arising from unforeseen personal or medical emergencies individually.",
+    "Any separately agreed optional purchase already provided is excluded from the tuition refund. Required program materials and services are included in tuition; no additional mandatory program fee is listed for this offering.",
+    "These terms do not retroactively reduce rights under an existing enrollment agreement or applicable law. Third-party financing terms may create separate repayment obligations; review them before financing tuition."
+  ]
+}

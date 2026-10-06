@@ -21,6 +21,7 @@ import TestimonialsCarousel from './components/TestimonialsCarousel';
 import YoutubeShortsGallery from './components/YoutubeShortsGallery';
 import NewsletterSignup from './components/NewsletterSignup';
 import SocialFooter from './components/SocialFooter';
+import { productProgramPhases } from '../lib/product-program';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -771,29 +772,7 @@ export default function CourseLandingPage() {
     window.open('https://courses.mentoragile.com/12-week-po-course', '_blank');
   };
 
-  const modules = [
-    {
-      title: "Agile Foundations 101",
-      icon: "🚀",
-      description: "In this course, we'll cover all the basics. From the fundamentals of Agile methodologies to the essentials of iterative development and team collaboration, you'll leave this course with a strong foundation in agile allowing you to build your expertise in the later modules.",
-      topics: ["Scrum Ceremonies", "User Stories", "Sprint Planning", "Retrospectives"],
-      duration: "2 weeks"
-    },
-    {
-      title: "Product Discovery & Validation",
-      icon: "🔍",
-      description: "This module will enhance your skills in identifying viable product opportunities and validating them with real-world methods. Learn to navigate the complexities of market research and user testing to create amazing products.",
-      topics: ["Market Research", "Customer Interviews", "MVP Development", "A/B Testing"],
-      duration: "3 weeks"
-    },
-    {
-      title: "Product Backlog Mastery",
-      icon: "📊",
-      description: "This module will equip you with the skills to analyze and prioritize features effectively, turning your strategic vision into a comprehensive roadmap for success.",
-      topics: ["Prioritization Frameworks", "Roadmap Creation", "Stakeholder Communication", "Metrics & KPIs"],
-      duration: "3 weeks"
-    }
-  ];
+  const modules = productProgramPhases;
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -955,7 +934,7 @@ export default function CourseLandingPage() {
 
             {/* Subtitle */}
             <p className="hero-subtitle text-xl lg:text-2xl text-gray-400 font-light mb-6">
-              From Beginner to <span className="text-gold-400 font-semibold">Certified Product Owner</span> in Just 12 Weeks
+              Build <span className="text-gold-400 font-semibold">Product Owner Skills</span> in 12 Weeks
             </p>
 
             {/* CTA Buttons - Mobile Optimized with 48px+ touch targets */}
@@ -1071,10 +1050,10 @@ export default function CourseLandingPage() {
             >
               <span className="text-gradient-gold">Master The Craft</span>
             </h2>
-            <p className="text-xl text-gray-400">Three intensive modules to transform your career</p>
+            <p className="text-xl text-gray-400">Four phases across 12 weeks, including career preparation</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {modules.map((module, index) => (
               <div
                 key={index}
@@ -1257,16 +1236,16 @@ export default function CourseLandingPage() {
                 <div className="certification-badge flex flex-col items-center gap-4 px-8 py-6 rounded-2xl hover:scale-105 transition-all duration-300">
                   <div className="relative w-20 h-20 flex items-center justify-center">
                     <Image
-                      src="/images/logos/comptia-partner.webp"
-                      alt="CompTIA Authorized Partner"
+                      src="/images/logos/mentor-agile-gold.png"
+                      alt="Mentor Agile AI coursework"
                       width={80}
                       height={80}
                       className="object-contain"
                     />
                   </div>
                   <div className="text-center">
-                    <div className="text-xs font-semibold text-gold-300 mb-1 tracking-wider uppercase">CompTIA® Authorized Partner</div>
-                    <div className="text-base font-black text-white mb-2">2 AI Certifications</div>
+                    <div className="text-xs font-semibold text-gold-300 mb-1 tracking-wider uppercase">Mentor Agile Coursework</div>
+                    <div className="text-base font-black text-white mb-2">AI Skills Training</div>
                     <div className="flex items-center justify-center gap-1 text-xs text-green-400">
                       <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

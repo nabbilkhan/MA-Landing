@@ -104,7 +104,7 @@ export default function ComplaintPolicyPage() {
           <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
             Mentor Agile&apos;s policy for addressing student complaints. We value your feedback and are committed to resolving concerns promptly and fairly.
           </p>
-          <p className="text-sm text-gray-400">Last Updated: February 20, 2026</p>
+          <p className="text-sm text-gray-400">Last Updated: October 6, 2026</p>
         </div>
       </section>
 
@@ -224,7 +224,7 @@ export default function ComplaintPolicyPage() {
                       <div className="relative pl-8 border-l-2 border-gold-500/30">
                         <div className="absolute -left-3 top-0 w-6 h-6 bg-gold-500/20 rounded-full flex items-center justify-center text-xs font-bold text-gold-400">1</div>
                         <h4 className="font-semibold text-white mb-1">Submission</h4>
-                        <p className="text-gray-300 leading-relaxed">Submit written complaints using official forms available on the website or student portal, including issue details, dates, parties involved, and supporting documents.</p>
+                        <p className="text-gray-300 leading-relaxed">Submit a written complaint to info@mentoragile.com, including your name, contact details, program, issue details, dates, parties involved, and supporting documents. A special form is not required.</p>
                       </div>
                       <div className="relative pl-8 border-l-2 border-gold-500/30">
                         <div className="absolute -left-3 top-0 w-6 h-6 bg-gold-500/20 rounded-full flex items-center justify-center text-xs font-bold text-gold-400">2</div>

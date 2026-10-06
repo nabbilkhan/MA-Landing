@@ -8,10 +8,10 @@ const certifications = [
   {
     id: 'scrum-alliance',
     name: 'Scrum Alliance',
-    description: 'Certified Scrum Training Partner',
+    description: 'Certified Scrum Product Owner pathway',
     icon: '🎯',
     color: 'from-blue-500 to-cyan-500',
-    badge: 'CSM • CSPO • CSD',
+    badge: 'CSPO · Trainer-led course required',
     logo: '/images/logos/scrum-alliance.png',
     href: 'https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner',
     logoWidth: 200,
@@ -21,10 +21,10 @@ const certifications = [
   {
     id: 'comptia',
     name: 'CompTIA',
-    description: 'Authorized Training Partner',
+    description: 'Separate IT certification programs',
     icon: '💻',
     color: 'from-red-500 to-orange-500',
-    badge: 'A+ • Network+ • Security+',
+    badge: 'Not included in the Product Owner program',
     logo: '/images/logos/comptia-partner.webp',
     href: 'https://www.comptia.org/en-us/certifications/#ai',
     logoWidth: 200,
@@ -64,7 +64,7 @@ export default function CertificationsShowcase() {
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Training programs approved by leading industry organizations and regulatory bodies
+            Credential pathways and state authorization have distinct requirements. Review the student catalog before enrolling.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function CertificationsShowcase() {
               </div>
             </div>
             <span className="text-base sm:text-lg font-bold text-white">
-              Trusted by 1000+ Students Nationwide
+              Practical learning with instructor guidance
             </span>
           </div>
         </div>
@@ -163,7 +163,7 @@ function CertificationCard({ cert, index }) {
                 <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span>Industry-recognized credentials</span>
+                <span>{cert.id === 'ibhe' ? 'Authorization to operate; not accreditation' : 'Issuer requirements apply'}</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-300">
                 <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

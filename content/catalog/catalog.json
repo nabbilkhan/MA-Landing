@@ -1,0 +1,672 @@
+{
+  "title": "Product Owner / Product Manager",
+  "edition": "2026–2027",
+  "revision": "October 6, 2026",
+  "status": "published",
+  "sections": [
+    {
+      "id": "program",
+      "title": "The Product Owner program",
+      "subtitle": "Practical learning. Product decisions. Career preparation.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Mentor Agile’s Product Owner / Product Manager program (MAPOB) is a 12-week learning experience combining live online instruction, recorded lessons, practical projects, and career preparation. It is designed for adults entering or developing skills in Agile product roles."
+        },
+        {
+          "type": "h",
+          "text": "Our mission"
+        },
+        {
+          "type": "p",
+          "text": "We help students connect Agile principles with practical product work through hands-on learning and personalized mentorship. The program develops skills used in product ownership, product management, and collaboration with cross-functional teams."
+        },
+        {
+          "type": "h",
+          "text": "Learning objectives"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Explain Agile values, Scrum accountabilities and events, and the use of Kanban to manage work.",
+            "Translate customer and stakeholder needs into user stories and acceptance criteria.",
+            "Prioritize and refine a product backlog and define a minimum viable product (MVP).",
+            "Develop a product roadmap and explain release-planning choices.",
+            "Communicate product decisions and trade-offs to stakeholders and delivery teams.",
+            "Prepare career materials and explain product work in interviews."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Mentor Agile course completion and third-party certification are different achievements. Employment, job title, compensation, and certification are not guaranteed."
+        },
+        {
+          "type": "h",
+          "text": "Institutional status"
+        },
+        {
+          "type": "p",
+          "text": "Mentor Agile is approved by the Division of Private Business and Vocational Schools of the Illinois Board of Higher Education. Mentor Agile is not accredited by a U.S. Department of Education recognized accrediting body. IBHE approval is authorization to operate; it is not institutional accreditation."
+        },
+        {
+          "type": "p",
+          "text": "The IBHE directory lists the program as Agile: Scrum BA Product Owner, SAFe Product Manager. MAPOB is the Product Owner / Product Manager program name used in this catalog."
+        }
+      ]
+    },
+    {
+      "id": "curriculum",
+      "title": "Your 12-week learning sequence",
+      "subtitle": "Four phases, including four weeks of career preparation.",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Phase",
+            "Weeks",
+            "Focus"
+          ],
+          "rows": [
+            [
+              "1 · Beginner",
+              "1–3",
+              "Agile principles and values; Scrum and Kanban; Agile events and responsibilities."
+            ],
+            [
+              "2 · Intermediate",
+              "4–6",
+              "Product backlog management and refinement; user stories; acceptance criteria; MVP development and prioritization."
+            ],
+            [
+              "3 · Advanced",
+              "7–8",
+              "Stakeholder engagement; communication; release planning; roadmap management; cross-functional collaboration."
+            ],
+            [
+              "4 · Career Launchpad",
+              "9–12",
+              "Resume development; interview preparation; career strategy; job-application coaching; readiness for CSPO and SAFe POPM pathways."
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "text": "How learning is applied"
+        },
+        {
+          "type": "p",
+          "text": "Practical assignments and group discussions connect the material to product scenarios. Students practice developing product artifacts and explaining their decisions. Instructors provide assignment criteria and feedback."
+        },
+        {
+          "type": "h",
+          "text": "Instruction and independent work"
+        },
+        {
+          "type": "p",
+          "text": "Live sessions are delivered online, with weekend sessions described in the program overview. Recorded modules and class recordings support review and independent work. Access to online materials does not replace required attendance at live sessions."
+        },
+        {
+          "type": "h",
+          "text": "Cohort calendar"
+        },
+        {
+          "type": "p",
+          "text": "Your enrollment agreement and cohort schedule identify the start and end dates, live meeting times and time zone, required instructional hours, assignment deadlines, and any holiday or makeup sessions. Review that schedule before enrolling; calendar-quarter windows are not a substitute for your actual 12-week schedule."
+        },
+        {
+          "type": "h",
+          "text": "AI coursework"
+        },
+        {
+          "type": "p",
+          "text": "Supplemental AI learning covers the use of AI tools in product work. AI coursework is separate from Scrum Alliance and Scaled Agile credentials. Any additional certificate, issuing organization, and included fee must be identified in the enrollment agreement."
+        }
+      ]
+    },
+    {
+      "id": "admissions",
+      "title": "Admissions & learning access",
+      "subtitle": "Prepare for an online, participatory program.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Admissions requirements"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Be at least 18 years old at enrollment.",
+            "Demonstrate basic computer literacy, including email, web browsing, and common productivity tools.",
+            "Read, write, and communicate in English sufficiently to participate in instruction and coursework. Admissions may request evidence of proficiency where applicable.",
+            "Have reliable access to a computer or laptop and a stable internet connection.",
+            "Commit to the full 12-week program, including live sessions, independent study, and project work."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A formal degree is not required. A high school diploma or equivalent is recommended. Prior experience in technology, business, or project management can be helpful but is not mandatory."
+        },
+        {
+          "type": "h",
+          "text": "Before you enroll"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Obtain the dated cohort schedule and confirm that you can attend required live sessions.",
+            "Review total tuition, any optional purchases, payment arrangements, and the cancellation and refund policy.",
+            "Confirm which third-party training bookings and credentialing fees are included.",
+            "Review the published performance data and ask admissions for any additional information important to your decision."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Technology and support"
+        },
+        {
+          "type": "p",
+          "text": "Course materials, live instruction, and communication use online platforms. Confirm access to the required platforms and tools before the cohort starts. Contact info@mentoragile.com for access problems or questions about learning materials."
+        },
+        {
+          "type": "h",
+          "text": "Accessibility"
+        },
+        {
+          "type": "p",
+          "text": "Contact info@mentoragile.com before the program begins, or as soon as a need arises, to discuss accessibility needs and available accommodations. Requests should identify the access barrier and the support needed without including unnecessary sensitive information."
+        }
+      ]
+    },
+    {
+      "id": "tuition",
+      "title": "Tuition & enrollment costs",
+      "subtitle": "Review the applicable written terms before paying.",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Public VIP offering",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Product Owner / Product Manager · 12 weeks",
+              "$6,000 USD"
+            ],
+            [
+              "Required program materials, live classes, and support",
+              "Included"
+            ],
+            [
+              "Additional mandatory program fees",
+              "None listed"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The public VIP price covers the 12-week live and recorded program. Your enrollment agreement identifies included external training and credentialing fees. A separate institutional, employer-funded, or agency-funded arrangement must state its own applicable program and charges; it must not be confused with this public VIP price."
+        },
+        {
+          "type": "h",
+          "text": "Payment plans and tuition reductions"
+        },
+        {
+          "type": "p",
+          "text": "Payment dates and any approved installment plan or tuition reduction must be stated in writing before enrollment. Do not assume a discount or funding approval. Optional purchases require a separate cost disclosure before purchase."
+        },
+        {
+          "type": "h",
+          "text": "Cancellation and refund policy"
+        },
+        {
+          "type": "p",
+          "text": "The complete refund schedule and written withdrawal process appear in the following section. A student who cancels before the first live session begins is eligible for a full refund of tuition paid."
+        },
+        {
+          "type": "h",
+          "text": "What to confirm before enrollment"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Your full program name, cohort start and end dates, and live-session schedule.",
+            "Your total agreed charges, any optional purchases, and payment due dates.",
+            "The required external CSPO training booking, initial fees, and any optional SAFe POPM arrangement.",
+            "The duration of learning-material access and career services available to your enrollment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refunds",
+      "title": "Cancellation & refunds",
+      "subtitle": "Written requests, published percentages, and student rights.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Cancellation and tuition refunds"
+        },
+        {
+          "type": "table",
+          "head": [
+            "When a student withdraws",
+            "Refund"
+          ],
+          "rows": [
+            [
+              "Before the first live session begins",
+              "100% of tuition paid"
+            ],
+            [
+              "During the first program week",
+              "75% of tuition paid"
+            ],
+            [
+              "During the second program week",
+              "50% of tuition paid"
+            ],
+            [
+              "After the second program week",
+              "No tuition refund"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Submit cancellation or withdrawal requests in writing to admissions@mentoragile.com. Include your name, program, cohort, and request date. Keep a copy of the request and the school’s response."
+        },
+        {
+          "type": "p",
+          "text": "The refund period is measured from the beginning of the program’s first live session. Receiving access to recorded materials before that session does not remove the published pre-start refund right."
+        },
+        {
+          "type": "p",
+          "text": "Approved refunds are processed within 14 business days of approval. The school reviews requests for refund or deferment arising from unforeseen personal or medical emergencies individually."
+        },
+        {
+          "type": "p",
+          "text": "Any separately agreed optional purchase already provided is excluded from the tuition refund. Required program materials and services are included in tuition; no additional mandatory program fee is listed for this offering."
+        },
+        {
+          "type": "p",
+          "text": "These terms do not retroactively reduce rights under an existing enrollment agreement or applicable law. Third-party financing terms may create separate repayment obligations; review them before financing tuition."
+        },
+        {
+          "type": "note",
+          "text": "Immediate access to online materials does not override the published refund schedule. Keep your catalog, enrollment agreement, payment receipts, and cancellation correspondence."
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "title": "Assessment & course completion",
+      "subtitle": "School completion requirements are separate from external credentials.",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Requirement",
+            "Completion standard"
+          ],
+          "rows": [
+            [
+              "Module quizzes",
+              "At least 70% on each module quiz. One retake is available after instructor guidance."
+            ],
+            [
+              "Practical assignments",
+              "Complete all required projects to the instructor’s stated pass/fail criteria."
+            ],
+            [
+              "Live attendance",
+              "Attend at least 80% of live sessions. Review recordings and missed materials when absent."
+            ],
+            [
+              "Final assessment",
+              "At least 75% on the written assessment and satisfactory completion of the practical project."
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Students must meet all of the above requirements to receive the Mentor Agile certificate of completion. Instructors provide the assessment criteria and the applicable deadlines."
+        },
+        {
+          "type": "h",
+          "text": "Participation and missed work"
+        },
+        {
+          "type": "p",
+          "text": "Notify the instructor in advance when you anticipate missing a session. Reviewing a recording supports continuity but does not automatically count as live attendance. A certifying organization may require stricter attendance than the school’s general course rule."
+        },
+        {
+          "type": "h",
+          "text": "Academic difficulties"
+        },
+        {
+          "type": "p",
+          "text": "Contact your instructor promptly about a failed assessment, missed deadline, or inability to complete required work. Ask for the available remedial options and their deadlines in writing. An additional final-assessment attempt or an extension is not automatic."
+        },
+        {
+          "type": "h",
+          "text": "Leave, withdrawal, and return"
+        },
+        {
+          "type": "p",
+          "text": "If you cannot continue, contact admissions@mentoragile.com to request withdrawal or discuss deferment. Obtain written confirmation of any approved change to your cohort, remaining coursework, fees, and completion dates. Refunds follow the applicable cancellation policy."
+        },
+        {
+          "type": "h",
+          "text": "Reviewing an academic decision"
+        },
+        {
+          "type": "p",
+          "text": "Raise grading or attendance concerns with your instructor. If the concern remains unresolved, use the formal complaint and appeal process in this catalog."
+        }
+      ]
+    },
+    {
+      "id": "credentials",
+      "title": "Credentials & certification pathways",
+      "subtitle": "Know who issues each credential and what it requires.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Mentor Agile certificate of completion"
+        },
+        {
+          "type": "p",
+          "text": "Mentor Agile issues its own completion certificate when the school’s academic requirements are met. This is not an academic degree, a state occupational license, or an automatic award of an external certification."
+        },
+        {
+          "type": "h",
+          "text": "Certified Scrum Product Owner® — Scrum Alliance"
+        },
+        {
+          "type": "p",
+          "text": "CSPO® currently requires successful attendance at a 16-hour course taught by a Certified Scrum Trainer® (CST®), followed by acceptance of the Scrum Alliance license agreement. There is no CSPO certification exam. General MAPOB class attendance alone does not establish completion of the required CST-led course."
+        },
+        {
+          "type": "p",
+          "text": "The public VIP offering includes the initial CSPO training and certification arrangement; confirm the scheduled CST-led course and included fee details in your enrollment agreement. Scrum Alliance sets membership, certification, and renewal requirements. A school attendance threshold does not override those requirements."
+        },
+        {
+          "type": "h",
+          "text": "SAFe® Product Owner / Product Manager — Scaled Agile"
+        },
+        {
+          "type": "p",
+          "text": "The program includes preparation relevant to the SAFe POPM pathway. Preparation does not itself award the credential. Scaled Agile controls the applicable course, examination, eligibility, and renewal requirements. Confirm in writing whether authorized training and examination access are included in your enrollment."
+        },
+        {
+          "type": "h",
+          "text": "AI learning"
+        },
+        {
+          "type": "p",
+          "text": "AI coursework develops practical skills. A school-issued AI course certificate, if specified in your enrollment agreement, is not a CompTIA professional certification. Do not assume that unrelated credentials shown elsewhere on the institution’s website are included in this program."
+        },
+        {
+          "type": "h",
+          "text": "Fees and additional attempts"
+        },
+        {
+          "type": "p",
+          "text": "Review the enrollment agreement for each included training booking, initial credentialing fee, optional credential, retake, and future renewal charge. Obtain a written cost statement before agreeing to an optional purchase."
+        },
+        {
+          "type": "p",
+          "text": "Official requirements: scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner and scaledagile.com/certification/safe-product-owner-product-manager/."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Student support & school policies",
+      "subtitle": "Professional conduct, practical help, and clear expectations.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Career support"
+        },
+        {
+          "type": "p",
+          "text": "Career preparation includes resume development, interview practice, and job-application coaching. The supplied program description also offers post-graduation support and networking opportunities. Ask admissions to document the available support, access period, and appointment arrangements for your enrollment."
+        },
+        {
+          "type": "p",
+          "text": "Career services assist students with preparation and their search. Employers make hiring decisions. Mentor Agile does not guarantee placement, continued employment, a particular role, or a salary."
+        },
+        {
+          "type": "h",
+          "text": "Conduct and academic integrity"
+        },
+        {
+          "type": "p",
+          "text": "Students are expected to communicate respectfully, act honestly in coursework, and support a collaborative learning environment. Harassment, academic dishonesty, and disruptive conduct may result in disciplinary action, including dismissal. Concerns about disciplinary decisions can be raised through the complaint process."
+        },
+        {
+          "type": "h",
+          "text": "Transfer of learning"
+        },
+        {
+          "type": "p",
+          "text": "Mentor Agile does not award transferable academic credit. Acceptance of a certificate or prior learning is determined by the receiving institution. Contact that institution directly before relying on transferability. Mentor Agile has no formal articulation or academic-credit transfer agreements."
+        },
+        {
+          "type": "h",
+          "text": "Questions and records"
+        },
+        {
+          "type": "p",
+          "text": "Contact info@mentoragile.com for questions about attendance records, assessments, completion documentation, access to learning materials, or student services. Include your program and cohort so the school can identify the relevant record."
+        },
+        {
+          "type": "h",
+          "text": "Tuition assistance"
+        },
+        {
+          "type": "p",
+          "text": "Any approved tuition reduction or funded arrangement must be documented in the enrollment agreement before enrollment. Do not assume eligibility or a reduced price from a general reference to financial hardship, unemployment, or funding programs."
+        }
+      ]
+    },
+    {
+      "id": "complaints",
+      "title": "Complaints & appeals",
+      "subtitle": "A written process with published response times.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "1 · Seek an informal resolution"
+        },
+        {
+          "type": "p",
+          "text": "Raise the issue with the instructor or relevant program contact when appropriate. If it is not resolved, submit a formal complaint."
+        },
+        {
+          "type": "h",
+          "text": "2 · Submit a written complaint"
+        },
+        {
+          "type": "p",
+          "text": "Email info@mentoragile.com with your name, contact information, program and cohort, relevant dates, a description of the issue, supporting documents, and the resolution requested. A special form is not required."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Stage",
+            "Published timeline"
+          ],
+          "rows": [
+            [
+              "Acknowledgment",
+              "Within 5 business days, with an investigation timeline."
+            ],
+            [
+              "Written decision",
+              "Within 20 business days, including findings and corrective actions."
+            ],
+            [
+              "Student appeal",
+              "Submit within 10 business days of the decision."
+            ],
+            [
+              "Appeal decision",
+              "Within 15 business days."
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The school’s complaint policy provides for impartial review, confidentiality among those involved in resolution, and protection against retaliation. Complaint records are retained for at least five years."
+        },
+        {
+          "type": "h",
+          "text": "3 · External complaint to IBHE"
+        },
+        {
+          "type": "note",
+          "text": "COMPLAINTS AGAINST THIS SCHOOL MAY BE REGISTERED WITH THE BOARD OF HIGHER EDUCATION."
+        },
+        {
+          "type": "p",
+          "text": "After attempting resolution through the school’s process, students may use the Illinois Board of Higher Education complaint system at https://complaints.ibhe.org/."
+        },
+        {
+          "type": "p",
+          "text": "Illinois Board of Higher Education, Division of Private Business and Vocational Schools\n1 N. Old State Capitol Plaza, Suite 333, Springfield, IL 62701\nPhone: (217) 782-2551 • Website: https://www.ibhe.org/"
+        },
+        {
+          "type": "p",
+          "text": "Full school policy: https://mentoragile.com/complaint-policy/. This catalog uses the same acknowledgment, decision, and appeal timelines."
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "Reported program performance",
+      "subtitle": "July–June reporting periods; measures shown as supplied.",
+      "blocks": []
+    },
+    {
+      "id": "historical",
+      "title": "Historical institutional disclosure",
+      "subtitle": "July 1, 2023–June 30, 2024 • Historical record only",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The previous institutional disclosure reported zero students and zero activity in the listed categories for July 1, 2023–June 30, 2024. It is retained below as a historical record; it does not describe the current student population."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Historical category",
+            "Reported count"
+          ],
+          "rows": [
+            [
+              "Students enrolled at July 1; new starts; re-enrollments; transfers into the program; total admissions",
+              "0 in each category"
+            ],
+            [
+              "Transfers out; completed/graduated; withdrew; still enrolled",
+              "0 in each category"
+            ],
+            [
+              "Placed in field; related field; outside field; unavailable for placement; not employed",
+              "0 in each category"
+            ],
+            [
+              "Professional/state exam attempts and passes",
+              "0 in each category"
+            ],
+            [
+              "Graduates employed in field without school placement assistance",
+              "0"
+            ],
+            [
+              "Average starting salary",
+              "0 as entered in the historical table; no graduates reported"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Program identifiers in the historical record"
+        },
+        {
+          "type": "p",
+          "text": "Program: Product Owner / Product Manager. CIP: 11.0103. SOC: 13-1082.00. These are the identifiers shown in the historical disclosure; they do not establish an additional approval or credential."
+        },
+        {
+          "type": "h",
+          "text": "Reading current and historical measures"
+        },
+        {
+          "type": "p",
+          "text": "The current program-performance table and the historical institutional disclosure use different categories. Exits cannot be substituted for graduates, and employment after exit cannot be substituted for placement in the field of study."
+        },
+        {
+          "type": "note",
+          "text": "The supplied current performance table is not a complete current IBHE institutional disclosure. Current category-level figures not supplied in the source have not been estimated or carried forward from the historical zeros. Contact info@mentoragile.com for additional disclosure information."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact & enrollment information",
+      "subtitle": "Get the details for your cohort before you commit.",
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Mentor Agile"
+        },
+        {
+          "type": "p",
+          "text": "2200 S Main St\nLombard, IL 60148\nPhone: (630) 521-3351\nGeneral inquiries and complaints: info@mentoragile.com\nAdmissions, cancellation, or withdrawal: admissions@mentoragile.com\nWebsite: https://mentoragile.com/"
+        },
+        {
+          "type": "h",
+          "text": "Your enrollment record"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Retain a copy of this catalog and the enrollment agreement provided to you.",
+            "Check that the program name, dates, instructional schedule, and total charges match your enrollment.",
+            "Confirm which external training and credentialing fees are included.",
+            "Ask for any approved accommodation, deferment, tuition reduction, or special payment arrangement in writing."
+          ]
+        },
+        {
+          "type": "h",
+          "text": "Approval and accreditation"
+        },
+        {
+          "type": "p",
+          "text": "Mentor Agile is approved by the Division of Private Business and Vocational Schools of the Illinois Board of Higher Education. Mentor Agile is not accredited by a U.S. Department of Education recognized accrediting body."
+        },
+        {
+          "type": "h",
+          "text": "Useful links"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Catalog and accessible text: https://mentoragile.com/student-catalog/",
+            "Program-performance disclosures: https://mentoragile.com/institutional-disclosure/",
+            "School complaint procedure: https://mentoragile.com/complaint-policy/",
+            "IBHE approved-program directory: https://www.ibhe.org/pbvsAppProgs.aspx?id=1374",
+            "IBHE complaint system: https://complaints.ibhe.org/"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Edition: 2026–2027 · Revision: October 6, 2026. This edition concerns the Product Owner / Product Manager program. Other school offerings have separate program descriptions and enrollment terms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_drive_file": "1beu1YbMNAY7tByG5U0a9WHjB6BoJ_m_h",
+  "source_sha256": "3c1945849450bff2907150f402e2ddbc18c47c3fa712ef56d87f29c3f68e8d3f",
+  "previous_catalog_sha256": "1745355bbd0ef29325af90480400921c3715b166ffb62a1bbfa96570cc661fe9",
+  "financial_basis": "Retain existing public Product Owner VIP price ($6,000); retain existing catalog and Black Friday landing-page refund schedule. Do not substitute pricing from a separate TWC application catalog.",
+  "curriculum_basis": "Owner-supplied 2026\u20132027 catalog page 10: weeks 1\u20133, 4\u20136, 7\u20138, 9\u201312.",
+  "performance_basis": "Owner-supplied catalog page 13; transcribed without inference. Missing current IBHE categories are explicitly identified; historical zero counts remain historical.",
+  "unresolved": [
+    "Complete current IBHE category-level disclosure requires school records.",
+    "Current performance source does not specify verification date or maturity of post-exit quarter measures.",
+    "Exact cohort dates and hours, optional credential inclusions, and service-access periods must be supplied in enrollment agreements.",
+    "California governing-law/venue wording in general website terms is unchanged; legal review was recommended in the assessment."
+  ],
+  "approval_directory": "https://www.ibhe.org/pbvsAppProgs.aspx?id=1374",
+  "previous_production_deployment": "dpl_CyNF6ByNYvZ7KqqssdYNHQz6cWes"
+}

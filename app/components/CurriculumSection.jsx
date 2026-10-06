@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
+import { productProgramPhases } from '../lib/product-program'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import {
   BookOpen,
@@ -22,62 +23,12 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
 }
 
-const curriculumModules = [
-  {
-    icon: BookOpen,
-    title: 'Agile Principles',
-    description: 'Master the foundational values and mindset that drive successful Agile teams',
-    week: 'Week 1'
-  },
-  {
-    icon: Users,
-    title: 'Agile Ceremonies & Artifacts',
-    description: 'Learn Sprint Planning, Daily Standups, Retrospectives, and key Agile artifacts',
-    week: 'Week 2-3'
-  },
-  {
-    icon: Target,
-    title: 'Discovery & Validation',
-    description: 'Identify customer needs, validate ideas, and build products people actually want',
-    week: 'Week 4'
-  },
-  {
-    icon: Rocket,
-    title: 'MVP Development',
-    description: 'Ship faster with Minimum Viable Products and iterative development strategies',
-    week: 'Week 5'
-  },
-  {
-    icon: FileText,
-    title: 'User Stories, Requirements, & Technical Communication',
-    description: 'Write clear user stories and communicate effectively with engineering teams',
-    week: 'Week 6-7'
-  },
-  {
-    icon: BarChart3,
-    title: 'Product Backlog Management & Analytics',
-    description: 'Prioritize features, manage your backlog, and make data-driven decisions',
-    week: 'Week 8'
-  },
-  {
-    icon: Calendar,
-    title: 'Release Planning & Strategy',
-    description: 'Plan releases, coordinate launches, and deliver value incrementally',
-    week: 'Week 9-10'
-  },
-  {
-    icon: MessageSquare,
-    title: 'Stakeholder Management & Tech-Savvy Leadership',
-    description: 'Navigate complex stakeholder relationships and lead with technical credibility',
-    week: 'Week 11'
-  },
-  {
-    icon: Sparkles,
-    title: 'AI Essentials',
-    description: 'Leverage AI tools and automation to 10x your productivity as a Product Owner',
-    week: 'Week 12'
-  }
-]
+const curriculumModules = productProgramPhases.map((phase, index) => ({
+  icon: [BookOpen, FileText, Calendar, Award][index],
+  title: phase.title,
+  description: phase.description,
+  week: phase.weeks,
+}));
 
 const features = [
   {
@@ -215,7 +166,7 @@ export default function CurriculumSection({ compact = false }) {
         </div>
 
         {/* Curriculum Modules Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {curriculumModules.map((module, index) => {
             const Icon = module.icon
             return (

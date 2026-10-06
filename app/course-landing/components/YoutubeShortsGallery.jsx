@@ -28,14 +28,7 @@ const shortsVideos = [
     duration: '0:60',
     views: '15K'
   },
-  {
-    id: 4,
-    videoId: 'Ee-Ax8IdkrQ',
-    title: 'Our Vocational School is Now Accredited!',
-    thumbnail: 'https://img.youtube.com/vi/Ee-Ax8IdkrQ/maxresdefault.jpg',
-    duration: '0:60',
-    views: '9.2K'
-  }
+
 ]
 
 export default function YoutubeShortsGallery() {
@@ -80,7 +73,7 @@ export default function YoutubeShortsGallery() {
           </div>
 
           {/* Video Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {shortsVideos.map((video, index) => (
               <VideoCard key={video.id} video={video} index={index} onClick={() => openVideo(video)} />
             ))}

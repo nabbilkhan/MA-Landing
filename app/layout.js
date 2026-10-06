@@ -1,8 +1,9 @@
 import './globals.css'
 
 export const metadata = {
+  metadataBase: new URL('https://mentoragile.com'),
   title: 'Mentor Agile - Transform Your Career in 12 Weeks',
-  description: 'IBHE Approved Product Owner training with AI certifications. No coding required. Career transformation guaranteed.',
+  description: 'IBHE Approved Product Owner training with AI certifications. No coding required. Practical projects and career preparation.',
   keywords: 'Product Owner, CSPO, AI certifications, career transformation, WIOA approved, Illinois training',
   openGraph: {
     title: 'Mentor Agile - Transform Your Career in 12 Weeks',

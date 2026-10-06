@@ -1,0 +1,27 @@
+{
+  "program": "Product Owner / Product Manager (MAPOB)",
+  "source": "Training Program – Program Performance table supplied in the 2026–2027 Mentor Agile catalog, page 13",
+  "periods": [
+    { "label": "PY 2025", "dates": "July 1, 2025–June 30, 2026" },
+    { "label": "PY 2024", "dates": "July 1, 2024–June 30, 2025" }
+  ],
+  "rows": [
+    { "label": "Total students in the program", "values": ["80", "3"] },
+    { "label": "Total students who exited the program", "values": ["68", "3"] },
+    { "label": "Exiters employed in the second quarter after their exit quarter", "values": ["58", "3"] },
+    { "label": "Exiters employed in the fourth quarter after their exit quarter", "values": ["58", "3"] },
+    { "label": "Median wage earned in the second quarter after exit, where a wage match occurred", "values": ["Not reported", "Not reported"] },
+    { "label": "Reported credential rate for exiters", "values": ["85%", "100%"] },
+    { "label": "Reported second-quarter employment rate — completers", "values": ["85%", "100%"] },
+    { "label": "Reported second-quarter employment rate — total", "values": ["85%", "100%"] },
+    { "label": "Reported fourth-quarter employment rate — completers", "values": ["85%", "100%"] },
+    { "label": "Reported fourth-quarter employment rate — total", "values": ["85%", "100%"] }
+  ],
+  "notes": [
+    "Figures and rates are reproduced as reported in the supplied program-performance table. Blank wage cells are shown as Not reported; they do not represent zero wages.",
+    "An exit is not necessarily a graduation. Employment after exit is not necessarily employment in the field of study or placement by the school.",
+    "Post-exit quarter measures describe follow-up periods after a student leaves. The supplied table does not state a verification date or explain whether all follow-up periods were complete.",
+    "The supplied table does not give current counts for graduates, withdrawals, transfers, field-of-study placement, certification-exam attempts or passes, or average starting salary. Those figures cannot be inferred from these totals.",
+    "Reported outcomes describe the stated periods and do not guarantee a credential, job, or salary for an individual student. Contact info@mentoragile.com for reporting definitions and additional disclosures."
+  ]
+}

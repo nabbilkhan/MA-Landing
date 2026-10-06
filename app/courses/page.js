@@ -8,6 +8,7 @@ import SocialFooter from '../course-landing/components/SocialFooter';
 import CurriculumSection from '../components/CurriculumSection';
 import CertificationsSection from '../components/CertificationsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import { productProgramPhases } from '../lib/product-program';
 import {
   BookOpen,
   Award,
@@ -42,7 +43,7 @@ export default function CoursesPage() {
     'User Stories, Requirements & Technical Communication',
     'Delivery: Working Agreements & Backlog',
     'Stakeholder Management & Team Dynamics Leadership',
-    'AI Essentials + 2 AI Certifications Guidance',
+    'AI Essentials Training',
     'Portfolio Capstone Project',
     'Coach Feedback & Private Community',
   ];
@@ -294,57 +295,13 @@ export default function CoursesPage() {
 
           <div className="backdrop-blur-xl bg-gradient-to-br from-gold-500/10 to-gold-600/5 border border-gold-500/20 rounded-3xl p-8 md:p-12">
             <div className="space-y-8">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center">
-                  <span className="text-gold-400 font-bold text-xl">1</span>
+              {productProgramPhases.map((phase, index) => (
+                <div className="flex gap-6" key={phase.title}>
+                  <div className="flex-shrink-0 w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center"><span className="text-gold-400 font-bold text-xl">{index + 1}</span></div>
+                  <div><h3 className="text-2xl font-bold mb-2 text-gold-400">{phase.title} ({phase.weeks})</h3><p className="text-gray-300 leading-relaxed">{phase.description}</p></div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 text-gold-400">Foundations (Weeks 1-3)</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Master Agile fundamentals, Scrum framework, and Product Owner role essentials. Earn your
-                    CSPO® certification from Scrum Alliance.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center">
-                  <span className="text-gold-400 font-bold text-xl">2</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 text-gold-400">Core Skills (Weeks 4-8)</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Learn customer discovery, roadmapping, backlog management, user stories, and stakeholder
-                    communication. Master modern AI tools for product management.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center">
-                  <span className="text-gold-400 font-bold text-xl">3</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 text-gold-400">Portfolio Project (Weeks 9-12)</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Build a real-world capstone project that demonstrates your skills. Create a portfolio piece
-                    that will impress hiring managers and land you interviews.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-gold-400 w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 text-gold-400">Job Ready!</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Graduate with CSPO® certification, AI skills, a portfolio project, and the confidence to
-                    apply for Product Owner roles.
-                  </p>
-                </div>
-              </div>
+              ))}
+              <p className="text-gray-300">School completion, third-party certification, and employment are separate outcomes. <a href="/student-catalog" className="text-gold-300 underline">Review the student catalog</a> for requirements and program disclosures.</p>
             </div>
           </div>
         </div>

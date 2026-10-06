@@ -278,7 +278,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />
-                  <span className="text-gray-200 text-sm">CSPO + 2 AI certifications guidance</span>
+                  <span className="text-gray-200 text-sm">CSPO + AI skills training</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0 mt-1" />

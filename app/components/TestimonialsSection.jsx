@@ -28,7 +28,7 @@ const testimonials = [
     role: 'Sr. Business Analyst (FinTech)',
     company: 'Northern Trust',
     photo: 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156289409/settings_images/30bb726-e1-127c-025b-72cdde07ae3e_2.png',
-    quote: 'I never thought I\'d be someone who could earn six figures. For so long, I doubted myself, my abilities, and whether I\'d ever have the kind of career that could truly transform my life. But then I found Mentor Agile, and everything changed.',
+    quote: 'For so long, I doubted myself, my abilities, and whether I\'d ever have the kind of career that could truly transform my life. But then I found Mentor Agile, and everything changed.',
     rating: 5,
     program: 'Business Analyst',
     outcome: 'Career Transformation'

@@ -2,21 +2,24 @@
 """Build the PDF from the same catalog data used by the accessible web pages.
 Requires Python playwright and Chromium; does not fetch external assets.
 """
-import json, html, pathlib, shutil
+import json, html, pathlib, shutil, re
 from playwright.sync_api import sync_playwright
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 CAT=json.loads((ROOT/'content/catalog/catalog.json').read_text())
 PERF=json.loads((ROOT/'content/catalog/performance.json').read_text())
 OUT=ROOT/'public/catalog'
 e=lambda x: html.escape(str(x))
+def rich(text):
+ escaped=e(text).replace('\n','<br>')
+ return re.sub(r'https?://[^\s<]+', lambda m: '<a href="'+m.group().rstrip('.')+'">'+m.group().rstrip('.')+'</a>'+('.' if m.group().endswith('.') else ''), escaped)
 def table(head, rows):
  return '<table><thead><tr>'+''.join('<th>'+e(x)+'</th>' for x in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+e(x)+'</td>' for x in row)+'</tr>' for row in rows)+'</tbody></table>'
 def block(b):
  t=b['type']
  if t=='h':return '<h2>'+e(b['text'])+'</h2>'
- if t=='p':return '<p>'+e(b['text']).replace('\n','<br>')+'</p>'
+ if t=='p':return '<p>'+rich(b['text'])+'</p>'
  if t=='note':return '<aside>'+e(b['text'])+'</aside>'
- if t=='list':return '<ul>'+''.join('<li>'+e(i)+'</li>' for i in b['items'])+'</ul>'
+ if t=='list':return '<ul>'+''.join('<li>'+rich(i)+'</li>' for i in b['items'])+'</ul>'
  if t=='table':return table(b['head'],b['rows'])
  raise ValueError(t)
 def performance():

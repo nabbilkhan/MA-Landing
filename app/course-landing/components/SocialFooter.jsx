@@ -201,6 +201,7 @@ export default function SocialFooter() {
             <p>
               © {new Date().getFullYear()} Mentor Agile. All rights reserved.
             </p>
+            <p className="mt-2">Mentor Agile is a DBA of Khan Holdings LLC</p>
             <p className="mt-2 flex items-center justify-center gap-2">
               <span>Made with</span>
               <span className="text-red-500 animate-pulse">❤️</span>

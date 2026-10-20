@@ -215,6 +215,7 @@ export default function PrivacyPolicyPage() {
       <footer className="bg-white border-t border-gray-200 mt-12">
         <div className="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600">
           <p>&copy; 2025 Mentor Agile. All rights reserved.</p>
+          <p className="mt-2">Mentor Agile is a DBA of Khan Holdings LLC</p>
         </div>
       </footer>
     </div>

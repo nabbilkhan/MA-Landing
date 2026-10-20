@@ -22,10 +22,23 @@ export const metadata = {
   },
 }
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Mentor Agile',
+  legalName: 'Khan Holdings LLC',
+  url: 'https://mentoragile.com',
+  description: 'Mentor Agile is a DBA of Khan Holdings LLC',
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         {children}
       </body>
     </html>

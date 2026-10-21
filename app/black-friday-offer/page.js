@@ -873,7 +873,7 @@ export default function BlackFridayOfferPage() {
                 <span className="text-2xl">⚡</span>
                 <span className="text-xl lg:text-2xl tracking-wide">Start On-Demand</span>
                 <span className="text-sm lg:text-base font-semibold text-gray-improved opacity-90">
-                  Self-paced • $800 <span className="line-through opacity-60">$1,299</span>
+                  Self-paced • $800
                 </span>
               </div>
             </button>
@@ -1025,7 +1025,6 @@ export default function BlackFridayOfferPage() {
                   <div className="mb-10">
                     <div className="flex items-baseline gap-3 mb-2">
                       <span className="text-6xl lg:text-7xl font-black text-white">$800</span>
-                      <span className="text-gray-improved line-through text-2xl">$1,299</span>
                     </div>
                     <p className="text-base text-gray-improved">One-time payment</p>
                   </div>

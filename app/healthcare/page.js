@@ -885,20 +885,6 @@ export default function HealthcareLandingPage() {
 
             {/* Stats - Healthcare specific (matching /tech layout) */}
             <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
-              {/* Avg Salary */}
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-medical">
-                  $<span className="stat-number" data-target="65">65</span>K
-                </div>
-                <div className="text-sm text-gray-300">Avg Salary</div>
-              </div>
-              {/* Top Earners */}
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-medical">
-                  $<span className="stat-number" data-target="100">100</span>K
-                </div>
-                <div className="text-sm text-gray-300">Top Earners</div>
-              </div>
               {/* Job Openings - Green Glow */}
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-400 animate-pulse-glow-green">

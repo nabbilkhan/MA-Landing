@@ -219,10 +219,6 @@ export default function TestimonialsSection({ compact = false }) {
                 <Star className="w-4 h-4 text-gold-400 fill-gold-400" />
                 <span>4.9/5 Average Rating</span>
               </div>
-              <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-              <div>500+ Students Trained</div>
-              <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-              <div>95% Job Placement Rate</div>
             </div>
           </div>
         )}

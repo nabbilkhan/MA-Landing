@@ -55,13 +55,9 @@ export default function IBHEBanner({ onCTAClick }) {
 
               {/* Message */}
               <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2">
-                <span className="flex items-center gap-2 text-base sm:text-lg font-black text-white drop-shadow-sm">
-                  <span className="text-xl sm:hidden">🏛️</span>
-                  <span className="uppercase tracking-wide">IBHE Approved</span>
-                </span>
-                <span className="hidden sm:block text-white font-bold">•</span>
+                <span className="text-xl sm:hidden">🏛️</span>
                 <span className="text-sm sm:text-base font-bold text-white">
-                  Approved to operate by the Illinois Board of Higher Education PBVS Division
+                  Mentor Agile is approved by the Division of Private Business and Vocational Schools of the Illinois Board of Higher Education.
                 </span>
               </div>
             </div>

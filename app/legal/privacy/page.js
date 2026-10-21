@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">C. Information we send to Meta</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li><strong>Server-to-server events</strong> via the <strong>Conversions API</strong> (e.g., <em>Lead</em>, <em>CompleteRegistration</em>, <em>Purchase/Tuition</em>, <em>Placement</em>) with required event parameters and <strong>hashed</strong> customer identifiers where applicable (SHA-256 applied to email/phone; never hash IP). We may also include <code>event_id</code> for deduplication with the Pixel.</li>
+              <li><strong>Server-to-server events</strong> via the <strong>Conversions API</strong> (e.g., <em>Lead</em>, <em>CompleteRegistration</em>, <em>Purchase</em>, <em>Placement</em>) with required event parameters and <strong>hashed</strong> customer identifiers where applicable (SHA-256 applied to email/phone; never hash IP). We may also include <code>event_id</code> for deduplication with the Pixel.</li>
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">D. Device, cookie, and analytics data</h3>
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-3">E. Financial and operational data (program operations)</h3>
             <p className="text-gray-700 mb-4">
-              Tuition invoices/payments (via QuickBooks), program progress and outcomes (via LMS), and AJC/WIOA documentation and metrics.
+              Invoices/payments (via QuickBooks), program progress and outcomes (via LMS), and AJC/WIOA documentation and metrics.
             </p>
 
             <p className="text-gray-700 italic">

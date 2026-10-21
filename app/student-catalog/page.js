@@ -16,7 +16,7 @@ export default function StudentCatalogPage() {
         <p className="text-gold-300 font-semibold uppercase tracking-widest">2026–2027 · Revised {catalog.revision}</p>
         <h1 className="text-4xl md:text-6xl font-black text-white">Product Owner<br /><span className="text-gold-400">Student Catalog</span></h1>
         <p className="text-lg text-gray-300">The Product Owner / Product Manager program: 12 weeks of online learning, practical assignments, and career preparation.</p>
-        {catalog.status === 'draft' && <p className="border border-amber-400 p-4 text-amber-200">Review draft — tuition and refund terms await school confirmation.</p>}
+        <p className="rounded-xl border border-gold-400 bg-gold-500/10 p-4 text-gold-100">Illinois students: the Illinois catalog, cancellation and refund terms, and IBHE approval information are at <a href="https://il.mentoragile.com/" className="underline underline-offset-4 font-semibold">il.mentoragile.com</a>.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/institutional-disclosure" className="rounded-xl border border-gold-400 text-gold-200 font-semibold px-5 py-3">View program disclosures</Link>
         </div>

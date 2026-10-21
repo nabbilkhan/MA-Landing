@@ -131,7 +131,7 @@ export default function DataDeletionPage() {
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li><strong>WIOA/ETPL records:</strong> If you enrolled in a WIOA-funded program, we must retain records for <strong>7 years</strong> for compliance and audit purposes.</li>
-                <li><strong>Financial records:</strong> Tuition payments and invoices retained for accounting and tax compliance.</li>
+                <li><strong>Financial records:</strong> Payments and invoices retained for accounting and tax compliance.</li>
                 <li><strong>Legal/audit needs:</strong> Data required for pending disputes, investigations, or legal obligations.</li>
               </ul>
               <p className="text-gray-700 mt-4">

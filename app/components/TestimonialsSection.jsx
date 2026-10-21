@@ -211,9 +211,6 @@ export default function TestimonialsSection({ compact = false }) {
         {/* Bottom CTA (Optional) */}
         {!compact && (
           <div className="text-center mt-12 md:mt-16">
-            <p className="text-lg text-gray-300 mb-4">
-              Join hundreds of successful alumni who transformed their careers
-            </p>
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-gold-400 fill-gold-400" />

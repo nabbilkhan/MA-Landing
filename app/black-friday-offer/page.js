@@ -856,7 +856,7 @@ export default function BlackFridayOfferPage() {
                 <span className="text-2xl">💎</span>
                 <span className="text-xl lg:text-2xl tracking-wide">Get FREE Career Guidance</span>
                 <span className="text-sm lg:text-base font-semibold text-gold-100 opacity-90">
-                  Product Owner/Product Manager: [NEEDS: PO tuition] <span className="line-through opacity-60">$8,999</span>
+                  Product Owner/Product Manager: [NEEDS: PO tuition]
                 </span>
               </div>
             </button>
@@ -937,7 +937,6 @@ export default function BlackFridayOfferPage() {
                   <div className="mb-10">
                     <div className="flex items-baseline gap-3 mb-2">
                       <span className="text-6xl lg:text-7xl font-black text-gradient-gold">[NEEDS: PO tuition]</span>
-                      <span className="text-gray-improved line-through text-2xl">$8,999</span>
                     </div>
                     <p className="text-base text-gray-improved">Payment plans available</p>
                   </div>

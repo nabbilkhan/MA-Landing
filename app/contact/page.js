@@ -350,10 +350,9 @@ export default function ContactPage() {
                   <Globe className="w-6 h-6 text-gold-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-gold-400">Global Reach</h3>
+                  <h3 className="text-xl font-bold mb-2 text-gold-400">Flexible Delivery</h3>
                   <p className="text-gray-300">
-                    We deliver training in 150+ countries with instructors available across all time
-                    zones. Virtual and in-person options available.
+                    Training is delivered live online. Virtual and in-person options available.
                   </p>
                 </div>
               </div>

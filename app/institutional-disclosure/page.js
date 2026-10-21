@@ -17,7 +17,6 @@ export default function InstitutionalDisclosurePage() {
         <p className="text-lg text-gray-300">Read the reported outcomes with their reporting periods and definitions. Current program-performance measures and historical institutional data are shown separately.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/student-catalog" className="rounded-xl bg-gold-500 text-black font-semibold px-5 py-3">Read the student catalog</Link>
-          <a href="/catalog/product-owner-catalog-2026-2027.pdf" download className="rounded-xl border border-gold-400 text-gold-200 px-5 py-3">Download catalog PDF</a>
         </div>
       </header>
       <div className="rounded-2xl border border-gold-500/20 p-5 md:p-8"><ProgramPerformance /></div>

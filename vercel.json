@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/catalog/product-owner-catalog-2026-2027.pdf", "destination": "/academic-catalog/", "permanent": true },
+    { "source": "/catalog/ibhe-catalog.pdf", "destination": "/academic-catalog/", "permanent": true },
+    { "source": "/academic-catalog{/}?", "destination": "/student-catalog/", "permanent": false }
+  ]
+}

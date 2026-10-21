@@ -1079,9 +1079,8 @@ export default function CourseEnhancementsPage() {
               <ul className="space-y-4 mb-8">
                 {[
                   '160+ documents you\'d otherwise need to create yourself',
-                  '$15,000+ estimated value in training, templates, and frameworks',
                   '300+ hours saved vs. building from scratch',
-                  'Complete AI competency training (worth $2,000+ separately)',
+                  'Complete AI competency training',
                   'Two proprietary frameworks (CORE + TRUST) for career-long use',
                   'Personal AI Advantage Playbook as career asset',
                   'Future-proofed skills that compound over time',
@@ -1093,12 +1092,6 @@ export default function CourseEnhancementsPage() {
                 ))}
               </ul>
 
-              <div className="pt-6 border-t border-gold-500/20">
-                <div className="text-center">
-                  <div className="text-3xl font-black text-gold-400 mb-1">$15,000+</div>
-                  <div className="text-gold-300/80 text-sm">Estimated Total Value</div>
-                </div>
-              </div>
             </div>
 
             {/* Organization Value */}

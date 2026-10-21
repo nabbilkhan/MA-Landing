@@ -33,11 +33,11 @@ const certifications = [
   },
   {
     id: 'ibhe',
-    name: 'IBHE Approved',
+    name: 'IBHE',
     description: 'Illinois Board of Higher Education',
     icon: '🏛️',
     color: 'from-gold-500 to-amber-500',
-    badge: 'State Approved Provider',
+    badge: 'Division of Private Business and Vocational Schools',
     logo: '/images/logos/ibhe.png',
     href: 'https://www.ibhe.org/pbvsAppProgs.aspx?id=1374',
     logoWidth: 200,

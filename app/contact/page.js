@@ -136,7 +136,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Questions about our 12-week VIP program? Ready to start your journey to a new career?
+            Questions about our 12-week Product Owner/Product Manager program? Ready to start your journey to a new career?
             We're here to help you every step of the way.
           </p>
         </div>
@@ -233,7 +233,7 @@ export default function ContactPage() {
                     className="w-full px-4 py-3 bg-black/50 border border-gold-500/30 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                   >
                     <option value="">Select an option</option>
-                    <option value="VIP Program - $6,000">VIP Program - Live + Pre-Recorded - $6,000</option>
+                    <option value="Product Owner/Product Manager - [NEEDS: PO tuition]">Product Owner/Product Manager - Live + Pre-Recorded - [NEEDS: PO tuition]</option>
                     <option value="Enterprise Training">Enterprise Training</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>

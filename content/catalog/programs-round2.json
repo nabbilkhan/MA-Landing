@@ -1,0 +1,159 @@
+{
+  "status": "STAGED DRAFT for Akber's review (IBHE round 2). Not published.",
+  "institution": {
+    "name": "Khan Holdings LLC dba Mentor Agile",
+    "address": "2200 S Main Street, Lombard, IL 60148",
+    "phone": "[NEEDS: one phone number]",
+    "email": "info@mentoragile.com",
+    "web": "https://mentoragile.com"
+  },
+  "statements": {
+    "approval": "Mentor Agile is approved by the Division of Private Business and Vocational Schools of the Illinois Board of Higher Education.",
+    "accreditation": "Mentor Agile is not accredited by a US Department of Education recognized accrediting body.",
+    "transferability": "Mentor Agile does not guarantee the transferability of credits to another school, college, or university. Credits or coursework are not likely to transfer; any decision on the comparability, appropriateness and applicability of credit and whether credit should be accepted is the decision of the receiving institution."
+  },
+  "programs": {
+    "po": {
+      "name": "Mentor Agile Product Owner Product Manager",
+      "shortName": "Product Owner/Product Manager",
+      "status": "IBHE approved",
+      "cip": "11.0103",
+      "soc": "13-1082.00",
+      "clockHours": "216",
+      "length": "12 weeks",
+      "modality": "100% online",
+      "description": "A 12-week program combining live online instruction, recorded lessons, practical projects, and career preparation, designed for adults entering or developing skills in Agile product roles.",
+      "objectives": [
+        "Explain Agile values, Scrum accountabilities and events, and the use of Kanban to manage work.",
+        "Translate customer and stakeholder needs into user stories and acceptance criteria.",
+        "Prioritize and refine a product backlog and define a minimum viable product (MVP).",
+        "Develop a product roadmap and explain release-planning choices.",
+        "Communicate product decisions and trade-offs to stakeholders and delivery teams.",
+        "Prepare career materials and explain product work in interviews."
+      ],
+      "sequence": "Phase 1 Beginner (weeks 1–3) · Phase 2 Intermediate (weeks 4–6) · Phase 3 Advanced (weeks 7–8) · Phase 4 Career Launchpad (weeks 9–12).",
+      "admission": "At least 18 years old; basic computer literacy; English proficiency sufficient for instruction; reliable computer and internet; commitment to the full 12 weeks. High school diploma or equivalent: [NEEDS: \"recommended\" (catalog) or \"required\" (ETPL listing)].",
+      "calendar": [
+        [
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]"
+        ],
+        [
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]"
+        ]
+      ],
+      "fees": [
+        [
+          "Tuition",
+          "[NEEDS: PO tuition — sources conflict: $5,000 / $6,000 / $8,000 + fees = $10,278]"
+        ],
+        [
+          "Registration fee",
+          "[NEEDS]"
+        ],
+        [
+          "Books and supplies",
+          "[NEEDS]"
+        ],
+        [
+          "Testing / credentialing fees (e.g., CSPO course booking)",
+          "[NEEDS]"
+        ],
+        [
+          "Other required charges",
+          "[NEEDS]"
+        ],
+        [
+          "Total cost to complete",
+          "[NEEDS]"
+        ]
+      ],
+      "disclosure": "PY2025 (Jul 1, 2025–Jun 30, 2026) and PY2024, as posted on the Program Disclosures page: 80 students, 68 exits, 85% reported rates for PY2025; 3 students for PY2024."
+    },
+    "pharm": {
+      "name": "AI-Enhanced Pharmacy Technician & EKG Technician",
+      "shortName": "AI-Enhanced Pharmacy Technician & EKG Technician",
+      "status": "IBHE approved (April 1, 2026)",
+      "cip": "51.0801",
+      "soc": "29-2052",
+      "clockHours": "160",
+      "length": "[NEEDS: weeks]",
+      "modality": "100% online",
+      "description": "A fully remote program preparing students for entry-level work as pharmacy technicians and EKG technicians. It combines live instruction led by a PharmD with virtual simulations and VR skill labs covering pharmacy law, pharmacology, medication safety, prescription processing, calculations, and pharmacy workflow, plus an EKG track covering lead placement, cardiac anatomy, and rhythm interpretation. Students prepare for the PTCB Certified Pharmacy Technician (CPhT) exam and an EKG technician certification exam. Credentials are issued by the certifying bodies, not by Mentor Agile. [NEEDS: Akber to confirm the wording and name the EKG certifying body, e.g., NHA CET.]",
+      "objectives": [
+        "[NEEDS: three to six objectives from the approved NPS09165 application]"
+      ],
+      "sequence": "Week 1 Foundations in Medications & Pharmacology · Week 2 Law, Standards & Professional Practice · Week 3 Order Entry, Calculations, Compounding & Inventory · Week 4 Patient Safety, Health & Wellness, Billing & PTCE Bootcamp. [NEEDS: confirm where the EKG content sits and that 160 clock hours fit the stated weeks.]",
+      "admission": "[NEEDS: confirm. The draft catalog uses the same list as the Product Owner Product Manager program]",
+      "calendar": [
+        [
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]",
+          "[NEEDS]"
+        ]
+      ],
+      "fees": [
+        [
+          "Tuition",
+          "$3,500 [NEEDS: confirm still current]"
+        ],
+        [
+          "Registration fee",
+          "$0"
+        ],
+        [
+          "Books and supplies",
+          "Included"
+        ],
+        [
+          "Testing / credentialing fees (PTCB, EKG exam)",
+          "[NEEDS]"
+        ],
+        [
+          "VR software / licenses",
+          "[NEEDS: included or separate]"
+        ],
+        [
+          "Total cost to complete",
+          "[NEEDS]"
+        ]
+      ],
+      "disclosure": "Since approval (Apr 1, 2026): [NEEDS: counts, or \"no students enrolled as of [date]\"]"
+    }
+  },
+  "refund": {
+    "rows": [
+      [
+        "Before the first live session begins",
+        "100% of tuition paid"
+      ],
+      [
+        "During the first program week",
+        "75% of tuition paid"
+      ],
+      [
+        "During the second program week",
+        "50% of tuition paid"
+      ],
+      [
+        "After the second program week",
+        "No tuition refund"
+      ]
+    ],
+    "notes": [
+      "Send cancellation or withdrawal requests in writing to admissions@mentoragile.com. Approved refunds are processed within 14 business days of approval.",
+      "The refund period is measured from the beginning of the program's first live session.",
+      "Student's right to cancel: [NEEDS: one wording for all three agreements. The Pharm/EKG enrollment agreement sent to IBHE reads \"until 11pm of the 14th business day after the student has been admitted … refund on all monies paid to date within (30) days of cancellation.\"]"
+    ]
+  },
+  "disclosureNote": "An exit is not necessarily a graduation. Employment after exit is not necessarily employment in the field of study or placement by the school. Mentor Agile does not guarantee employment, a job title, or a salary."
+}

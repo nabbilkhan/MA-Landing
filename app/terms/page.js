@@ -185,12 +185,12 @@ export default function TermsPage() {
                 </div>
                 <div className="prose prose-invert max-w-none">
                   <p className="text-gray-300 leading-relaxed mb-4">
-                    Mentor Agile provides the "Become a Job-Ready Product Owner" 12-week VIP program
-                    with live coaching ($6,000). This comprehensive training is designed to transform
+                    Mentor Agile provides the "Become a Job-Ready Product Owner" 12-week Product Owner/Product Manager program
+                    with live coaching ([NEEDS: PO tuition]). This comprehensive training is designed to transform
                     beginners into certified Product Owners.
                   </p>
 
-                  <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">VIP Program — Live + Pre-Recorded ($6,000)</h3>
+                  <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">Product Owner/Product Manager — Live + Pre-Recorded ([NEEDS: PO tuition])</h3>
                   <ul className="space-y-3 text-gray-300 mb-6">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -295,7 +295,7 @@ export default function TermsPage() {
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span>
-                        <strong className="text-gold-300">VIP Program:</strong> $6,000 for 12 weeks of live coaching plus pre-recorded curriculum. Contact us to book a free consultation.
+                        <strong className="text-gold-300">Product Owner/Product Manager:</strong> [NEEDS: PO tuition] for 12 weeks of live coaching plus pre-recorded curriculum. Contact us to book a free consultation.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -322,7 +322,7 @@ export default function TermsPage() {
                   <div className="bg-gold-500/10 border border-gold-500/30 rounded-xl p-6 mt-6">
                     <p className="text-gold-300 font-semibold mb-2">CSPO® Certification:</p>
                     <p className="text-gray-300">
-                      The public VIP program includes the initial CSPO® training and certification arrangement. Scrum Alliance currently requires successful completion of a 16-hour course taught by a Certified Scrum Trainer® and acceptance of its license agreement; there is no CSPO® exam. The training booking and included fees are identified in your enrollment agreement. Membership and renewal follow Scrum Alliance terms.
+                      The public Product Owner/Product Manager program includes the initial CSPO® training and certification arrangement. Scrum Alliance currently requires successful completion of a 16-hour course taught by a Certified Scrum Trainer® and acceptance of its license agreement; there is no CSPO® exam. The training booking and included fees are identified in your enrollment agreement. Membership and renewal follow Scrum Alliance terms.
                     </p>
                   </div>
                 </div>

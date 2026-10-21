@@ -1,0 +1,35 @@
+{
+  "_comment": "Retail QA is NOT IBHE-approved (NPS10872 pending). Render only on staging builds with NEXT_PUBLIC_IBHE_STAGING_RETAIL_QA=1. Never link publicly.",
+  "program": {
+    "name": "Retail Software QA Specialist Program",
+    "shortName": "Retail Software QA Specialist",
+    "status": "Proposed, pending IBHE approval (NPS10872). Not accepting enrollments.",
+    "cip": "11.0899 / 52.1803",
+    "soc": "15-1253",
+    "clockHours": "160",
+    "length": "[NEEDS: weeks]",
+    "modality": "[NEEDS: as filed]",
+    "notice": "This program is pending IBHE approval (NPS10872). Mentor Agile is not advertising or enrolling students in it.",
+    "description": "[NEEDS: copy from the NPS10872 application exactly as filed]",
+    "objectives": [
+      "[NEEDS: copy from the NPS10872 application exactly as filed]"
+    ],
+    "admission": "[NEEDS]",
+    "calendar": [
+      [
+        "[NEEDS: first proposed cohort, subject to IBHE approval]",
+        "[NEEDS]",
+        "[NEEDS]",
+        "[NEEDS]",
+        "[NEEDS]"
+      ]
+    ],
+    "fees": [
+      [
+        "Proposed tuition and fees",
+        "[NEEDS: all lines as filed in NPS10872]"
+      ]
+    ],
+    "disclosure": "No students. Pending IBHE approval."
+  }
+}

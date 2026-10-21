@@ -104,7 +104,7 @@ export default function AboutPage() {
               the job was nearly impossible to find.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-              Our 12-week VIP program combines live coaching with personalized feedback and a full
+              Our 12-week Product Owner/Product Manager program combines live coaching with personalized feedback and a full
               pre-recorded curriculum library. It includes Scrum Alliance CSPO certification, modern AI tools,
               real-world projects, and portfolio development. We don't just teach theory; we transform
               beginners into job-ready professionals who are prepared from day one.
@@ -250,15 +250,15 @@ export default function AboutPage() {
 
           <div className="relative backdrop-blur-xl bg-gradient-to-br from-gold-500/20 to-gold-600/10 border-4 border-gold-500/70 rounded-3xl p-8 md:p-10 shadow-2xl">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-500 to-gold-600 text-black px-6 py-2 rounded-full font-bold text-sm">
-              12-WEEK VIP PROGRAM
+              12-WEEK PRODUCT OWNER/PRODUCT MANAGER PROGRAM
             </div>
 
             <div className="mt-4">
               <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
-                VIP Program — Live + Pre-Recorded
+                Product Owner/Product Manager — Live + Pre-Recorded
               </h3>
               <div className="text-center mb-6">
-                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
+                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">[NEEDS: PO tuition]</div>
                 <div className="text-gray-400 text-lg">/ 12 weeks</div>
               </div>
 

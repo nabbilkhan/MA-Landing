@@ -20,6 +20,7 @@ import CertificationsShowcase from './components/CertificationsShowcase';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
 import YoutubeShortsGallery from './components/YoutubeShortsGallery';
 import NewsletterSignup from './components/NewsletterSignup';
+import ProgramFacts from '../components/ProgramFacts';
 import SocialFooter from './components/SocialFooter';
 import { productProgramPhases } from '../lib/product-program';
 
@@ -1830,6 +1831,9 @@ export default function CourseLandingPage() {
           </div>
         </div>
       )}
+
+      {/* IBHE: program description, tuition and fees */}
+      <ProgramFacts programKey="po" />
 
       {/* Social Media Footer */}
       <SocialFooter />

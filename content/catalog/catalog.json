@@ -185,13 +185,13 @@
         {
           "type": "table",
           "head": [
-            "Public VIP offering",
+            "Public Product Owner/Product Manager offering",
             "Amount"
           ],
           "rows": [
             [
               "Product Owner / Product Manager · 12 weeks",
-              "$6,000 USD"
+              "[NEEDS: PO tuition] USD"
             ],
             [
               "Required program materials, live classes, and support",
@@ -205,7 +205,7 @@
         },
         {
           "type": "p",
-          "text": "The public VIP price covers the 12-week live and recorded program. Your enrollment agreement identifies included external training and credentialing fees. A separate institutional, employer-funded, or agency-funded arrangement must state its own applicable program and charges; it must not be confused with this public VIP price."
+          "text": "The public Product Owner/Product Manager price covers the 12-week live and recorded program. Your enrollment agreement identifies included external training and credentialing fees. A separate institutional, employer-funded, or agency-funded arrangement must state its own applicable program and charges; it must not be confused with this public Product Owner/Product Manager price."
         },
         {
           "type": "h",
@@ -389,7 +389,7 @@
         },
         {
           "type": "p",
-          "text": "The public VIP offering includes the initial CSPO training and certification arrangement; confirm the scheduled CST-led course and included fee details in your enrollment agreement. Scrum Alliance sets membership, certification, and renewal requirements. A school attendance threshold does not override those requirements."
+          "text": "The public Product Owner/Product Manager offering includes the initial CSPO training and certification arrangement; confirm the scheduled CST-led course and included fee details in your enrollment agreement. Scrum Alliance sets membership, certification, and renewal requirements. A school attendance threshold does not override those requirements."
         },
         {
           "type": "h",

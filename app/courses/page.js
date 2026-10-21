@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import NavigationHeader from '../course-landing/components/NavigationHeader';
+import ProgramFacts from '../components/ProgramFacts';
 import SocialFooter from '../course-landing/components/SocialFooter';
 import CurriculumSection from '../components/CurriculumSection';
 import CertificationsSection from '../components/CertificationsSection';
@@ -158,7 +159,7 @@ export default function CoursesPage() {
             Become a Product Owner in 12 Weeks
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Our 12-week VIP program combines live coaching with a full pre-recorded curriculum
+            Our 12-week Product Owner/Product Manager program combines live coaching with a full pre-recorded curriculum
             to transform you into a job-ready, certified Product Owner.
           </p>
 
@@ -204,7 +205,7 @@ export default function CoursesPage() {
       <section ref={courseRef} className="relative py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-4 text-center bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">
-            12-Week VIP Program
+            12-Week Product Owner/Product Manager Program
           </h2>
           <p className="text-xl text-gray-400 mb-16 text-center max-w-3xl mx-auto">
             Our comprehensive program includes CSPO certification and prepares you for Product Owner roles. Live coaching combined with a full pre-recorded curriculum.
@@ -217,11 +218,11 @@ export default function CoursesPage() {
 
             <div className="mt-4">
               <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
-                VIP Program — Live + Pre-Recorded
+                Product Owner/Product Manager — Live + Pre-Recorded
               </h3>
 
               <div className="text-center mb-8">
-                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
+                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">[NEEDS: PO tuition]</div>
                 <div className="text-gray-400 text-lg">/ 12 weeks</div>
               </div>
 
@@ -250,6 +251,9 @@ export default function CoursesPage() {
           </div>
         </div>
       </section>
+
+      {/* IBHE: program description, tuition and fees */}
+      <ProgramFacts programKey="po" />
 
       {/* Key Benefits Grid */}
       <section ref={benefitsRef} className="relative py-24 px-6 bg-gradient-to-b from-black via-gold-950/5 to-black">

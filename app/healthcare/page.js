@@ -15,6 +15,7 @@ import { useRouter } from 'next/navigation';
 import NavigationHeader from '../course-landing/components/NavigationHeader';
 import GlassmorphicLogo from '../course-landing/components/GlassmorphicLogo';
 import NewsletterSignup from '../course-landing/components/NewsletterSignup';
+import ProgramFacts from '../components/ProgramFacts';
 import SocialFooter from '../course-landing/components/SocialFooter';
 import { isProgramVisible } from '../config/siteConfig';
 
@@ -1584,6 +1585,9 @@ export default function HealthcareLandingPage() {
           </div>
         </div>
       )}
+
+      {/* IBHE: program description, tuition and fees */}
+      <ProgramFacts programKey="pharm" />
 
       {/* Social Media Footer */}
       <SocialFooter />

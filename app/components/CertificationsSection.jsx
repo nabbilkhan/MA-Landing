@@ -278,7 +278,7 @@ export default function CertificationsSection({ compact = false }) {
               <Award className="w-10 h-10 text-gold-400 mx-auto mb-4" />
               <p className="text-lg text-gray-300 leading-relaxed">
                 <span className="font-bold text-gold-400">CSPO® certification</span> is
-                included with the VIP program, plus guidance and prep for
+                included with the Product Owner/Product Manager program, plus guidance and prep for
                 industry-recognized Product Owner credentials.
               </p>
             </div>

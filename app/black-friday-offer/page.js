@@ -715,11 +715,11 @@ export default function BlackFridayOfferPage() {
     },
     {
       question: 'What is the time commitment?',
-      answer: 'VIP program: 10-15 hours per week including live sessions. On-Demand: Flexible, go at your own pace (recommended 5-10 hours/week).'
+      answer: 'Product Owner/Product Manager program: 10-15 hours per week including live sessions. On-Demand: Flexible, go at your own pace (recommended 5-10 hours/week).'
     },
     {
       question: 'What certifications are included?',
-      answer: 'The VIP program includes CSPO training support and AI coursework. CSPO requires a Certified Scrum Trainer course and has no certification exam. Your enrollment agreement identifies included credentialing fees and any additional credentials. AI coursework is not a CompTIA certification.'
+      answer: 'The Product Owner/Product Manager program includes CSPO training support and AI coursework. CSPO requires a Certified Scrum Trainer course and has no certification exam. Your enrollment agreement identifies included credentialing fees and any additional credentials. AI coursework is not a CompTIA certification.'
     },
     {
       question: 'What is your refund policy?',
@@ -856,7 +856,7 @@ export default function BlackFridayOfferPage() {
                 <span className="text-2xl">💎</span>
                 <span className="text-xl lg:text-2xl tracking-wide">Get FREE Career Guidance</span>
                 <span className="text-sm lg:text-base font-semibold text-gold-100 opacity-90">
-                  VIP Program: $6,000 <span className="line-through opacity-60">$8,999</span>
+                  Product Owner/Product Manager: [NEEDS: PO tuition] <span className="line-through opacity-60">$8,999</span>
                 </span>
               </div>
             </button>
@@ -930,13 +930,13 @@ export default function BlackFridayOfferPage() {
 
                 <div className="relative z-10 flex flex-col h-full">
                   <h3 className="text-3xl lg:text-5xl font-black mb-2 text-white">
-                    VIP Program
+                    Product Owner/Product Manager
                   </h3>
                   <p className="text-gold-200 font-semibold mb-8 text-lg">Live + On-Demand (12 weeks)</p>
 
                   <div className="mb-10">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-6xl lg:text-7xl font-black text-gradient-gold">$6,000</span>
+                      <span className="text-6xl lg:text-7xl font-black text-gradient-gold">[NEEDS: PO tuition]</span>
                       <span className="text-gray-improved line-through text-2xl">$8,999</span>
                     </div>
                     <p className="text-base text-gray-improved">Payment plans available</p>
@@ -1102,7 +1102,7 @@ export default function BlackFridayOfferPage() {
                   <thead>
                     <tr className="border-b border-gray-700/50">
                       <th className="text-left p-6 lg:p-8 font-bold text-gray-improved text-base">Feature</th>
-                      <th className="text-center p-6 lg:p-8 font-bold text-gold-300 bg-gold-500/10 text-base">VIP</th>
+                      <th className="text-center p-6 lg:p-8 font-bold text-gold-300 bg-gold-500/10 text-base">Product Owner/Product Manager</th>
                       <th className="text-center p-6 lg:p-8 font-bold text-gray-improved text-base">On-Demand</th>
                     </tr>
                   </thead>

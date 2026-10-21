@@ -137,8 +137,6 @@ export default function AboutPage() {
             </div>
             <h3 className="text-3xl md:text-4xl font-black mb-6 text-gold-400">Our Vision</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
-              To be the #1 trusted program for breaking into Product Owner careers, known for delivering
-              real results and life-changing career transformations.
               We believe anyone with ambition can succeed—and we're here to prove it.
             </p>
           </div>

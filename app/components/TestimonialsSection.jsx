@@ -207,18 +207,6 @@ export default function TestimonialsSection({ compact = false }) {
             </div>
           ))}
         </div>
-
-        {/* Bottom CTA (Optional) */}
-        {!compact && (
-          <div className="text-center mt-12 md:mt-16">
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-gold-400 fill-gold-400" />
-                <span>4.9/5 Average Rating</span>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   )

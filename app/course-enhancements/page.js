@@ -122,7 +122,7 @@ const fourRules = [
 
 // LMS Features
 const lmsFeatures = [
-  { title: 'H5P Interactive Content', impact: '3x engagement vs. passive video', icon: Play },
+  { title: 'H5P Interactive Content', impact: 'Hands-on interactive practice', icon: Play },
   { title: 'Real-Time Progress Tracking', impact: 'Clear path to completion', icon: BarChart3 },
   { title: 'Adaptive Learning Paths', impact: 'Optimal learning sequence', icon: Target },
   { title: 'Points & Achievements', impact: 'Sustained motivation', icon: Trophy },
@@ -1079,7 +1079,6 @@ export default function CourseEnhancementsPage() {
               <ul className="space-y-4 mb-8">
                 {[
                   '160+ documents you\'d otherwise need to create yourself',
-                  '300+ hours saved vs. building from scratch',
                   'Complete AI competency training',
                   'Two proprietary frameworks (CORE + TRUST) for career-long use',
                   'Personal AI Advantage Playbook as career asset',
@@ -1113,7 +1112,6 @@ export default function CourseEnhancementsPage() {
                 {[
                   'Standardized PM + AI practices across all teams',
                   'Consistent AI usage policies reduce enterprise risk',
-                  '50%+ faster onboarding for new PMs',
                   'Quality assurance through checklist culture',
                   'LMS analytics for compliance and progress tracking',
                   'Scalable training program that grows with the organization',
@@ -1126,16 +1124,6 @@ export default function CourseEnhancementsPage() {
                 ))}
               </ul>
 
-              <div className="pt-6 border-t border-emerald-500/20 grid grid-cols-2 gap-4">
-                <div className="text-center">
-                  <div className="text-2xl font-black text-emerald-400 mb-1">100x</div>
-                  <div className="text-emerald-300/80 text-xs">ROI from prevented AI security incidents</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-black text-emerald-400 mb-1">20-40%</div>
-                  <div className="text-emerald-300/80 text-xs">Productivity gain per PM</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -78,10 +78,6 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-12">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">4.9★</div>
-              <div className="text-gray-400 text-sm md:text-base">Rating</div>
-            </div>
-            <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">12</div>
               <div className="text-gray-400 text-sm md:text-base">Week Program</div>
             </div>
@@ -110,7 +106,7 @@ export default function AboutPage() {
               beginners into job-ready professionals who are prepared from day one.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              With a 4.9-star rating, we're proud to be the trusted path for
+              We're proud to be a trusted path for
               career changers, business analysts, and aspiring product professionals who want to break into
               this lucrative field.
             </p>
@@ -130,7 +126,7 @@ export default function AboutPage() {
             <p className="text-lg text-gray-300 leading-relaxed">
               To transform everyday professionals into job-ready Product Owners—no coding or tech
               background required. We provide the CSPO certification, real-world skills, AI tools, and
-              portfolio projects that get you hired in high-paying Product Owner roles within 12 weeks.
+              portfolio projects that prepare you for Product Owner roles.
             </p>
           </div>
 

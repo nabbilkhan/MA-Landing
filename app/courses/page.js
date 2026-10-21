@@ -165,10 +165,6 @@ export default function CoursesPage() {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-12">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">4.9★</div>
-              <div className="text-gray-400">Rating</div>
-            </div>
-            <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">12</div>
               <div className="text-gray-400">Weeks</div>
             </div>

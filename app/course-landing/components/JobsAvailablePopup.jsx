@@ -77,18 +77,6 @@ export default function JobsAvailablePopup({ isOpen, onClose }) {
       description: 'Heavy trucks, light trucks, bus, delivery',
       program: 'logistics',
     },
-    {
-      name: 'Healthcare Tech',
-      openings: '53K',
-      openingsNum: 53000,
-      icon: '🏥',
-      color: 'from-purple-500 to-pink-600',
-      bgColor: 'bg-purple-500/10',
-      borderColor: 'border-purple-500/30',
-      textColor: 'text-purple-400',
-      description: 'Pharmacy Tech (49K) + EKG Tech (4K)',
-      program: 'healthcare',
-    },
   ];
 
   const jobCategories = allJobCategories.filter(c => isProgramVisible(c.program));

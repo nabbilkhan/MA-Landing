@@ -669,35 +669,35 @@ export default function HealthcareLandingPage() {
     return () => window.removeEventListener('keydown', handleEscape);
   }, [showVideoModal]);
 
-  // Healthcare Program Modules - 4 Weeks
+  // Healthcare Program Modules
   const modules = [
     {
       title: "Pharmacy Fundamentals",
       icon: "💊",
       description: "Master the foundational knowledge of pharmacy operations. Learn pharmaceutical calculations, medication classifications, drug interactions, and the regulatory framework governing pharmacy practice.",
       topics: ["Pharmaceutical Calculations", "Drug Classifications", "Pharmacy Law & Ethics", "Medication Safety"],
-      duration: "Week 1"
+      duration: "Module 1"
     },
     {
       title: "Pharmacy Operations",
       icon: "🏥",
       description: "Dive deep into day-to-day pharmacy operations. Master prescription processing, inventory management, insurance billing, and patient consultation techniques used in modern pharmacy settings.",
       topics: ["Prescription Processing", "Inventory Management", "Insurance & Billing", "Patient Communication"],
-      duration: "Week 2"
+      duration: "Module 2"
     },
     {
       title: "EKG Technician Track",
       icon: "❤️",
       description: "Learn to perform and interpret electrocardiograms. Understand cardiac anatomy, rhythm recognition, lead placement, and emergency protocols essential for cardiovascular diagnostics.",
       topics: ["Cardiac Anatomy", "EKG Lead Placement", "Rhythm Interpretation", "Emergency Protocols"],
-      duration: "Week 3"
+      duration: "Module 3"
     },
     {
       title: "Clinical Integration",
       icon: "🎓",
       description: "Combine your pharmacy and EKG skills in real-world clinical scenarios. Practice with VR simulations, prepare for certification exams, and build your professional portfolio.",
       topics: ["VR Clinical Simulations", "PTCB Exam Prep", "NHA EKG Certification", "Career Placement"],
-      duration: "Week 4"
+      duration: "Module 4"
     }
   ];
 

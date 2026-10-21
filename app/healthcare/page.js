@@ -880,20 +880,8 @@ export default function HealthcareLandingPage() {
 
             {/* Subtitle */}
             <p className="hero-subtitle text-xl lg:text-2xl text-gray-400 font-light mb-6">
-              From Beginner to <span className="text-medical-400 font-semibold">Certified Pharmacy & EKG Technician</span> in Just 4 Weeks
+              <span className="text-medical-400 font-semibold">Pharmacy & EKG Technician</span> Training
             </p>
-
-            {/* Stats - Healthcare specific (matching /tech layout) */}
-            <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
-              {/* Job Openings - Green Glow */}
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 animate-pulse-glow-green">
-                  <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
-                  <span className="stat-number" data-target="53">53</span>K
-                </div>
-                <div className="text-sm text-green-300">Job Openings</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Side - Hero Image (60%) */}
@@ -1040,7 +1028,7 @@ export default function HealthcareLandingPage() {
             >
               <span className="text-gradient-medical">Master Healthcare</span>
             </h2>
-            <p className="text-xl text-gray-400">Four intensive weeks to launch your healthcare career</p>
+            <p className="text-xl text-gray-400">Intensive training to launch your healthcare career</p>
           </div>
 
           <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
@@ -1164,7 +1152,7 @@ export default function HealthcareLandingPage() {
               Ready to <span className="text-gradient-medical">Transform</span>?
             </h2>
             <p className="text-xl text-gray-300 mb-10">
-              Start your healthcare career in just 4 weeks. <span className="text-medical-400 font-semibold">Limited seats available!</span>
+              Start your healthcare career. <span className="text-medical-400 font-semibold">Limited seats available!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
@@ -1579,7 +1567,7 @@ export default function HealthcareLandingPage() {
 
             <div className="mt-4 text-center">
               <h3 className="text-xl font-bold text-white">Healthcare Training Program</h3>
-              <p className="text-gray-300 mt-1">Become a certified Pharmacy & EKG Technician in just 4 weeks</p>
+              <p className="text-gray-300 mt-1">Pharmacy & EKG Technician training</p>
             </div>
           </div>
         </div>

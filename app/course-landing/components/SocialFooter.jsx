@@ -183,7 +183,7 @@ export default function SocialFooter() {
                 </a>.
               </p>
               <p className="text-xs text-gray-400">
-                Mentor Agile is not accredited by a U.S. Department of Education recognized accrediting body.
+                Mentor Agile is not accredited by a US Department of Education recognized accrediting body.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-1 text-sm">
                 <a href="/student-catalog" className="text-gray-300 hover:text-gold-400 transition-colors duration-300">Student Catalog</a>

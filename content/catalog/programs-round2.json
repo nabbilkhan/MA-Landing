@@ -16,7 +16,7 @@
     "po": {
       "name": "Mentor Agile Product Owner Product Manager",
       "shortName": "Product Owner/Product Manager",
-      "status": "IBHE approved",
+      "status": "Approved",
       "cip": "11.0103",
       "soc": "13-1082.00",
       "clockHours": "216",
@@ -80,7 +80,7 @@
     "pharm": {
       "name": "AI-Enhanced Pharmacy Technician & EKG Technician",
       "shortName": "AI-Enhanced Pharmacy Technician & EKG Technician",
-      "status": "IBHE approved (April 1, 2026)",
+      "status": "Approved (April 1, 2026)",
       "cip": "51.0801",
       "soc": "29-2052",
       "clockHours": "160",

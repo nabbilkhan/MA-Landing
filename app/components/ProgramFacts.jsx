@@ -12,7 +12,7 @@ export default function ProgramFacts({ programKey, className = '' }) {
           <p className="uppercase tracking-widest text-sm font-semibold text-gold-300">Program description, tuition and fees</p>
           <h2 id={`facts-${programKey}`} className="text-3xl md:text-4xl font-black text-white">{p.name}</h2>
           <p className="text-gray-300 text-lg leading-relaxed">{p.description}</p>
-          <p className="text-gray-400 text-sm">{p.status} · {p.clockHours} clock hours · {p.length} · {p.modality}</p>
+          <p className="text-gray-400 text-sm">{p.clockHours} clock hours · {p.length} · {p.modality}</p>
         </div>
         <div className="overflow-x-auto rounded-xl border border-gold-500/30">
           <table className="w-full min-w-[480px] text-left text-sm md:text-base">

@@ -78,16 +78,8 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-12">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">500+</div>
-              <div className="text-gray-400 text-sm md:text-base">Graduates</div>
-            </div>
-            <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">4.9★</div>
               <div className="text-gray-400 text-sm md:text-base">Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">95%</div>
-              <div className="text-gray-400 text-sm md:text-base">Job Placement</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">12</div>
@@ -118,8 +110,7 @@ export default function AboutPage() {
               beginners into job-ready professionals who are prepared from day one.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Today, over 500 graduates have launched successful Product Owner careers through our program.
-              With a 4.9-star rating and 95% job placement rate, we're proud to be the trusted path for
+              With a 4.9-star rating, we're proud to be the trusted path for
               career changers, business analysts, and aspiring product professionals who want to break into
               this lucrative field.
             </p>
@@ -151,7 +142,7 @@ export default function AboutPage() {
             <h3 className="text-3xl md:text-4xl font-black mb-6 text-gold-400">Our Vision</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
               To be the #1 trusted program for breaking into Product Owner careers, known for delivering
-              real results: 95% job placement and life-changing career transformations.
+              real results and life-changing career transformations.
               We believe anyone with ambition can succeed—and we're here to prove it.
             </p>
           </div>
@@ -314,7 +305,7 @@ export default function AboutPage() {
             Ready to Become a Product Owner?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-            Join 500+ graduates who transformed their careers as Product Owners,
+            Transform your career as a Product Owner,
             all in just 12 weeks, no coding required.
           </p>
           <a

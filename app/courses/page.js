@@ -165,16 +165,8 @@ export default function CoursesPage() {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-12">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">500+</div>
-              <div className="text-gray-400">Graduates</div>
-            </div>
-            <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">4.9★</div>
               <div className="text-gray-400">Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">95%</div>
-              <div className="text-gray-400">Job Placement</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-black text-gold-400 mb-2">12</div>
@@ -323,7 +315,7 @@ export default function CoursesPage() {
             Ready to Start Your Journey?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-            Join 500+ graduates who landed Product Owner roles and transformed their careers.
+            Prepare for Product Owner roles and transform your career.
           </p>
           <p className="text-lg text-gray-400 mb-12">
             ✓ CSPO® certification &nbsp;•&nbsp; ✓ Lifetime access &nbsp;•&nbsp; ✓ No coding required

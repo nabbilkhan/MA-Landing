@@ -960,45 +960,6 @@ export default function CourseLandingPage() {
               </button>
             </div>
 
-            {/* Stats - BA/PO/PM Specific Data - hidden per request
-            <div className="grid grid-cols-3 gap-4 pt-4" style={{ transform: 'translateZ(80px)' }}>
-              <div
-                className="text-center cursor-pointer group hover:scale-105 transition-transform duration-300"
-                onClick={() => setShowSalaryPopup(true)}
-              >
-                <div className="text-3xl font-bold text-gradient-gold group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">
-                  $<span className="stat-number" data-target="130">130</span>K
-                </div>
-                <div className="text-sm text-gray-300 group-hover:text-gold-400 transition-colors flex items-center justify-center gap-1">
-                  <span>Avg Salary</span>
-                  <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-              <div
-                className="text-center cursor-pointer group hover:scale-105 transition-transform duration-300"
-                onClick={() => setShowSalaryPopup(true)}
-              >
-                <div className="text-3xl font-bold text-gradient-gold group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">
-                  $<span className="stat-number" data-target="516">516</span>K
-                </div>
-                <div className="text-sm text-gray-300 group-hover:text-gold-400 transition-colors flex items-center justify-center gap-1">
-                  <span>Top Earners</span>
-                  <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 animate-pulse-glow-green">
-                  <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
-                  <span className="stat-number" data-target="281">281</span>K
-                </div>
-                <div className="text-sm text-green-300">Job Openings</div>
-              </div>
-            </div>
-            */}
           </div>
 
           {/* Right Side - Hero Image (60%) */}
@@ -1295,7 +1256,7 @@ export default function CourseLandingPage() {
           }
         }
 
-        /* Green Glow Animation for Job Openings */
+        /* Green Glow Animation */
         @keyframes pulse-glow-green {
           0%, 100% {
             text-shadow: 0 0 10px rgba(74, 222, 128, 0.7), 0 0 20px rgba(74, 222, 128, 0.5), 0 0 30px rgba(74, 222, 128, 0.3);

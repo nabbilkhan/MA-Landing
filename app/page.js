@@ -11,7 +11,6 @@ import GlassmorphicLogo from './course-landing/components/GlassmorphicLogo'
 import SocialFooter from './course-landing/components/SocialFooter'
 import IndustryCard3D from './components/IndustryCard3D'
 import HolographicBadge from './components/HolographicBadge'
-import JobsAvailablePopup from './course-landing/components/JobsAvailablePopup'
 import { isProgramVisible } from './config/siteConfig'
 
 // Dynamically import HexCoins for code splitting
@@ -39,7 +38,6 @@ const industries = [
     href: '/tech',
     theme: 'gold',
     features: ['12-Week Intensive Program', 'CSPO Certification', 'AI Essentials Training', 'Portfolio Project'],
-    // stats: { 'Starting Salary': '$88K', 'Up To': '$356K' },
     hasAIBadge: true,
   },
   {
@@ -63,7 +61,6 @@ const industries = [
     href: '/logistics',
     theme: 'logistics',
     features: ['Supply Chain AI', 'Predictive Analytics', 'Automation Training', 'Industry Certification'],
-    stats: { Demand: 'High', Growth: '25%' },
     hasAIBadge: true,
     hasVRBadge: true,
     comingSoon: true,
@@ -107,8 +104,6 @@ export default function AIInstituteLanding() {
   const cardsRef = useRef(null)
   const [isMounted, setIsMounted] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const [jobsCount, setJobsCount] = useState(0)
-  const [showJobsPopup, setShowJobsPopup] = useState(false)
   const [showPillNav, setShowPillNav] = useState(false)
 
   useEffect(() => {
@@ -127,65 +122,6 @@ export default function AIInstituteLanding() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  // Animate jobs counter - initial roll up, then continuous random ticking
-  useEffect(() => {
-    if (isLoading) return
-
-    const MIN_VALUE = 280000
-    const MAX_VALUE = 282000
-
-    // Random starting target within range
-    const targetValue = Math.floor(Math.random() * 1001) + MIN_VALUE
-    const duration = 4000 // 4 seconds for initial animation
-    const startTime = Date.now()
-    let currentValue = 0
-    let tickingInterval = null
-
-    // Initial roll-up animation
-    const animate = () => {
-      const elapsed = Date.now() - startTime
-      const progress = Math.min(elapsed / duration, 1)
-
-      // Easing function for smooth deceleration
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      currentValue = Math.floor(easeOutQuart * targetValue)
-
-      setJobsCount(currentValue)
-
-      if (progress < 1) {
-        requestAnimationFrame(animate)
-      } else {
-        // Initial animation complete - start continuous ticking
-        startTicking(currentValue)
-      }
-    }
-
-    // Continuous random ticking up and down
-    const startTicking = (startValue) => {
-      let value = startValue
-
-      tickingInterval = setInterval(() => {
-        // Random change: -50 to +50
-        const change = Math.floor(Math.random() * 101) - 50
-        value = value + change
-
-        // Clamp between min and max
-        value = Math.max(MIN_VALUE, Math.min(MAX_VALUE, value))
-
-        setJobsCount(value)
-      }, 800) // Tick every 800ms
-    }
-
-    requestAnimationFrame(animate)
-
-    // Cleanup
-    return () => {
-      if (tickingInterval) {
-        clearInterval(tickingInterval)
-      }
-    }
-  }, [isLoading])
 
   // Three.js Multi-colored Background
   useEffect(() => {
@@ -608,28 +544,6 @@ export default function AIInstituteLanding() {
               </button>
             </div>
 
-            {/* Job & Salary Stats - hidden per request
-            <div className="hero-stats flex flex-wrap gap-6 md:gap-10 items-center">
-              <button
-                onClick={() => setShowSalaryPopup(true)}
-                className="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-gold-500/10 hover:bg-gold-500/20 border-2 border-gold-500/40 hover:border-gold-400 transition-all cursor-pointer"
-                style={{
-                  boxShadow: '0 0 30px rgba(251, 191, 36, 0.2), 0 0 60px rgba(251, 191, 36, 0.1)',
-                }}
-              >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-400 to-amber-600 flex items-center justify-center text-2xl shadow-lg shadow-gold-500/30">
-                  💰
-                </div>
-                <div className="text-left">
-                  <div className="text-4xl md:text-5xl font-black text-gold-400 tabular-nums tracking-tight">
-                    $88K - $356K
-                  </div>
-                  <div className="text-sm md:text-base text-gold-300/80 font-semibold">Salary Range</div>
-                </div>
-                <span className="ml-3 text-gold-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-              </button>
-            </div>
-            */}
           </div>
 
           {/* FIXED BOTTOM: Scroll Indicator - Left */}
@@ -786,11 +700,6 @@ export default function AIInstituteLanding() {
         <SocialFooter />
       </div>
 
-      {/* Jobs Available Popup */}
-      <JobsAvailablePopup
-        isOpen={showJobsPopup}
-        onClose={() => setShowJobsPopup(false)}
-      />
     </div>
   )
 }

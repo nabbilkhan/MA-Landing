@@ -233,7 +233,7 @@ export default function ContactPage() {
                     className="w-full px-4 py-3 bg-black/50 border border-gold-500/30 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                   >
                     <option value="">Select an option</option>
-                    <option value="VIP Program - $6,000">VIP Program - Live + Pre-Recorded - $6,000</option>
+                    <option value="VIP Program - $5,000">VIP Program - Live + Pre-Recorded - $5,000</option>
                     <option value="Enterprise Training">Enterprise Training</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>

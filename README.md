@@ -4,7 +4,7 @@ A modern, responsive landing page for Mentor Agile's Product Owner Training prog
 
 ## 🎯 Project Overview
 
-Mentor Agile provides comprehensive Product Owner training through a 12-week VIP program ($6,000) combining live coaching with expert instructors and a full pre-recorded curriculum.
+Mentor Agile provides comprehensive Product Owner training through a 12-week VIP program ($5,000) combining live coaching with expert instructors and a full pre-recorded curriculum.
 
 The platform helps professionals break into Product Owner roles with CSPO certification, AI essentials training, and hands-on portfolio projects.
 
@@ -283,7 +283,7 @@ npm run build && npm start
 
 ## 🎓 Programs Offered
 
-### VIP Program ($6,000)
+### VIP Program ($5,000)
 - Weekly live cohort sessions
 - Full pre-recorded curriculum library
 - CSPO® + 2 AI certifications guidance

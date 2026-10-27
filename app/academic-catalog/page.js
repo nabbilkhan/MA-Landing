@@ -20,6 +20,7 @@ export default function AcademicCatalogPage() {
     <div className="grid lg:grid-cols-3 gap-6">
       {catalog.programs.map(program => <section key={program.slug} aria-labelledby={`${program.slug}-title`} className="flex flex-col rounded-2xl border border-gold-500/25 bg-gray-950 p-6 space-y-5">
         <h2 id={`${program.slug}-title`} className="text-2xl font-bold text-gold-200">{program.name}</h2>
+        {program.note && <p className="text-gray-300">{program.note}</p>}
         <dl className="space-y-4 text-gray-200">
           <div><dt className="text-sm text-gray-400">Program length</dt><dd>{program.length}</dd></div>
           <div><dt className="text-sm text-gray-400">Instruction</dt><dd>{program.instruction}</dd></div>

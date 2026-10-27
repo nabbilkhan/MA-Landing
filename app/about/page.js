@@ -252,7 +252,7 @@ export default function AboutPage() {
                 VIP Program — Live + Pre-Recorded
               </h3>
               <div className="text-center mb-6">
-                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
+                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$5,000</div>
                 <div className="text-gray-400 text-lg">/ 12 weeks</div>
               </div>
 

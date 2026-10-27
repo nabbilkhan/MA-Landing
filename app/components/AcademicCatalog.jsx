@@ -23,9 +23,12 @@ export function CatalogSection({ id, title, children }) {
 }
 
 export function CatalogDownload({ program }) {
-  return <a href={program.pdf} download className="inline-block rounded-xl bg-gold-400 px-5 py-3 font-semibold text-black hover:bg-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-300">
-    Download catalog (PDF)<span className="sr-only">: {program.name}</span>
-  </a>;
+  return <div className="space-y-2">
+    <a href={program.pdf} download className="inline-block rounded-xl bg-gold-400 px-5 py-3 font-semibold text-black hover:bg-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-300">
+      Download catalog (PDF)<span className="sr-only">: {program.name}</span>
+    </a>
+    <p className="text-sm text-gray-400">Catalog updated October 26, 2026</p>
+  </div>;
 }
 
 export function InstitutionalStatements() {

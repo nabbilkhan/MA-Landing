@@ -10,6 +10,7 @@ import CurriculumSection from '../components/CurriculumSection';
 import CertificationsSection from '../components/CertificationsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import { productProgramPhases } from '../lib/product-program';
+import catalog from '../../content/catalog/ibhe-r2.json';
 import {
   BookOpen,
   Award,
@@ -216,9 +217,10 @@ export default function CoursesPage() {
               <h3 className="text-2xl md:text-3xl font-black mb-2 text-white text-center">
                 VIP Program — Live + Pre-Recorded
               </h3>
+              <p className="text-gray-300 text-center mb-6">{catalog.programs.find(program => program.slug === 'product-owner-product-manager').note}</p>
 
               <div className="text-center mb-8">
-                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$6,000</div>
+                <div className="text-5xl md:text-6xl font-black text-gold-400 mb-1">$5,000</div>
                 <div className="text-gray-400 text-lg">/ 12 weeks</div>
               </div>
 

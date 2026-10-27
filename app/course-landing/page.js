@@ -20,6 +20,7 @@ import CertificationsShowcase from './components/CertificationsShowcase';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
 import YoutubeShortsGallery from './components/YoutubeShortsGallery';
 import NewsletterSignup from './components/NewsletterSignup';
+import ProgramCatalogLinks from '../components/ProgramCatalogLinks';
 import SocialFooter from './components/SocialFooter';
 import { productProgramPhases } from '../lib/product-program';
 
@@ -1793,6 +1794,7 @@ export default function CourseLandingPage() {
       )}
 
       {/* Social Media Footer */}
+      <ProgramCatalogLinks />
       <SocialFooter />
 
     </div>

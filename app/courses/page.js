@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import NavigationHeader from '../course-landing/components/NavigationHeader';
+import ProgramCatalogLinks from '../components/ProgramCatalogLinks';
 import SocialFooter from '../course-landing/components/SocialFooter';
 import CurriculumSection from '../components/CurriculumSection';
 import CertificationsSection from '../components/CertificationsSection';
@@ -332,6 +333,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
+      <ProgramCatalogLinks />
       <SocialFooter />
     </div>
   );

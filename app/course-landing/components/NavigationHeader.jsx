@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Image from 'next/image'
+import Link from 'next/link'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { isProgramVisible } from '../../config/siteConfig'
@@ -193,6 +194,8 @@ export default function NavigationHeader({ onCTAClick }) {
                 </button>
               )}
               <div className="w-px h-5 bg-gray-600"></div>
+              <Link href="/academic-catalog/" className="hidden xl:inline text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors">Academic Catalog</Link>
+              <Link href="/institutional-disclosure/" className="hidden xl:inline text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors">Disclosures</Link>
               <button
                 onClick={() => {
                   if (pathname !== '/contact') {

@@ -1,3 +1,5 @@
+
+import AcademicLinks from '../../components/AcademicLinks';
 import { Metadata } from 'next';
 
 export const metadata = {
@@ -216,6 +218,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600">
           <p>&copy; 2025 Mentor Agile. All rights reserved.</p>
           <p className="mt-2">Mentor Agile is a DBA of Khan Holdings LLC</p>
+          <div className="mt-4"><AcademicLinks className="text-blue-700" /></div>
         </div>
       </footer>
     </div>

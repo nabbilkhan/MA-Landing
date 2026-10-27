@@ -1,5 +1,7 @@
 'use client';
 
+import AcademicLinks from '../components/AcademicLinks';
+
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -1293,6 +1295,8 @@ export default function BlackFridayOfferPage() {
           </div>
         </div>
       </section>
+
+      <footer className="relative z-10 border-t border-white/10 px-5 py-8"><AcademicLinks /></footer>
 
       <style jsx>{`
         /* ===== TYPOGRAPHY & READABILITY ===== */

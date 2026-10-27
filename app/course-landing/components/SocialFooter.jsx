@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import AcademicLinks from '../../components/AcademicLinks'
 
 const socialLinks = [
   {
@@ -156,6 +157,7 @@ export default function SocialFooter() {
           </div>
 
           {/* Institution Complaint Policy - Prominent Link */}
+          <AcademicLinks />
           <a
             href="/complaint-policy"
             className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-gold-400 border border-gold-500/40 rounded-xl bg-gold-500/10 hover:bg-gold-500/20 hover:border-gold-400 transition-all duration-300"

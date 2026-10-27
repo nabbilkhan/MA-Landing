@@ -12,6 +12,10 @@ export default function StudentCatalogPage() {
   return <div className="min-h-screen bg-black text-white overflow-x-hidden">
     <NavigationHeader />
     <main className="max-w-6xl mx-auto px-5 md:px-8 pt-32 pb-20 space-y-12">
+      <aside className="rounded-2xl border border-gold-400/40 bg-gold-500/10 p-5 text-gray-200">
+        <p className="font-semibold text-gold-200">Updated catalogs for all three programs</p>
+        <p className="mt-2">For current program tuition, fees, calendars, policies, and downloadable catalogs, visit the <Link href="/academic-catalog/" className="text-gold-200 underline underline-offset-4">Academic Catalog</Link>, including the <Link href="/programs/product-owner-product-manager/" className="text-gold-200 underline underline-offset-4">updated Product Owner/Product Manager catalog</Link>.</p>
+      </aside>
       <header className="max-w-4xl space-y-5">
         <p className="text-gold-300 font-semibold uppercase tracking-widest">2026–2027 · Revised {catalog.revision}</p>
         <h1 className="text-4xl md:text-6xl font-black text-white">Product Owner<br /><span className="text-gold-400">Student Catalog</span></h1>

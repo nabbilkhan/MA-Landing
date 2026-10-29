@@ -73,6 +73,12 @@ export default function SocialFooter() {
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
       </div>
+      <div className="relative max-w-4xl mx-auto px-4 mb-10">
+        <p className="rounded-xl border border-gold-500/40 bg-gold-500/10 px-5 py-4 text-center text-sm sm:text-base text-gold-100">
+          Illinois students: view the Illinois catalog and IBHE approval information at{" "}
+          <a href="https://il.mentoragile.com/" className="font-semibold text-gold-300 underline underline-offset-4">il.mentoragile.com</a>
+        </p>
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

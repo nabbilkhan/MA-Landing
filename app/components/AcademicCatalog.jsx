@@ -24,10 +24,10 @@ export function CatalogSection({ id, title, children }) {
 
 export function CatalogDownload({ program }) {
   return <div className="space-y-2">
-    <a href={program.pdf} download className="inline-block rounded-xl bg-gold-400 px-5 py-3 font-semibold text-black hover:bg-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-300">
-      Download catalog (PDF)<span className="sr-only">: {program.name}</span>
+    <a href={program.pdf} className="inline-block rounded-xl bg-gold-400 px-5 py-3 font-semibold text-black hover:bg-gold-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-300">
+      Illinois catalog at il.mentoragile.com<span className="sr-only">: {program.name}</span>
     </a>
-    <p className="text-sm text-gray-400">Catalog updated October 26, 2026</p>
+    <p className="text-sm text-gray-400">The catalog, tuition, and refund terms are published on the Illinois site.</p>
   </div>;
 }
 
@@ -38,9 +38,8 @@ export function InstitutionalStatements() {
 }
 
 export function ProgramFacts({ program }) {
-  return <dl className="grid sm:grid-cols-3 gap-4">
+  return <dl className="grid sm:grid-cols-2 gap-4">
     {[
-      ['Tuition', program.tuition],
       ['Program length', program.length],
       ['Instruction', program.instruction],
     ].map(([label, value]) => <div key={label} className="rounded-xl border border-gold-500/20 bg-gold-500/5 p-5">
@@ -64,27 +63,17 @@ export function InstitutionalCalendar({ program }) {
   </div>;
 }
 
-export function TuitionAndFees({ program }) {
+export function TuitionAndFees() {
   return <div className="space-y-4">
-    <p><strong className="text-white">Tuition: {program.tuition}.</strong> {program.tuitionIncludes}</p>
-    <h3 className="text-xl font-semibold text-gold-200">Fees and other charges / expenses</h3>
-    <p>{catalog.fees}</p>
-    <h3 className="text-xl font-semibold text-gold-200">Tuition reduction</h3>
-    <p>Tuition reductions are based on measurable, documented factors:</p>
-    <ul className="list-disc pl-6 space-y-2">{catalog.tuitionReduction.map(item => <li key={item}>{item}</li>)}</ul>
+    <p>Contact admissions for enrollment details.</p>
+    <p>Illinois students: the Illinois catalog, cancellation and refund terms, and IBHE approval information are at <a href="https://il.mentoragile.com/" className={catalogLinkClass}>il.mentoragile.com</a>.</p>
   </div>;
 }
 
 export function CancellationAndRefundPolicy() {
   return <div className="space-y-4">
-    <p>{catalog.refundIntroduction}</p>
-    <ol className="list-decimal pl-6 space-y-4">
-      {catalog.refundPolicy.map(item => <li key={item.title}>
-        <strong className="text-white">{item.title}: </strong>{item.text}
-        {item.items && <ul className="list-disc pl-6 mt-2 space-y-2">{item.items.map(text => <li key={text}>{text}</li>)}</ul>}
-      </li>)}
-    </ol>
-    <p><a href="mailto:admissions@mentoragile.com" className={catalogLinkClass}>Email Admissions with a written refund request</a>.</p>
+    <p>Cancellation and refund terms are provided in writing before enrollment.</p>
+    <p>Illinois students: the Illinois catalog, cancellation and refund terms, and IBHE approval information are at <a href="https://il.mentoragile.com/" className={catalogLinkClass}>il.mentoragile.com</a>.</p>
   </div>;
 }
 
@@ -115,7 +104,6 @@ export function InstitutionContact() {
     <p>Mentor Agile · Admissions and Support Office</p>
     <p>2200 S Main St, Lombard, IL 60148</p>
     <p><a href="mailto:info@mentoragile.com" className={catalogLinkClass}>info@mentoragile.com</a> · <a href="tel:+16305213351" className={catalogLinkClass}>+1 630-521-3351</a></p>
-    <p>Refund requests: <a href="mailto:admissions@mentoragile.com" className={catalogLinkClass}>admissions@mentoragile.com</a></p>
   </address>;
 }
 
@@ -123,7 +111,7 @@ export function ProgramCatalogPage({ program }) {
   const contents = [
     ['description', 'Program description'], ['objectives', 'Program objectives'],
     ['structure', 'Length and weekly structure'], ['admissions', 'Admissions requirements'],
-    ['calendar', 'Institutional calendar'], ['tuition', 'Tuition, fees and other expenses'],
+    ['calendar', 'Institutional calendar'], ['tuition', 'Enrollment details'],
     ['refunds', 'Cancellation and refund policy'], ['completion', 'Grading and completion'],
     ['certifications', 'Certification exams'], ['approval', 'Accreditation, approval and transfer of credits'],
     ['complaints', 'Complaints'], ['contact', 'Contact'],
@@ -166,7 +154,7 @@ export function ProgramCatalogPage({ program }) {
       <p>Applicants must commit to {program.length} of live sessions, group projects, and self-paced learning modules.</p>
     </CatalogSection>
     <CatalogSection id="calendar" title="Institutional calendar"><InstitutionalCalendar program={program} /></CatalogSection>
-    <CatalogSection id="tuition" title="Tuition and fees"><TuitionAndFees program={program} /></CatalogSection>
+    <CatalogSection id="tuition" title="Enrollment details"><TuitionAndFees /></CatalogSection>
     <CatalogSection id="refunds" title="Cancellation and refund policy"><CancellationAndRefundPolicy /></CatalogSection>
     <CatalogSection id="completion" title="Grading and completion requirements">
       <p>To pass the course and receive a certificate of completion, students must meet all of these requirements:</p>

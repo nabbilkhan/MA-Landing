@@ -79,7 +79,7 @@
       "length": "12 weeks (3 months)",
       "instruction": "216 clock hours · 24 live classes",
       "codes": "CIP 11.0103 · SOC 13-1082.00",
-      "pdf": "/catalogs/mentor-agile-product-owner-product-manager-catalog.pdf",
+      "pdf": "https://il.mentoragile.com/catalog/",
       "description": [
         "The Mentor Agile Product Owner/Product Manager (MAPOB) course is a 3-month immersive program designed to provide students with the skills and knowledge required to succeed in roles as Product Owners or Product Managers in Agile environments. The course covers Agile frameworks, including Scrum and Kanban, product management fundamentals, stakeholder engagement, and technical communication strategies. Students gain practical experience in backlog management, release planning, and team collaboration, preparing them for real-world challenges in tech-driven industries."
       ],
@@ -129,7 +129,7 @@
       "instruction": "160 clock hours · 10 live classes · Fully remote",
       "codes": "CIP 51.0801 · SOC 29-2052 (Pharmacy Technicians). The catalog also lists SOC 29-2031 (Cardiovascular Technologists and Technicians).",
       "implementationDate": "January 26, 2026",
-      "pdf": "/catalogs/mentor-agile-pharmacy-technician-ekg-catalog.pdf",
+      "pdf": "https://il.mentoragile.com/catalog/",
       "description": [
         "An intensive 4-week, fully remote training program designed to prepare students for high-demand careers as Certified Pharmacy Technicians and EKG Technicians. Led by a residency-trained PharmD and practicing hospital pharmacist, this premium program blends AI-enhanced coursework with advanced virtual simulations, immersive VR skill labs, and interactive exercises covering pharmacy law, pharmacology, medication safety, prescription processing, calculations, and real-world pharmacy workflow training. To further elevate our student competitiveness, the program incorporates a comprehensive EKG Technician training track, including virtual lead placement, cardiac anatomy essentials, rhythm interpretation, and hands-on simulated patient scenarios. This dual-focus approach equips students with both pharmacy technician competencies and essential cardiovascular diagnostic skills widely valued across hospitals, clinics, and outpatient centers. Graduates emerge fully prepared to earn the Certified Pharmacy Technician (CPhT) and EKG Technician Certification, gaining practical skills, professional confidence, and job-ready expertise for retail, hospital, ambulatory, and clinical healthcare environments. Participants also receive personalized career coaching, resume development, interview preparation, and job-connection support, making this a truly premium, career-accelerating program designed to produce highly skilled candidates with exceptional value in today’s healthcare workforce."
       ],
@@ -180,7 +180,7 @@
       "length": "4 weeks",
       "instruction": "160 hours · 40 hours per week",
       "codes": "CIP 11.0899 (Computer Software and Media Applications) and CIP 52.1803 · SOC 15-1253 (Software QA Analysts and Testers)",
-      "pdf": "/catalogs/mentor-agile-retail-software-qa-catalog.pdf",
+      "pdf": "https://il.mentoragile.com/catalog/",
       "description": [
         "The Retail Software QA Specialist program prepares students to perform User Acceptance Testing (UAT) and software quality assurance within a live retail environment. Students gain hands-on experience testing proprietary point-of-sale (POS) systems, store management platforms, and AI-powered retail technologies during real customer transactions. The program integrates Agile and Scrum methodologies with practical QA techniques, enabling students to evaluate software performance, identify defects, and provide actionable feedback to development teams. Emphasis is placed on ensuring that technology solutions function effectively in real-world retail settings while enhancing the overall customer experience."
       ],

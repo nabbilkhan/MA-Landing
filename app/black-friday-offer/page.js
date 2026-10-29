@@ -1,7 +1,5 @@
 'use client';
 
-import AcademicLinks from '../components/AcademicLinks';
-
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -729,7 +727,7 @@ export default function BlackFridayOfferPage() {
     },
     {
       question: 'Can I get funding support?',
-      answer: 'If you\'re eligible, American Job Centers (WIOA) can help cover tuition in IL and nearby areas. We work with 10+ centers. Contact us to learn more.'
+      answer: 'If you\'re eligible, American Job Centers (WIOA) may be able to help with program funding in IL and nearby areas. We work with 10+ centers. Contact us to learn more.'
     },
   ];
 
@@ -858,7 +856,7 @@ export default function BlackFridayOfferPage() {
                 <span className="text-2xl">💎</span>
                 <span className="text-xl lg:text-2xl tracking-wide">Get FREE Career Guidance</span>
                 <span className="text-sm lg:text-base font-semibold text-gold-100 opacity-90">
-                  VIP Program: $5,000
+                  VIP Program: Live + On-Demand
                 </span>
               </div>
             </button>
@@ -875,7 +873,7 @@ export default function BlackFridayOfferPage() {
                 <span className="text-2xl">⚡</span>
                 <span className="text-xl lg:text-2xl tracking-wide">Start On-Demand</span>
                 <span className="text-sm lg:text-base font-semibold text-gray-improved opacity-90">
-                  Self-paced • $5,000
+                  Self-paced
                 </span>
               </div>
             </button>
@@ -938,9 +936,9 @@ export default function BlackFridayOfferPage() {
 
                   <div className="mb-10">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-6xl lg:text-7xl font-black text-gradient-gold">$5,000</span>
+                      <span className="text-4xl lg:text-5xl font-black text-gradient-gold">12 weeks</span>
                     </div>
-                    <p className="text-base text-gray-improved">Payment plans available</p>
+                    <p className="text-base text-gray-improved">Contact admissions for enrollment details</p>
                   </div>
 
                   <div className="space-y-5 mb-10">
@@ -1026,9 +1024,9 @@ export default function BlackFridayOfferPage() {
 
                   <div className="mb-10">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-6xl lg:text-7xl font-black text-white">$5,000</span>
+                      <span className="text-4xl lg:text-5xl font-black text-white">Self-paced</span>
                     </div>
-                    <p className="text-base text-gray-improved">One-time payment</p>
+                    <p className="text-base text-gray-improved">Start any time</p>
                   </div>
 
                   <div className="space-y-5 mb-10">
@@ -1290,13 +1288,11 @@ export default function BlackFridayOfferPage() {
               </button>
             </div>
             <p className="text-base lg:text-lg text-gray-improved mt-10 font-medium">
-              🔥 Black Friday pricing ends soon — Don't miss out
+              🔥 Black Friday offer ends soon. Don't miss out
             </p>
           </div>
         </div>
       </section>
-
-      <footer className="relative z-10 border-t border-white/10 px-5 py-8"><AcademicLinks /></footer>
 
       <style jsx>{`
         /* ===== TYPOGRAPHY & READABILITY ===== */

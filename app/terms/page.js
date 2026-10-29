@@ -186,11 +186,11 @@ export default function TermsPage() {
                 <div className="prose prose-invert max-w-none">
                   <p className="text-gray-300 leading-relaxed mb-4">
                     Mentor Agile provides the "Become a Job-Ready Product Owner" 12-week VIP program
-                    with live coaching ($5,000). This comprehensive training is designed to transform
+                    with live coaching. This comprehensive training is designed to transform
                     beginners into certified Product Owners.
                   </p>
 
-                  <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">VIP Program — Live + Pre-Recorded ($5,000)</h3>
+                  <h3 className="text-xl font-bold text-gold-300 mb-4 mt-6">VIP Program: Live + Pre-Recorded</h3>
                   <ul className="space-y-3 text-gray-300 mb-6">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -218,7 +218,7 @@ export default function TermsPage() {
                   <ul className="space-y-3 text-gray-300">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Custom team training packages available (contact for pricing)</span>
+                      <span>Custom team training packages available (contact us for details)</span>
                     </li>
                   </ul>
                   <p className="text-gray-300 leading-relaxed mt-6">
@@ -295,7 +295,7 @@ export default function TermsPage() {
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span>
-                        <strong className="text-gold-300">VIP Program:</strong> $5,000 for 12 weeks of live coaching plus pre-recorded curriculum. Contact us to book a free consultation.
+                        <strong className="text-gold-300">VIP Program:</strong> 12 weeks of live coaching plus pre-recorded curriculum. Enrollment terms are provided in writing before enrollment. Illinois students: see <a href="https://il.mentoragile.com/" className="text-gold-300 underline">il.mentoragile.com</a>.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -307,12 +307,12 @@ export default function TermsPage() {
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span>
-                        All prices are in US Dollars and include access to course materials, CSPO® certification guidance, and community access
+                        Enrollment includes access to course materials, CSPO® certification guidance, and community access
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Enterprise training packages available - contact us for custom pricing</span>
+                      <span>Enterprise training packages available - contact us for details</span>
                     </li>
                   </ul>
 

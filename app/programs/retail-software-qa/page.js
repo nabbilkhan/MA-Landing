@@ -5,10 +5,10 @@ const program = catalog.programs.find(item => item.slug === 'retail-software-qa'
 
 export const metadata = {
   title: `${program.name} | Academic Catalog | Mentor Agile`,
-  description: `${program.length}, ${program.instruction}. Tuition: ${program.tuition}. Read the curriculum, admissions, calendar, refund policy, and certification requirements.`,
+  description: `${program.length}, ${program.instruction}. Read the curriculum, admissions, calendar, refund policy, and certification requirements.`,
   openGraph: {
     title: `${program.name} | Academic Catalog | Mentor Agile`,
-    description: `${program.length}. Tuition: ${program.tuition}. Curriculum, enrollment policies, and certification information.`,
+    description: `${program.length}. Curriculum, enrollment policies, and certification information.`,
     url: `/programs/${program.slug}/`,
   },
   alternates: { canonical: '/programs/retail-software-qa/' },

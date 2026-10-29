@@ -15,6 +15,7 @@ import { useRouter } from 'next/navigation';
 import NavigationHeader from '../course-landing/components/NavigationHeader';
 import GlassmorphicLogo from '../course-landing/components/GlassmorphicLogo';
 import NewsletterSignup from '../course-landing/components/NewsletterSignup';
+import ProgramCatalogLinks from '../components/ProgramCatalogLinks';
 import SocialFooter from '../course-landing/components/SocialFooter';
 import { isProgramVisible } from '../config/siteConfig';
 
@@ -49,10 +50,10 @@ export default function HealthcareLandingPage() {
   const scrollProgressBarRef = useRef(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
 
-  // Redirect if program is hidden
+  // Keep the public catalog accessible when the marketing program is hidden
   useEffect(() => {
     if (!isProgramVisible('healthcare')) {
-      router.replace('/');
+      router.replace('/programs/pharmacy-technician-ekg/');
     }
   }, [router]);
 
@@ -1574,6 +1575,7 @@ export default function HealthcareLandingPage() {
       )}
 
       {/* Social Media Footer */}
+      <ProgramCatalogLinks healthcare />
       <SocialFooter />
     </div>
   );

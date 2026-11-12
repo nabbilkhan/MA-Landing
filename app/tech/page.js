@@ -1,3 +1,6 @@
 // AI in Tech - Product Manager Training
-// Re-exports the course landing page content
-export { default } from '../course-landing/page'
+import CourseLandingPage from '../course-landing/page'
+
+export default function TechPage() {
+  return <CourseLandingPage techHero />
+}

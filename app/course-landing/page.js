@@ -29,7 +29,7 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 }
 
-export default function CourseLandingPage() {
+export default function CourseLandingPage({ techHero = false }) {
   const router = useRouter();
   const pathname = usePathname();
   const heroRef = useRef(null);
@@ -297,7 +297,8 @@ export default function CourseLandingPage() {
         );
 
         // Hero animations - Enhanced with random directions
-        gsap.fromTo('.hero-title span',
+        // On /tech, animate letters without transforming their text-clipping ancestors.
+        gsap.fromTo(techHero ? '.hero-title [data-hero-letter]' : '.hero-title span',
           {
             y: () => gsap.utils.random(-100, 100),
             x: () => gsap.utils.random(-50, 50),
@@ -318,7 +319,8 @@ export default function CourseLandingPage() {
               amount: 0.8,
               from: 'random'
             },
-            ease: 'elastic.out(1, 0.5)'
+            ease: 'elastic.out(1, 0.5)',
+            ...(techHero ? { clearProps: 'transform,opacity' } : {})
           }
         );
 
@@ -907,11 +909,11 @@ export default function CourseLandingPage() {
             </div>
 
             {/* Main Headline with Split Text */}
-            <h1 className="hero-title text-6xl lg:text-8xl font-black leading-none mb-5">
+            <h1 data-tech-hero={techHero ? '' : undefined} className="hero-title text-6xl lg:text-8xl font-black leading-none mb-5">
               {['Launch', 'Your'].map((word, wordIndex) => (
                 <span key={wordIndex} className="inline-block" style={{ whiteSpace: 'nowrap' }}>
                   {word.split('').map((char, charIndex) => (
-                    <span key={charIndex} className="inline-block">
+                    <span key={charIndex} data-hero-letter={techHero ? '' : undefined} className="inline-block">
                       {char}
                     </span>
                   ))}
@@ -923,7 +925,7 @@ export default function CourseLandingPage() {
                 {['Tech', 'Career'].map((word, wordIndex) => (
                   <span key={wordIndex} className="inline-block" style={{ whiteSpace: 'nowrap' }}>
                     {word.split('').map((char, charIndex) => (
-                      <span key={charIndex} className="inline-block">
+                      <span key={charIndex} data-hero-letter={techHero ? '' : undefined} className="inline-block">
                         {char}
                       </span>
                     ))}
@@ -1246,6 +1248,15 @@ export default function CourseLandingPage() {
           background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: gradient-flow 8s ease infinite;
+        }
+
+        /* /tech paints the gold gradient once per letter, never on nested wrappers. */
+        .hero-title[data-tech-hero] .text-gradient-gold,
+        .hero-title[data-tech-hero] .text-gradient-gold > span {
+          background: none;
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          animation: none;
         }
 
         @keyframes gradient-flow {
